@@ -4,6 +4,26 @@ import { useState, useMemo } from 'react';
 import { Table, Search, Download, ExternalLink } from 'lucide-react';
 import Link from 'next/link';
 
+// Fabric colors for generating cushion/shell variants
+const FABRIC_COLORS = [
+  { code: 'CBN', name: 'Carbon', pattern: 'SPTM' },
+  { code: 'IND', name: 'Indigo', pattern: 'SPTM' },
+  { code: 'DOV', name: 'Dove', pattern: 'SPTM' },
+  { code: 'CHR', name: 'Charcoal', pattern: 'HRTG' },
+  { code: 'LEF', name: 'Leaf', pattern: 'HRTG' },
+  { code: 'SBL', name: 'Sable', pattern: 'HRTG' },
+  { code: 'SLT', name: 'Salt', pattern: 'SAIL' },
+  { code: 'SAH', name: 'Sahara', pattern: 'SAIL' },
+  { code: 'GUL', name: 'Seagull', pattern: 'SAIL' },
+  { code: 'BSQ', name: 'Bisque', pattern: 'CAST' },
+  { code: 'SEA', name: 'Seaglass', pattern: 'CAST' },
+  { code: 'SND', name: 'Sand', pattern: 'CAST' },
+  { code: 'ALO', name: 'Aloe', pattern: 'BLIS' },
+  { code: 'JAV', name: 'Java', pattern: 'CNVS' },
+  { code: 'DEW', name: 'Dewdrop', pattern: 'EXHL' },
+  { code: 'EMB', name: 'Ember', pattern: 'EXHL' },
+];
+
 // Master data from CSV - comprehensive list
 const MASTER_DATA = [
   // Frames
@@ -11,15 +31,34 @@ const MASTER_DATA = [
   { partNumber: '30002', sku: 'FR-SOL-LOV-NTK', name: 'Solerno Loveseat Frame, Natural Teak', category: 'Frame', type: 'Product', use: 'Subassembly', sellable: false },
   { partNumber: '30003', sku: 'FR-SOL-SOF-NTK', name: 'Solerno Sofa Frame, Natural Teak', category: 'Frame', type: 'Product', use: 'Subassembly', sellable: false },
   { partNumber: '30004', sku: 'FR-SOL-HOT-NTK', name: 'Solerno Heated Ottoman Frame, Natural Teak', category: 'Frame', type: 'Product', use: 'Subassembly', sellable: false },
-  { partNumber: '30005', sku: 'FR-SOL-OTM-NTK', name: 'Solerno Ottoman Frame, Natural Teak', category: 'Frame', type: 'Product', use: 'Resale', sellable: true },
-  { partNumber: '30006', sku: 'FR-SOL-CTB-NTK', name: 'Solerno Coffee Table Frame, Natural Teak', category: 'Frame', type: 'Product', use: 'Resale', sellable: true },
-  { partNumber: '30007', sku: 'FR-SOL-STB-NTK', name: 'Solerno Side Table Frame, Natural Teak', category: 'Frame', type: 'Product', use: 'Resale', sellable: true },
-  { partNumber: '30008', sku: 'FR-SOL-SVL-NTK', name: 'Solerno Swivel Chair Frame, Natural Teak', category: 'Frame', type: 'Product', use: 'Subassembly', sellable: false },
-  { partNumber: '30009', sku: 'FR-SOL-CHS-NTK', name: 'Solerno Chaise Lounge Frame, Natural Teak', category: 'Frame', type: 'Product', use: 'Subassembly', sellable: false },
-  { partNumber: '30010', sku: 'FR-SOL-DCH-NTK', name: 'Solerno Dining Side Chair Frame, Natural Teak', category: 'Frame', type: 'Product', use: 'Subassembly', sellable: false },
-  { partNumber: '30011', sku: 'FR-SOL-DAC-NTK', name: 'Solerno Dining Arm Chair Frame, Natural Teak', category: 'Frame', type: 'Product', use: 'Subassembly', sellable: false },
+  { partNumber: '30005', sku: 'FR-SOL-CHS-NTK', name: 'Solerno Chaise Lounge Frame, Natural Teak', category: 'Frame', type: 'Product', use: 'Subassembly', sellable: false },
+  { partNumber: '30006', sku: 'FR-SOL-SVL-NTK', name: 'Solerno Swivel Chair Frame, Natural Teak', category: 'Frame', type: 'Product', use: 'Subassembly', sellable: false },
+  { partNumber: '30007', sku: 'FR-SOL-DAC-NTK', name: 'Solerno Dining Arm Chair Frame, Natural Teak', category: 'Frame', type: 'Product', use: 'Subassembly', sellable: false },
+  { partNumber: '30008', sku: 'FR-SOL-DCH-NTK', name: 'Solerno Dining Side Chair Frame, Natural Teak', category: 'Frame', type: 'Product', use: 'Subassembly', sellable: false },
+  { partNumber: '30009', sku: 'FR-SOL-OTM-NTK', name: 'Solerno Ottoman Frame, Natural Teak', category: 'Frame', type: 'Product', use: 'Resale', sellable: true },
+  { partNumber: '30010', sku: 'FR-SOL-CTB-NTK', name: 'Solerno Coffee Table Frame, Natural Teak', category: 'Frame', type: 'Product', use: 'Resale', sellable: true },
+  { partNumber: '30011', sku: 'FR-SOL-STB-NTK', name: 'Solerno Side Table Frame, Natural Teak', category: 'Frame', type: 'Product', use: 'Resale', sellable: true },
   { partNumber: '30012', sku: 'FR-SOL-SDT-NTK', name: 'Solerno Square Dining Table Frame, Natural Teak', category: 'Frame', type: 'Product', use: 'Resale', sellable: true },
   { partNumber: '30013', sku: 'FR-SOL-RDT-NTK', name: 'Solerno Rectangle Dining Table Frame, Natural Teak', category: 'Frame', type: 'Product', use: 'Resale', sellable: true },
+
+  // Cushions (generated per fabric color)
+  ...FABRIC_COLORS.flatMap((fabric, i) => [
+    { partNumber: `40${String(1 + i * 3).padStart(3, '0')}`, sku: `CSH-LS-SEAT-${fabric.code}`, name: `Cushion, Lounge Seating Seat, ${fabric.name}`, category: 'Cushion', type: 'Product', use: 'Subassembly', sellable: false },
+    { partNumber: `40${String(2 + i * 3).padStart(3, '0')}`, sku: `CSH-LS-BACK-${fabric.code}`, name: `Cushion, Lounge Seating Back, ${fabric.name}`, category: 'Cushion', type: 'Product', use: 'Subassembly', sellable: false },
+    { partNumber: `40${String(3 + i * 3).padStart(3, '0')}`, sku: `CSH-LS-PILB-${fabric.code}`, name: `Cushion, Lounge Seating Pillow Back, ${fabric.name}`, category: 'Cushion', type: 'Product', use: 'Subassembly', sellable: false },
+  ]),
+
+  // Shells (generated per fabric color) - sellable as replacements
+  ...FABRIC_COLORS.flatMap((fabric, i) => [
+    { partNumber: `50${String(1 + i * 3).padStart(3, '0')}`, sku: `SHL-LS-SEAT-${fabric.code}`, name: `Shell, Lounge Seating Seat, ${fabric.name}`, category: 'Shell', type: 'Product', use: 'Contract-manufactured', sellable: true },
+    { partNumber: `50${String(2 + i * 3).padStart(3, '0')}`, sku: `SHL-LS-BACK-${fabric.code}`, name: `Shell, Lounge Seating Back, ${fabric.name}`, category: 'Shell', type: 'Product', use: 'Contract-manufactured', sellable: true },
+    { partNumber: `50${String(3 + i * 3).padStart(3, '0')}`, sku: `SHL-LS-PILB-${fabric.code}`, name: `Shell, Lounge Seating Pillow Back, ${fabric.name}`, category: 'Shell', type: 'Product', use: 'Contract-manufactured', sellable: true },
+  ]),
+
+  // Core Inserts (universal - no fabric color)
+  { partNumber: '40501', sku: 'COR-LS-SEAT', name: 'Core Insert, Lounge Seating, Seat', category: 'Core Insert', type: 'Product', use: 'Contract-manufactured', sellable: false },
+  { partNumber: '40502', sku: 'COR-LS-BACK', name: 'Core Insert, Lounge Seating, Back', category: 'Core Insert', type: 'Product', use: 'Contract-manufactured', sellable: false },
+  { partNumber: '40503', sku: 'COR-LS-PILB', name: 'Core Insert, Lounge Seating, Pillow Back', category: 'Core Insert', type: 'Product', use: 'Contract-manufactured', sellable: false },
 
   // Heat Tech
   { partNumber: '70001', sku: 'HT-PB-G1R-151', name: 'Power Bar, Gen 1 Refresh, 151Wh', category: 'Heat Tech', type: 'Product', use: 'Kit', sellable: true },
@@ -30,9 +69,9 @@ const MASTER_DATA = [
   { partNumber: '70006', sku: 'HT-CHG-SPLT-2', name: 'Power Splitter, 2-Way', category: 'Heat Tech', type: 'Product', use: 'Resale', sellable: true },
   { partNumber: '70007', sku: 'HT-CHG-SPLT-3', name: 'Power Splitter, 3-Way', category: 'Heat Tech', type: 'Product', use: 'Resale', sellable: true },
   { partNumber: '70008', sku: 'HT-CHG-SPLT-4', name: 'Power Splitter, 4-Way', category: 'Heat Tech', type: 'Product', use: 'Resale', sellable: true },
-  { partNumber: '70009', sku: 'HT-GPH-LS-SEAT-G1', name: 'Graphene Heating Element, LS Seat, Gen 1', category: 'Heat Tech', type: 'Material', use: 'Material', sellable: false },
-  { partNumber: '70010', sku: 'HT-GPH-LS-BACK-G1', name: 'Graphene Heating Element, LS Back, Gen 1', category: 'Heat Tech', type: 'Material', use: 'Material', sellable: false },
-  { partNumber: '70011', sku: 'HT-GPH-LS-PILB-G1', name: 'Graphene Heating Element, LS Pillow Back, Gen 1', category: 'Heat Tech', type: 'Material', use: 'Material', sellable: false },
+  { partNumber: '70009', sku: 'HT-GPH-LS-SEAT-G1', name: 'Graphene Heating Element, LS Seat, Gen 1', category: 'Heat Tech', type: 'Material', use: 'Raw Material', sellable: false },
+  { partNumber: '70010', sku: 'HT-GPH-LS-BACK-G1', name: 'Graphene Heating Element, LS Back, Gen 1', category: 'Heat Tech', type: 'Material', use: 'Raw Material', sellable: false },
+  { partNumber: '70011', sku: 'HT-GPH-LS-PILB-G1', name: 'Graphene Heating Element, LS Pillow Back, Gen 1', category: 'Heat Tech', type: 'Material', use: 'Raw Material', sellable: false },
 
   // Protective Covers
   { partNumber: '60001', sku: 'PRO-SOL-LCH', name: 'Protective Cover, Lounge Chair', category: 'Protective Cover', type: 'Product', use: 'Resale', sellable: true },
@@ -40,38 +79,56 @@ const MASTER_DATA = [
   { partNumber: '60003', sku: 'PRO-SOL-SOF', name: 'Protective Cover, Sofa', category: 'Protective Cover', type: 'Product', use: 'Resale', sellable: true },
   { partNumber: '60004', sku: 'PRO-SOL-HOT', name: 'Protective Cover, Heated Ottoman', category: 'Protective Cover', type: 'Product', use: 'Resale', sellable: true },
   { partNumber: '60005', sku: 'PRO-SOL-OTM', name: 'Protective Cover, Ottoman', category: 'Protective Cover', type: 'Product', use: 'Resale', sellable: true },
-  { partNumber: '60006', sku: 'PRO-SOL-CTB', name: 'Protective Cover, Coffee Table', category: 'Protective Cover', type: 'Product', use: 'Resale', sellable: true },
-  { partNumber: '60007', sku: 'PRO-SOL-STB', name: 'Protective Cover, Side Table', category: 'Protective Cover', type: 'Product', use: 'Resale', sellable: true },
-  { partNumber: '60008', sku: 'PRO-SOL-SVL', name: 'Protective Cover, Swivel Chair', category: 'Protective Cover', type: 'Product', use: 'Resale', sellable: true },
-  { partNumber: '60009', sku: 'PRO-SOL-CHS', name: 'Protective Cover, Chaise Lounge', category: 'Protective Cover', type: 'Product', use: 'Resale', sellable: true },
-  { partNumber: '60010', sku: 'PRO-SOL-DCH', name: 'Protective Cover, Dining Side Chair', category: 'Protective Cover', type: 'Product', use: 'Resale', sellable: true },
-  { partNumber: '60011', sku: 'PRO-SOL-DAC', name: 'Protective Cover, Dining Arm Chair', category: 'Protective Cover', type: 'Product', use: 'Resale', sellable: true },
-  { partNumber: '60012', sku: 'PRO-SOL-SDT', name: 'Protective Cover, Square Dining Table', category: 'Protective Cover', type: 'Product', use: 'Resale', sellable: true },
-  { partNumber: '60013', sku: 'PRO-SOL-RDT', name: 'Protective Cover, Rectangle Dining Table', category: 'Protective Cover', type: 'Product', use: 'Resale', sellable: true },
+  { partNumber: '60006', sku: 'PRO-SOL-CHS', name: 'Protective Cover, Chaise Lounge', category: 'Protective Cover', type: 'Product', use: 'Resale', sellable: true },
+  { partNumber: '60007', sku: 'PRO-SOL-SVL', name: 'Protective Cover, Swivel Chair', category: 'Protective Cover', type: 'Product', use: 'Resale', sellable: true },
+  { partNumber: '60008', sku: 'PRO-SOL-CTB', name: 'Protective Cover, Coffee Table', category: 'Protective Cover', type: 'Product', use: 'Resale', sellable: true },
+  { partNumber: '60009', sku: 'PRO-SOL-STB', name: 'Protective Cover, Side Table', category: 'Protective Cover', type: 'Product', use: 'Resale', sellable: true },
+  { partNumber: '60010', sku: 'PRO-SOL-SDT', name: 'Protective Cover, Square Dining Table', category: 'Protective Cover', type: 'Product', use: 'Resale', sellable: true },
+  { partNumber: '60011', sku: 'PRO-SOL-RDT', name: 'Protective Cover, Rectangle Dining Table', category: 'Protective Cover', type: 'Product', use: 'Resale', sellable: true },
+  { partNumber: '60012', sku: 'PRO-SOL-DAC', name: 'Protective Cover, Dining Arm Chair', category: 'Protective Cover', type: 'Product', use: 'Resale', sellable: true },
+  { partNumber: '60013', sku: 'PRO-SOL-DCH', name: 'Protective Cover, Dining Side Chair', category: 'Protective Cover', type: 'Product', use: 'Resale', sellable: true },
 
   // Accessories
-  { partNumber: '80001', sku: 'ACC-THRW-ALO', name: 'Sunbrella Signature Throw, Aloe', category: 'Accessory', type: 'Product', use: 'Resale', sellable: true },
-  { partNumber: '80002', sku: 'ACC-THRW-IND', name: 'Sunbrella Signature Throw, Indigo', category: 'Accessory', type: 'Product', use: 'Resale', sellable: true },
-  { partNumber: '80003', sku: 'ACC-THRW-CBN', name: 'Sunbrella Signature Throw, Carbon', category: 'Accessory', type: 'Product', use: 'Resale', sellable: true },
-  { partNumber: '80004', sku: 'ACC-THRW-DOV', name: 'Sunbrella Signature Throw, Dove', category: 'Accessory', type: 'Product', use: 'Resale', sellable: true },
-  { partNumber: '80005', sku: 'ACC-THRW-CHR', name: 'Sunbrella Signature Throw, Charcoal', category: 'Accessory', type: 'Product', use: 'Resale', sellable: true },
-  { partNumber: '80006', sku: 'ACC-THRW-SLT', name: 'Sunbrella Signature Throw, Salt', category: 'Accessory', type: 'Product', use: 'Resale', sellable: true },
-  { partNumber: '80007', sku: 'ACC-CARE-TEAK', name: 'Teak Care Kit', category: 'Accessory', type: 'Product', use: 'Resale', sellable: true },
-  { partNumber: '80008', sku: 'ACC-CARE-SUN', name: 'Sunbrella Care Kit', category: 'Accessory', type: 'Product', use: 'Resale', sellable: true },
-  { partNumber: '80009', sku: 'SW-KIT-SM', name: 'Swatch Kit, Small', category: 'Accessory', type: 'Product', use: 'Resale', sellable: true },
-  { partNumber: '80010', sku: 'SW-KIT-LG', name: 'Swatch Kit, Large', category: 'Accessory', type: 'Product', use: 'Resale', sellable: true },
+  { partNumber: '80001', sku: 'ACC-CARE-TEAK', name: 'Teak Care Kit', category: 'Accessory', type: 'Product', use: 'Resale', sellable: true },
+  { partNumber: '80002', sku: 'ACC-CARE-SUN', name: 'Sunbrella Care Kit', category: 'Accessory', type: 'Product', use: 'Resale', sellable: true },
+  { partNumber: '80010', sku: 'ACC-THRW-CBN', name: 'Sunbrella Throw, Carbon', category: 'Accessory', type: 'Product', use: 'Resale', sellable: true },
+  { partNumber: '80011', sku: 'ACC-THRW-IND', name: 'Sunbrella Throw, Indigo', category: 'Accessory', type: 'Product', use: 'Resale', sellable: true },
+  { partNumber: '80012', sku: 'ACC-THRW-DOV', name: 'Sunbrella Throw, Dove', category: 'Accessory', type: 'Product', use: 'Resale', sellable: true },
+  { partNumber: '80013', sku: 'ACC-THRW-CHR', name: 'Sunbrella Throw, Charcoal', category: 'Accessory', type: 'Product', use: 'Resale', sellable: true },
+  { partNumber: '80014', sku: 'ACC-THRW-SLT', name: 'Sunbrella Throw, Salt', category: 'Accessory', type: 'Product', use: 'Resale', sellable: true },
+  { partNumber: '80020', sku: 'SW-KIT-SM', name: 'Swatch Kit, Small', category: 'Accessory', type: 'Product', use: 'Resale', sellable: true },
+  { partNumber: '80021', sku: 'SW-KIT-LG', name: 'Swatch Kit, Large', category: 'Accessory', type: 'Product', use: 'Resale', sellable: true },
+
+  // Fabrics (raw materials)
+  ...FABRIC_COLORS.map((fabric, i) => ({
+    partNumber: '-',
+    sku: `FAB-SUN-${fabric.pattern}-${fabric.code}`,
+    name: `Sunbrella ${fabric.pattern === 'SPTM' ? 'Spectrum' : fabric.pattern === 'HRTG' ? 'Heritage' : fabric.pattern === 'SAIL' ? 'Sailcloth' : fabric.pattern === 'CAST' ? 'Cast' : fabric.pattern === 'BLIS' ? 'Bliss' : fabric.pattern === 'CNVS' ? 'Canvas' : 'Exhale'} ${fabric.name}`,
+    category: 'Fabric',
+    type: 'Material',
+    use: 'Raw Material',
+    sellable: false,
+  })),
+
+  // Other Materials
+  { partNumber: '-', sku: 'FAB-BAR-WPB', name: 'Barrier, Waterproof Black', category: 'Material', type: 'Material', use: 'Raw Material', sellable: false },
+  { partNumber: '-', sku: 'FAB-BAR-MSH', name: 'Barrier, Mesh', category: 'Material', type: 'Material', use: 'Raw Material', sellable: false },
+  { partNumber: '-', sku: 'FOM-LS-SEAT', name: 'Foam, Lounge Seating Seat', category: 'Material', type: 'Material', use: 'Raw Material', sellable: false },
+  { partNumber: '-', sku: 'FOM-LS-BACK', name: 'Foam, Lounge Seating Back', category: 'Material', type: 'Material', use: 'Raw Material', sellable: false },
+  { partNumber: '-', sku: 'FOM-LS-PILB', name: 'Foam, Lounge Seating Pillow Back', category: 'Material', type: 'Material', use: 'Raw Material', sellable: false },
+  { partNumber: '-', sku: 'FIL-POLY', name: 'Polyester Batting', category: 'Material', type: 'Material', use: 'Raw Material', sellable: false },
+  { partNumber: '-', sku: 'HW-GRM-4', name: 'Snap Grommet #4', category: 'Material', type: 'Material', use: 'Raw Material', sellable: false },
+  { partNumber: '-', sku: 'HW-GRM-CUS', name: 'Custom Grommet (Seat Shell)', category: 'Material', type: 'Material', use: 'Raw Material', sellable: false },
+  { partNumber: '-', sku: 'HW-CRDG', name: 'Cord Grip', category: 'Material', type: 'Material', use: 'Raw Material', sellable: false },
+  { partNumber: '-', sku: 'HW-CRDN', name: 'Cord Grip Nut', category: 'Material', type: 'Material', use: 'Raw Material', sellable: false },
+  { partNumber: '-', sku: 'LBL-WVN-OM', name: 'Woven Label, Outmore', category: 'Material', type: 'Material', use: 'Raw Material', sellable: false },
 
   // Marketing
   { partNumber: '90001', sku: 'MKT-CAT-RES', name: 'Product Catalog, Residential', category: 'Marketing', type: 'Product', use: 'Resale', sellable: true },
   { partNumber: '90002', sku: 'MKT-CAT-HOS', name: 'Product Catalog, Hospitality', category: 'Marketing', type: 'Product', use: 'Resale', sellable: true },
-
-  // Core Inserts
-  { partNumber: '40501', sku: 'COR-LS-SEAT', name: 'Core Insert, Lounge Seating, Seat', category: 'Core Insert', type: 'Product', use: 'Contract-manufactured', sellable: false },
-  { partNumber: '40502', sku: 'COR-LS-BACK', name: 'Core Insert, Lounge Seating, Back', category: 'Core Insert', type: 'Product', use: 'Contract-manufactured', sellable: false },
-  { partNumber: '40503', sku: 'COR-LS-PILB', name: 'Core Insert, Lounge Seating, Pillow Back', category: 'Core Insert', type: 'Product', use: 'Contract-manufactured', sellable: false },
 ];
 
-const CATEGORIES = ['All', 'Frame', 'Heat Tech', 'Protective Cover', 'Accessory', 'Marketing', 'Core Insert'];
+const CATEGORIES = ['All', 'Frame', 'Cushion', 'Shell', 'Core Insert', 'Heat Tech', 'Protective Cover', 'Accessory', 'Fabric', 'Material', 'Marketing'];
 
 export default function MasterDataPage() {
   const [searchQuery, setSearchQuery] = useState('');
