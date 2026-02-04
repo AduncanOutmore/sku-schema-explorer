@@ -1,8 +1,10 @@
 'use client';
 
 import { useState, useMemo } from 'react';
-import { Table, Search, Download, ExternalLink } from 'lucide-react';
+import { Table, Search, Download, ChevronLeft, ChevronRight } from 'lucide-react';
 import Link from 'next/link';
+
+const ITEMS_PER_PAGE = 25;
 
 // Fabric colors for generating cushion/shell variants
 const FABRIC_COLORS = [
@@ -133,6 +135,7 @@ const CATEGORIES = ['All', 'Frame', 'Cushion', 'Shell', 'Core Insert', 'Heat Tec
 export default function MasterDataPage() {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('All');
+  const [currentPage, setCurrentPage] = useState(1);
 
   const filteredData = useMemo(() => {
     return MASTER_DATA.filter((item) => {
@@ -148,6 +151,23 @@ export default function MasterDataPage() {
       return matchesSearch && matchesCategory;
     });
   }, [searchQuery, selectedCategory]);
+
+  // Reset to page 1 when filters change
+  const totalPages = Math.ceil(filteredData.length / ITEMS_PER_PAGE);
+  const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
+  const endIndex = startIndex + ITEMS_PER_PAGE;
+  const paginatedData = filteredData.slice(startIndex, endIndex);
+
+  // Reset page when filters change
+  const handleCategoryChange = (cat: string) => {
+    setSelectedCategory(cat);
+    setCurrentPage(1);
+  };
+
+  const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setSearchQuery(e.target.value);
+    setCurrentPage(1);
+  };
 
   return (
     <div className="space-y-6">
@@ -194,7 +214,7 @@ export default function MasterDataPage() {
                 type="text"
                 placeholder="Search by SKU, name, or part number..."
                 value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
+                onChange={handleSearchChange}
                 className="w-full pl-9 pr-4 py-2 text-sm border border-sand rounded-md bg-cream focus:outline-none focus:ring-2 focus:ring-hot-embers"
               />
             </div>
@@ -204,7 +224,7 @@ export default function MasterDataPage() {
             {CATEGORIES.map((cat) => (
               <button
                 key={cat}
-                onClick={() => setSelectedCategory(cat)}
+                onClick={() => handleCategoryChange(cat)}
                 className={`btn text-xs py-1.5 px-3 ${
                   selectedCategory === cat
                     ? 'bg-hot-embers text-white border-hot-embers'
@@ -218,10 +238,18 @@ export default function MasterDataPage() {
         </div>
       </div>
 
-      {/* Results count */}
-      <p className="text-sm text-muted">
-        Showing {filteredData.length} of {MASTER_DATA.length} items
-      </p>
+      {/* Results count and pagination info */}
+      <div className="flex items-center justify-between">
+        <p className="text-sm text-muted">
+          Showing {startIndex + 1}–{Math.min(endIndex, filteredData.length)} of {filteredData.length} items
+          {selectedCategory !== 'All' && ` in ${selectedCategory}`}
+        </p>
+        {totalPages > 1 && (
+          <p className="text-sm text-muted">
+            Page {currentPage} of {totalPages}
+          </p>
+        )}
+      </div>
 
       {/* Data table */}
       <div className="card overflow-hidden">
@@ -239,15 +267,15 @@ export default function MasterDataPage() {
               </tr>
             </thead>
             <tbody>
-              {filteredData.length === 0 ? (
+              {paginatedData.length === 0 ? (
                 <tr>
                   <td colSpan={7} className="text-center text-muted py-8">
                     No matching items found.
                   </td>
                 </tr>
               ) : (
-                filteredData.map((item) => (
-                  <tr key={item.partNumber}>
+                paginatedData.map((item, idx) => (
+                  <tr key={`${item.sku}-${idx}`}>
                     <td className="font-mono text-muted">{item.partNumber}</td>
                     <td className="sku font-mono font-semibold">{item.sku}</td>
                     <td>{item.name}</td>
@@ -283,6 +311,78 @@ export default function MasterDataPage() {
             </tbody>
           </table>
         </div>
+
+        {/* Pagination controls */}
+        {totalPages > 1 && (
+          <div className="flex items-center justify-between px-4 py-3 border-t border-sand bg-cream">
+            <button
+              onClick={() => setCurrentPage((p) => Math.max(1, p - 1))}
+              disabled={currentPage === 1}
+              className="btn btn-sm flex items-center gap-1 disabled:opacity-50 disabled:cursor-not-allowed"
+            >
+              <ChevronLeft className="w-4 h-4" />
+              Previous
+            </button>
+
+            <div className="flex items-center gap-1">
+              {/* First page */}
+              {currentPage > 3 && (
+                <>
+                  <button
+                    onClick={() => setCurrentPage(1)}
+                    className="btn btn-sm w-8 h-8 p-0"
+                  >
+                    1
+                  </button>
+                  {currentPage > 4 && <span className="text-muted px-1">...</span>}
+                </>
+              )}
+
+              {/* Page numbers around current */}
+              {Array.from({ length: totalPages }, (_, i) => i + 1)
+                .filter((page) => {
+                  if (totalPages <= 7) return true;
+                  if (page === 1 || page === totalPages) return false;
+                  return Math.abs(page - currentPage) <= 2;
+                })
+                .map((page) => (
+                  <button
+                    key={page}
+                    onClick={() => setCurrentPage(page)}
+                    className={`btn btn-sm w-8 h-8 p-0 ${
+                      currentPage === page
+                        ? 'bg-hot-embers text-white border-hot-embers'
+                        : ''
+                    }`}
+                  >
+                    {page}
+                  </button>
+                ))}
+
+              {/* Last page */}
+              {currentPage < totalPages - 2 && (
+                <>
+                  {currentPage < totalPages - 3 && <span className="text-muted px-1">...</span>}
+                  <button
+                    onClick={() => setCurrentPage(totalPages)}
+                    className="btn btn-sm w-8 h-8 p-0"
+                  >
+                    {totalPages}
+                  </button>
+                </>
+              )}
+            </div>
+
+            <button
+              onClick={() => setCurrentPage((p) => Math.min(totalPages, p + 1))}
+              disabled={currentPage === totalPages}
+              className="btn btn-sm flex items-center gap-1 disabled:opacity-50 disabled:cursor-not-allowed"
+            >
+              Next
+              <ChevronRight className="w-4 h-4" />
+            </button>
+          </div>
+        )}
       </div>
     </div>
   );
