@@ -278,7 +278,7 @@ flowchart TB
           </p>
 
           <div className="diagram-container mb-6">
-            <MermaidDiagram chart={hierarchyDiagram} />
+            <MermaidDiagram chart={hierarchyDiagram} id="guide-hierarchy-diagram" />
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
