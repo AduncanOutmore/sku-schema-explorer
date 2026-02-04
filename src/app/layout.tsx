@@ -1,13 +1,23 @@
 'use client';
 
 import { useState } from 'react';
-import { Inter } from 'next/font/google';
+import { Poppins, DM_Sans } from 'next/font/google';
 import './globals.css';
 import { Header } from '@/components/layout/Header';
 import { Sidebar } from '@/components/layout/Sidebar';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
 
-const inter = Inter({ subsets: ['latin'] });
+const poppins = Poppins({
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '600'],
+  variable: '--font-display',
+});
+
+const dmSans = DM_Sans({
+  subsets: ['latin'],
+  weight: ['400', '500', '600'],
+  variable: '--font-body',
+});
 
 export default function RootLayout({
   children,
@@ -17,12 +27,13 @@ export default function RootLayout({
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   return (
-    <html lang="en">
+    <html lang="en" className={`${poppins.variable} ${dmSans.variable}`}>
       <head>
         <title>SKU Schema Explorer - Outmore Living</title>
         <meta name="description" content="Interactive SKU schema explorer for Outmore Living heated outdoor furniture" />
+        <link rel="icon" href="/favicon.ico" />
       </head>
-      <body className={`${inter.className} bg-gray-50`}>
+      <body className="bg-cream text-jet antialiased">
         <div className="flex h-screen overflow-hidden">
           {/* Sidebar */}
           <Sidebar
@@ -40,9 +51,17 @@ export default function RootLayout({
 
             {/* Main content */}
             <main className="flex-1 overflow-auto p-4 lg:p-6">
-              <Breadcrumb />
-              {children}
+              <div className="max-w-6xl mx-auto">
+                <Breadcrumb />
+                {children}
+              </div>
             </main>
+
+            {/* Footer */}
+            <footer className="border-t-2 border-jet py-6 text-center text-muted text-xs">
+              <p>Outmore Living SKU Schema v5.4</p>
+              <p>Interactive BOM Explorer for Katana MRP</p>
+            </footer>
           </div>
         </div>
       </body>

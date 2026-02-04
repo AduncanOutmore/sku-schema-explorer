@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { Database, CheckCircle, ArrowRight, HelpCircle } from 'lucide-react';
+import { Database, CheckCircle, ArrowRight, HelpCircle, ExternalLink, BookOpen } from 'lucide-react';
 import Link from 'next/link';
 import { CATEGORY_COLORS, CATEGORY_NAMES, PART_NUMBER_RANGES, ProductCategory } from '@/types/product';
 
@@ -66,6 +66,57 @@ const itemTypeDescriptions: Record<string, { name: string; description: string; 
     examples: ['FAB-SUN-SPTM-CBN', 'FOM-LS-SEAT', 'HW-GRM-4'],
   },
 };
+
+const KATANA_DOCS = [
+  {
+    title: 'Katana MRP Documentation',
+    url: 'https://support.katanamrp.com/',
+    description: 'Official Katana MRP support center and knowledge base',
+    category: 'Main',
+  },
+  {
+    title: 'Item Types Guide',
+    url: 'https://support.katanamrp.com/hc/en-us/articles/360011440200-Item-types',
+    description: 'Understanding Products, Materials, and Services in Katana',
+    category: 'Core Concepts',
+  },
+  {
+    title: 'Make-to-Order (MTO)',
+    url: 'https://support.katanamrp.com/hc/en-us/articles/4403780481937-Make-to-Order-MTO-',
+    description: 'Setting up and managing make-to-order products',
+    category: 'Production',
+  },
+  {
+    title: 'Bill of Materials (BOM)',
+    url: 'https://support.katanamrp.com/hc/en-us/articles/360011440220-Bill-of-Materials-BOM-',
+    description: 'Creating and managing BOMs in Katana',
+    category: 'Production',
+  },
+  {
+    title: 'Subassemblies',
+    url: 'https://support.katanamrp.com/hc/en-us/articles/360011440240-Subassemblies',
+    description: 'Working with subassembly products and nested BOMs',
+    category: 'Production',
+  },
+  {
+    title: 'Inventory Management',
+    url: 'https://support.katanamrp.com/hc/en-us/articles/360011440260-Inventory-management',
+    description: 'Managing stock levels and inventory tracking',
+    category: 'Inventory',
+  },
+  {
+    title: 'Stock Transfers',
+    url: 'https://support.katanamrp.com/hc/en-us/articles/360011440280-Stock-transfers',
+    description: 'Moving inventory between locations',
+    category: 'Inventory',
+  },
+  {
+    title: 'Purchase Orders',
+    url: 'https://support.katanamrp.com/hc/en-us/articles/360011440320-Purchase-orders',
+    description: 'Creating and managing purchase orders',
+    category: 'Purchasing',
+  },
+];
 
 function DecisionTreeExplorer() {
   const [path, setPath] = useState<boolean[]>([]);
@@ -168,19 +219,21 @@ function DecisionTreeExplorer() {
 }
 
 export default function KatanaPage() {
+  const categories = [...new Set(KATANA_DOCS.map(doc => doc.category))];
+
   return (
     <div className="space-y-6">
       {/* Header */}
-      <div className="bg-white rounded-xl border border-gray-200 p-6">
+      <div className="card p-6">
         <div className="flex items-start gap-4">
           <div className="w-12 h-12 rounded-xl bg-purple-50 flex items-center justify-center flex-shrink-0">
             <Database className="w-6 h-6 text-purple-600" />
           </div>
           <div>
-            <h1 className="text-2xl font-bold text-gray-900 mb-2">
+            <h1 className="text-2xl font-display font-bold text-jet mb-2">
               Katana Integration Guide
             </h1>
-            <p className="text-gray-600">
+            <p className="text-muted">
               Understanding how Outmore Living products map to Katana MRP item types.
               Use the decision tree to determine the correct type for any item.
             </p>
@@ -188,9 +241,62 @@ export default function KatanaPage() {
         </div>
       </div>
 
+      {/* Katana Documentation Links */}
+      <div className="card p-6">
+        <div className="flex items-center gap-3 mb-6">
+          <div className="w-10 h-10 rounded-lg bg-hot-embers/10 flex items-center justify-center">
+            <BookOpen className="w-5 h-5 text-hot-embers" />
+          </div>
+          <div>
+            <h2 className="text-xl font-display font-semibold text-jet">Katana MRP Documentation</h2>
+            <p className="text-sm text-muted">Official guides and resources</p>
+          </div>
+        </div>
+
+        <div className="space-y-6">
+          {categories.map(category => (
+            <div key={category}>
+              <h3 className="text-sm font-display font-semibold text-jet uppercase tracking-wider mb-3">
+                {category}
+              </h3>
+              <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
+                {KATANA_DOCS.filter(doc => doc.category === category).map(doc => (
+                  <a
+                    key={doc.title}
+                    href={doc.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="border border-sand rounded-lg p-4 hover:border-hot-embers/30 hover:bg-sand-light/50 transition-all group"
+                  >
+                    <div className="flex items-start justify-between">
+                      <h4 className="font-medium text-jet group-hover:text-hot-embers transition-colors text-sm">
+                        {doc.title}
+                      </h4>
+                      <ExternalLink className="w-4 h-4 text-muted group-hover:text-hot-embers transition-colors flex-shrink-0" />
+                    </div>
+                    <p className="text-xs text-muted mt-1">{doc.description}</p>
+                  </a>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <div className="mt-6 pt-4 border-t border-sand">
+          <Link
+            href="/downloads"
+            className="inline-flex items-center gap-2 text-sm text-hot-embers hover:underline"
+          >
+            <BookOpen className="w-4 h-4" />
+            View all resources and downloads
+            <ArrowRight className="w-4 h-4" />
+          </Link>
+        </div>
+      </div>
+
       {/* Decision Tree */}
       <div>
-        <h2 className="text-lg font-semibold text-gray-900 mb-4">
+        <h2 className="text-lg font-display font-semibold text-jet mb-4">
           Item Type Decision Tree
         </h2>
         <DecisionTreeExplorer />
@@ -198,17 +304,17 @@ export default function KatanaPage() {
 
       {/* Item Types Reference */}
       <div>
-        <h2 className="text-lg font-semibold text-gray-900 mb-4">
+        <h2 className="text-lg font-display font-semibold text-jet mb-4">
           Item Type Reference
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {Object.entries(itemTypeDescriptions).map(([key, info]) => (
-            <div key={key} className="bg-white rounded-xl border border-gray-200 p-4">
-              <h3 className="font-medium text-gray-900 mb-2">{info.name}</h3>
-              <p className="text-sm text-gray-600 mb-3">{info.description}</p>
+            <div key={key} className="card p-4">
+              <h3 className="font-display font-medium text-jet mb-2">{info.name}</h3>
+              <p className="text-sm text-muted mb-3">{info.description}</p>
               <div className="flex flex-wrap gap-1">
                 {info.examples.slice(0, 2).map(ex => (
-                  <code key={ex} className="text-xs bg-gray-100 px-2 py-1 rounded">
+                  <code key={ex} className="text-xs bg-sand-light px-2 py-1 rounded">
                     {ex.split(' ')[0]}
                   </code>
                 ))}
@@ -220,21 +326,21 @@ export default function KatanaPage() {
 
       {/* Part Number Ranges */}
       <div>
-        <h2 className="text-lg font-semibold text-gray-900 mb-4">
+        <h2 className="text-lg font-display font-semibold text-jet mb-4">
           Part Number Ranges
         </h2>
-        <div className="bg-white rounded-xl border border-gray-200 overflow-hidden">
-          <table className="w-full">
-            <thead className="bg-gray-50">
+        <div className="card overflow-hidden">
+          <table className="w-full data-table">
+            <thead>
               <tr>
-                <th className="text-left px-4 py-3 text-sm font-medium text-gray-700">Range</th>
-                <th className="text-left px-4 py-3 text-sm font-medium text-gray-700">Category</th>
-                <th className="text-left px-4 py-3 text-sm font-medium text-gray-700">Description</th>
+                <th className="text-left px-4 py-3 text-sm font-display font-medium text-jet">Range</th>
+                <th className="text-left px-4 py-3 text-sm font-display font-medium text-jet">Category</th>
+                <th className="text-left px-4 py-3 text-sm font-display font-medium text-jet">Description</th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-gray-100">
+            <tbody className="divide-y divide-sand">
               {PART_NUMBER_RANGES.map(range => (
-                <tr key={range.category} className="hover:bg-gray-50">
+                <tr key={range.category} className="hover:bg-sand-light">
                   <td className="px-4 py-3">
                     <code className="font-mono text-sm">
                       {range.start.toLocaleString()}-{range.end.toLocaleString()}
@@ -249,7 +355,7 @@ export default function KatanaPage() {
                       <span className="text-sm">{CATEGORY_NAMES[range.category]}</span>
                     </div>
                   </td>
-                  <td className="px-4 py-3 text-sm text-gray-600">
+                  <td className="px-4 py-3 text-sm text-muted">
                     {range.description}
                   </td>
                 </tr>
@@ -260,8 +366,8 @@ export default function KatanaPage() {
       </div>
 
       {/* Key Rules */}
-      <div className="bg-amber-50 border border-amber-100 rounded-xl p-5">
-        <h2 className="font-medium text-amber-900 mb-3">Key Rules for Katana</h2>
+      <div className="bg-amber-50 border border-amber-200 rounded-xl p-5">
+        <h2 className="font-display font-medium text-amber-900 mb-3">Key Rules for Katana</h2>
         <div className="space-y-3 text-sm text-amber-800">
           <p>
             <strong>Subassembly flag:</strong> An item is marked as subassembly if it&apos;s
@@ -282,6 +388,20 @@ export default function KatanaPage() {
             <strong>Kits vs Bundles:</strong> Power Bar (HT-PB-G1R-151) is a kit because
             charger is always included. Furniture sets on Shopify are NOT Katana kits -
             they&apos;re shopping cart configurations.
+          </p>
+        </div>
+
+        <div className="mt-4 pt-4 border-t border-amber-200">
+          <p className="text-sm text-amber-800">
+            Need help with Katana setup?{' '}
+            <a
+              href="https://support.katanamrp.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-amber-900 font-medium hover:underline inline-flex items-center gap-1"
+            >
+              Visit Katana Support <ExternalLink className="w-3 h-3" />
+            </a>
           </p>
         </div>
       </div>

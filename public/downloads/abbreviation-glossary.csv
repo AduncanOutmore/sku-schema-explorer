@@ -1,0 +1,99 @@
+Abbreviation,Meaning,Category
+SOL,Solerno (collection name),Prefix
+FR,Frame,Prefix
+CSH,Cushion,Prefix
+COR,Core Insert,Prefix
+SHL,Shell,Prefix
+HT,Heat Tech,Prefix
+PRO,Protective Cover,Prefix
+ACC,Accessory,Prefix
+SW,Swatch,Prefix
+MKT,Marketing,Prefix
+FAB,Fabric,Prefix
+FOM,Foam,Prefix
+FIL,Fill/Batting,Prefix
+HW,Hardware,Prefix
+LBL,Label,Prefix
+LCH,Lounge Chair,Product
+LOV,Loveseat,Product
+SOF,Sofa,Product
+HOT,Heated Ottoman,Product
+OTM,Ottoman (non-heated),Product
+CHS,Chaise Lounge,Product
+SVL,Swivel Chair,Product
+DAC,Dining Arm Chair,Product
+DCH,Dining Side Chair,Product
+CTB,Coffee Table,Product
+STB,Side Table,Product
+SDT,Square Dining Table,Product
+RDT,Rectangle Dining Table,Product
+SEAT,Seat,Component
+BACK,Back (foam),Component
+PILB,Pillow Back,Component
+LS,Lounge Seating,Component
+DN,Dining,Component
+ST1,Set Type 1 (Seat + Foam Back),Component
+ST2,Set Type 2 (Seat + Pillow Back),Component
+NT,Natural Teak,Finish
+NTK,Natural Teak (finished goods),Finish
+BLK,Black,Finish
+WHT,White,Finish
+PB,Power Bar,Heat Tech
+MNT,Mount,Heat Tech
+CHG,Charging,Heat Tech
+GPH,Graphene (heating element),Heat Tech
+G1,Generation 1,Heat Tech
+G1R,Generation 1 Refresh,Heat Tech
+ADPT,Adapter,Heat Tech
+CRT,Cart,Heat Tech
+SPLT,Splitter,Heat Tech
+UNI,Universal,Heat Tech
+UNIT,Unit (standalone device),Heat Tech
+SUN,Sunbrella,Fabric Pattern
+BAR,Barrier,Fabric Pattern
+WPB,Waterproof Black,Fabric Pattern
+MSH,Mesh,Fabric Pattern
+BLIS,Bliss (pattern),Fabric Pattern
+BLND,Blend (pattern),Fabric Pattern
+CAST,Cast (pattern),Fabric Pattern
+CNVS,Canvas (pattern),Fabric Pattern
+EXHL,Exhale (pattern),Fabric Pattern
+HRTG,Heritage (pattern),Fabric Pattern
+SAIL,Sailcloth (pattern),Fabric Pattern
+SPTM,Spectrum (pattern),Fabric Pattern
+ALO,Aloe,Color
+IND,Indigo,Color
+BSQ,Bisque,Color
+SEA,Seaglass,Color
+SND,Sand,Color
+JAV,Java,Color
+DEW,Dewdrop,Color
+CHR,Charcoal,Color
+LEF,Leaf,Color
+SBL,Sable,Color
+GUL,Seagull,Color
+SAH,Sahara,Color
+SLT,Salt,Color
+CBN,Carbon,Color
+DOV,Dove,Color
+ALB,Alabaster,Color
+DRFT,Driftwood,Color
+SAGE,Sage,Color
+STNE,Stone,Color
+EMB,Ember,Color
+GRM,Grommet,Hardware
+CRDG,Cord Grip,Hardware
+CRDN,Cord Grip Nut,Hardware
+WVN,Woven,Label
+OM,Outmore,Label
+OML,Outmore Living,Label
+THRW,Throw,Accessory
+CARE,Care Kit,Accessory
+TEAK,Teak,Accessory
+CAT,Catalog,Marketing
+RES,Residential,Marketing
+HOS,Hospitality,Marketing
+KIT,Kit/Bundle,Other
+SM,Small,Other
+LG,Large,Other
+POLY,Polyester,Other
