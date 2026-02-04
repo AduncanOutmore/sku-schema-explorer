@@ -43,7 +43,7 @@ const itemTypeDescriptions: Record<string, { name: string; description: string; 
   'subassembly': {
     name: 'Subassembly',
     description: 'Products assembled in-house that are components of other products.',
-    examples: ['CSH-LS-SEAT-CBN', 'FR-SOL-LCH-NT'],
+    examples: ['CSH-LS-SEAT-CBN', 'FR-SOL-LCH-NTK'],
   },
   'contract-manufactured': {
     name: 'Contract Manufactured',

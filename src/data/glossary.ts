@@ -42,8 +42,7 @@ export const GLOSSARY: GlossaryEntry[] = [
   { abbreviation: 'ST2', meaning: 'Set Type 2 (Seat + Pillow Back)', category: 'Component' },
 
   // Finishes
-  { abbreviation: 'NT', meaning: 'Natural Teak', category: 'Finish' },
-  { abbreviation: 'NTK', meaning: 'Natural Teak (finished goods)', category: 'Finish' },
+  { abbreviation: 'NTK', meaning: 'Natural Teak', category: 'Finish' },
   { abbreviation: 'BLK', meaning: 'Black', category: 'Finish' },
   { abbreviation: 'WHT', meaning: 'White', category: 'Finish' },
 
@@ -96,6 +95,8 @@ export const GLOSSARY: GlossaryEntry[] = [
 
   // Hardware
   { abbreviation: 'GRM', meaning: 'Grommet', category: 'Hardware' },
+  { abbreviation: 'GRM-4', meaning: 'Snap Grommet #4', category: 'Hardware' },
+  { abbreviation: 'GRM-CUS', meaning: 'Custom Grommet (for seat shells)', category: 'Hardware' },
   { abbreviation: 'CRDG', meaning: 'Cord Grip', category: 'Hardware' },
   { abbreviation: 'CRDN', meaning: 'Cord Grip Nut', category: 'Hardware' },
 

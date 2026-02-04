@@ -27,6 +27,7 @@ export function Header({ onMenuClick, isSidebarOpen }: HeaderProps) {
     if (pathname === '/configurator') return 'SKU Configurator';
     if (pathname === '/master') return 'Master Data';
     if (pathname === '/downloads') return 'Downloads & Resources';
+    if (pathname === '/katana-checklist') return 'Katana Integration Checklist';
     return 'SKU Schema Explorer';
   };
 

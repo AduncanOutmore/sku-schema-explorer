@@ -14,14 +14,18 @@ export type ProductCategory =
 // Sellability status for Katana integration
 export type SellableStatus = 'sellable' | 'internal-only' | 'kit-component';
 
-// Item type for Katana MRP
-export type KatanaItemType =
-  | 'make-to-order'      // Finished goods (assembled on order)
-  | 'subassembly'        // Cushions, frames for heated seating
-  | 'contract-manufactured' // Shells, core inserts
-  | 'kit'                // Power Bar (includes charger)
-  | 'product-for-resale' // Tables, covers, accessories
-  | 'raw-material';      // Fabrics, foam, hardware
+// Katana Item Type - can ONLY be one of these three
+export type KatanaItemType = 'Product' | 'Material' | 'Service';
+
+// Katana Usage - how the item is used in production/sales
+export type KatanaUsage =
+  | 'make-to-order'         // Finished goods assembled on order
+  | 'subassembly'           // Used as component in other products
+  | 'contract-manufactured' // Made by external manufacturer
+  | 'kit'                   // Bundle sold together (e.g., Power Bar + Charger)
+  | 'product-for-resale'    // Purchased and sold without modification
+  | 'raw-material'          // Materials consumed in production
+  | 'consumable';           // Supplies used but not tracked per unit
 
 // Fabric color definition with visual representation
 export interface FabricColor {
@@ -51,6 +55,7 @@ export interface Product {
   partNumberRange: PartNumberRange;
   sellable: SellableStatus;
   katanaItemType: KatanaItemType;
+  katanaUsage: KatanaUsage;
   hasBom: boolean;
   isSubassembly: boolean;
   // Optional fields depending on category

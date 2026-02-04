@@ -9,7 +9,7 @@ const SHELL_COMPONENTS = [
 ];
 
 // Generate all shells (48 total: 3 components x 16 fabrics)
-export const SHELLS: Product[] = SHELL_COMPONENTS.flatMap((component, componentIndex) =>
+export const SHELLS: Product[] = SHELL_COMPONENTS.flatMap((component) =>
   FABRIC_COLORS.map((fabric, fabricIndex) => ({
     sku: `SHL-LS-${component.code}-${fabric.code}`,
     name: `Shell, Lounge Seating ${component.name}, ${fabric.name}`,
@@ -18,7 +18,8 @@ export const SHELLS: Product[] = SHELL_COMPONENTS.flatMap((component, componentI
     partNumber: 50001 + component.partNumberOffset + fabricIndex,
     partNumberRange: getPartNumberRange('shell'),
     sellable: 'sellable' as const,
-    katanaItemType: 'contract-manufactured' as const,
+    katanaItemType: 'Product' as const,
+    katanaUsage: 'contract-manufactured' as const,
     hasBom: true,
     isSubassembly: true,
     seatingType: 'LS',

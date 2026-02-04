@@ -373,7 +373,7 @@ flowchart TB
                 { code: 'FR', meaning: 'Frame', type: 'prefix' },
                 { code: 'SOL', meaning: 'Solerno Collection', type: 'collection' },
                 { code: 'LCH', meaning: 'Lounge Chair', type: 'product' },
-                { code: 'NT', meaning: 'Natural Teak', type: 'finish' },
+                { code: 'NTK', meaning: 'Natural Teak', type: 'finish' },
               ]}
             />
             <InteractiveSku

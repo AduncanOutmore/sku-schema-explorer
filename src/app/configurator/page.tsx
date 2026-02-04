@@ -13,14 +13,14 @@ const PRODUCT_DATA: Record<string, {
   noBack?: boolean;
   frameDesc: string;
 }> = {
-  'LCH': { name: 'Lounge Chair', frameSku: 'FR-SOL-LCH-NT', seats: 1, hasDining: false, frameDesc: 'Lounge Chair Frame' },
-  'LOV': { name: 'Loveseat', frameSku: 'FR-SOL-LOV-NT', seats: 2, hasDining: false, frameDesc: 'Loveseat Frame' },
-  'SOF': { name: 'Sofa', frameSku: 'FR-SOL-SOF-NT', seats: 3, hasDining: false, frameDesc: 'Sofa Frame' },
-  'CHS': { name: 'Chaise Lounge', frameSku: 'FR-SOL-CHS-NT', seats: 1, hasDining: false, frameDesc: 'Chaise Frame' },
-  'SVL': { name: 'Swivel Chair', frameSku: 'FR-SOL-SVL-NT', seats: 1, hasDining: false, frameDesc: 'Swivel Chair Frame' },
-  'HOT': { name: 'Heated Ottoman', frameSku: 'FR-SOL-HOT-NT', seats: 1, hasDining: false, noBack: true, frameDesc: 'Ottoman Frame' },
-  'DAC': { name: 'Dining Arm Chair', frameSku: 'FR-SOL-DAC-NT', seats: 1, hasDining: true, frameDesc: 'Dining Arm Chair Frame' },
-  'DCH': { name: 'Dining Side Chair', frameSku: 'FR-SOL-DCH-NT', seats: 1, hasDining: true, frameDesc: 'Dining Side Chair Frame' },
+  'LCH': { name: 'Lounge Chair', frameSku: 'FR-SOL-LCH-NTK', seats: 1, hasDining: false, frameDesc: 'Lounge Chair Frame' },
+  'LOV': { name: 'Loveseat', frameSku: 'FR-SOL-LOV-NTK', seats: 2, hasDining: false, frameDesc: 'Loveseat Frame' },
+  'SOF': { name: 'Sofa', frameSku: 'FR-SOL-SOF-NTK', seats: 3, hasDining: false, frameDesc: 'Sofa Frame' },
+  'CHS': { name: 'Chaise Lounge', frameSku: 'FR-SOL-CHS-NTK', seats: 1, hasDining: false, frameDesc: 'Chaise Frame' },
+  'SVL': { name: 'Swivel Chair', frameSku: 'FR-SOL-SVL-NTK', seats: 1, hasDining: false, frameDesc: 'Swivel Chair Frame' },
+  'HOT': { name: 'Heated Ottoman', frameSku: 'FR-SOL-HOT-NTK', seats: 1, hasDining: false, noBack: true, frameDesc: 'Ottoman Frame' },
+  'DAC': { name: 'Dining Arm Chair', frameSku: 'FR-SOL-DAC-NTK', seats: 1, hasDining: true, frameDesc: 'Dining Arm Chair Frame' },
+  'DCH': { name: 'Dining Side Chair', frameSku: 'FR-SOL-DCH-NTK', seats: 1, hasDining: true, frameDesc: 'Dining Side Chair Frame' },
 };
 
 const FABRIC_DATA: Record<string, { pattern: string; name: string; hex: string }> = {

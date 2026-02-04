@@ -9,7 +9,7 @@ const CUSHION_COMPONENTS = [
 ];
 
 // Generate all cushions (48 total: 3 components x 16 fabrics)
-export const CUSHIONS: Product[] = CUSHION_COMPONENTS.flatMap((component, componentIndex) =>
+export const CUSHIONS: Product[] = CUSHION_COMPONENTS.flatMap((component) =>
   FABRIC_COLORS.map((fabric, fabricIndex) => ({
     sku: `CSH-LS-${component.code}-${fabric.code}`,
     name: `Cushion, Lounge Seating ${component.name}, ${fabric.name}`,
@@ -18,7 +18,8 @@ export const CUSHIONS: Product[] = CUSHION_COMPONENTS.flatMap((component, compon
     partNumber: 40001 + component.partNumberOffset + fabricIndex,
     partNumberRange: getPartNumberRange('cushion'),
     sellable: 'sellable' as const,
-    katanaItemType: 'subassembly' as const,
+    katanaItemType: 'Product' as const,
+    katanaUsage: 'subassembly' as const,
     hasBom: true,
     isSubassembly: true,
     seatingType: 'LS',

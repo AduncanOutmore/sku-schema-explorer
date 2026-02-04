@@ -7,19 +7,19 @@ import Link from 'next/link';
 // Master data from CSV - comprehensive list
 const MASTER_DATA = [
   // Frames
-  { partNumber: '30001', sku: 'FR-SOL-LCH-NT', name: 'Solerno Lounge Chair Frame, Natural Teak', category: 'Frame', type: 'Product', use: 'Subassembly', sellable: false },
-  { partNumber: '30002', sku: 'FR-SOL-LOV-NT', name: 'Solerno Loveseat Frame, Natural Teak', category: 'Frame', type: 'Product', use: 'Subassembly', sellable: false },
-  { partNumber: '30003', sku: 'FR-SOL-SOF-NT', name: 'Solerno Sofa Frame, Natural Teak', category: 'Frame', type: 'Product', use: 'Subassembly', sellable: false },
-  { partNumber: '30004', sku: 'FR-SOL-HOT-NT', name: 'Solerno Heated Ottoman Frame, Natural Teak', category: 'Frame', type: 'Product', use: 'Subassembly', sellable: false },
-  { partNumber: '30005', sku: 'FR-SOL-OTM-NT', name: 'Solerno Ottoman Frame, Natural Teak', category: 'Frame', type: 'Product', use: 'Resale', sellable: true },
-  { partNumber: '30006', sku: 'FR-SOL-CTB-NT', name: 'Solerno Coffee Table Frame, Natural Teak', category: 'Frame', type: 'Product', use: 'Resale', sellable: true },
-  { partNumber: '30007', sku: 'FR-SOL-STB-NT', name: 'Solerno Side Table Frame, Natural Teak', category: 'Frame', type: 'Product', use: 'Resale', sellable: true },
-  { partNumber: '30008', sku: 'FR-SOL-SVL-NT', name: 'Solerno Swivel Chair Frame, Natural Teak', category: 'Frame', type: 'Product', use: 'Subassembly', sellable: false },
-  { partNumber: '30009', sku: 'FR-SOL-CHS-NT', name: 'Solerno Chaise Lounge Frame, Natural Teak', category: 'Frame', type: 'Product', use: 'Subassembly', sellable: false },
-  { partNumber: '30010', sku: 'FR-SOL-DCH-NT', name: 'Solerno Dining Side Chair Frame, Natural Teak', category: 'Frame', type: 'Product', use: 'Subassembly', sellable: false },
-  { partNumber: '30011', sku: 'FR-SOL-DAC-NT', name: 'Solerno Dining Arm Chair Frame, Natural Teak', category: 'Frame', type: 'Product', use: 'Subassembly', sellable: false },
-  { partNumber: '30012', sku: 'FR-SOL-SDT-NT', name: 'Solerno Square Dining Table Frame, Natural Teak', category: 'Frame', type: 'Product', use: 'Resale', sellable: true },
-  { partNumber: '30013', sku: 'FR-SOL-RDT-NT', name: 'Solerno Rectangle Dining Table Frame, Natural Teak', category: 'Frame', type: 'Product', use: 'Resale', sellable: true },
+  { partNumber: '30001', sku: 'FR-SOL-LCH-NTK', name: 'Solerno Lounge Chair Frame, Natural Teak', category: 'Frame', type: 'Product', use: 'Subassembly', sellable: false },
+  { partNumber: '30002', sku: 'FR-SOL-LOV-NTK', name: 'Solerno Loveseat Frame, Natural Teak', category: 'Frame', type: 'Product', use: 'Subassembly', sellable: false },
+  { partNumber: '30003', sku: 'FR-SOL-SOF-NTK', name: 'Solerno Sofa Frame, Natural Teak', category: 'Frame', type: 'Product', use: 'Subassembly', sellable: false },
+  { partNumber: '30004', sku: 'FR-SOL-HOT-NTK', name: 'Solerno Heated Ottoman Frame, Natural Teak', category: 'Frame', type: 'Product', use: 'Subassembly', sellable: false },
+  { partNumber: '30005', sku: 'FR-SOL-OTM-NTK', name: 'Solerno Ottoman Frame, Natural Teak', category: 'Frame', type: 'Product', use: 'Resale', sellable: true },
+  { partNumber: '30006', sku: 'FR-SOL-CTB-NTK', name: 'Solerno Coffee Table Frame, Natural Teak', category: 'Frame', type: 'Product', use: 'Resale', sellable: true },
+  { partNumber: '30007', sku: 'FR-SOL-STB-NTK', name: 'Solerno Side Table Frame, Natural Teak', category: 'Frame', type: 'Product', use: 'Resale', sellable: true },
+  { partNumber: '30008', sku: 'FR-SOL-SVL-NTK', name: 'Solerno Swivel Chair Frame, Natural Teak', category: 'Frame', type: 'Product', use: 'Subassembly', sellable: false },
+  { partNumber: '30009', sku: 'FR-SOL-CHS-NTK', name: 'Solerno Chaise Lounge Frame, Natural Teak', category: 'Frame', type: 'Product', use: 'Subassembly', sellable: false },
+  { partNumber: '30010', sku: 'FR-SOL-DCH-NTK', name: 'Solerno Dining Side Chair Frame, Natural Teak', category: 'Frame', type: 'Product', use: 'Subassembly', sellable: false },
+  { partNumber: '30011', sku: 'FR-SOL-DAC-NTK', name: 'Solerno Dining Arm Chair Frame, Natural Teak', category: 'Frame', type: 'Product', use: 'Subassembly', sellable: false },
+  { partNumber: '30012', sku: 'FR-SOL-SDT-NTK', name: 'Solerno Square Dining Table Frame, Natural Teak', category: 'Frame', type: 'Product', use: 'Resale', sellable: true },
+  { partNumber: '30013', sku: 'FR-SOL-RDT-NTK', name: 'Solerno Rectangle Dining Table Frame, Natural Teak', category: 'Frame', type: 'Product', use: 'Resale', sellable: true },
 
   // Heat Tech
   { partNumber: '70001', sku: 'HT-PB-G1R-151', name: 'Power Bar, Gen 1 Refresh, 151Wh', category: 'Heat Tech', type: 'Product', use: 'Kit', sellable: true },

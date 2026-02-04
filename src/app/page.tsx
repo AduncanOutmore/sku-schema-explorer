@@ -287,7 +287,7 @@ export default function HomePage() {
 
       {/* Configure-to-Order Note */}
       <div className="note">
-        <strong>Configure-to-Order Model:</strong> Finished goods are not pre-built. When a customer orders on Shopify, Katana creates a Make-to-Order production run combining frame + cushions + power bars based on the selected configuration.
+        <strong>Configure-to-Order Model:</strong> Furniture <em>sets</em> are configured at order time. Individual <em>pieces</em> (frames, cushions, power bars) are pre-built products kept in inventory. When a customer orders a set on Shopify, the configured combination is assembled from pre-built pieces.
       </div>
 
       {/* Secondary Actions */}
@@ -350,10 +350,10 @@ export default function HomePage() {
         <h2 className="font-display font-semibold text-jet mb-4">Key Concepts</h2>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
           <div className="card p-5">
-            <h3 className="font-display font-medium text-jet mb-2">Make-to-Order</h3>
+            <h3 className="font-display font-medium text-jet mb-2">Configure-to-Order Sets</h3>
             <p className="text-sm text-muted">
-              Finished goods (SOL-*) are not pre-built. When a customer orders on Shopify,
-              the configured SKU triggers assembly from inventory components (frame, cushions, power bar).
+              Furniture sets (SOL-*) are configured at order time. Individual pieces (frames, cushions, power bars)
+              are pre-built products. When ordered, the configured set is assembled from these pre-built pieces.
             </p>
           </div>
           <div className="card p-5">

@@ -16,6 +16,7 @@ import {
   Settings,
   Table,
   Download,
+  CheckSquare,
 } from 'lucide-react';
 
 interface SidebarProps {
@@ -34,6 +35,7 @@ const navigation = [
   { name: 'Glossary', href: '/glossary', icon: BookOpen },
   { name: 'Master Data', href: '/master', icon: Table },
   { name: 'Katana Guide', href: '/katana', icon: Database },
+  { name: 'Katana Checklist', href: '/katana-checklist', icon: CheckSquare },
   { name: 'Downloads', href: '/downloads', icon: Download },
   { name: 'Search', href: '/search', icon: Search },
 ];
