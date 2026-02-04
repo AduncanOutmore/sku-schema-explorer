@@ -2,7 +2,7 @@
 
 import { useState, useMemo } from 'react';
 import { BookOpen, Search, Filter } from 'lucide-react';
-import { GLOSSARY_ENTRIES } from '@/data/glossary';
+import { GLOSSARY as GLOSSARY_ENTRIES } from '@/data/glossary';
 
 const CATEGORIES = [
   'All',

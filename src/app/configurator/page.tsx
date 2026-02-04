@@ -334,7 +334,7 @@ export default function ConfiguratorPage() {
                 <select
                   value={back}
                   onChange={(e) => setBack(e.target.value)}
-                  disabled={product && PRODUCT_DATA[product]?.noBack}
+                  disabled={Boolean(product && PRODUCT_DATA[product]?.noBack)}
                   className="w-full appearance-none px-4 py-3 border border-sand rounded-md bg-white text-jet focus:outline-none focus:ring-2 focus:ring-hot-embers pr-10 disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   <option value="ST1">Standard Back (Foam)</option>
