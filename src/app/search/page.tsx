@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useMemo } from 'react';
+import { useState, useMemo, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 import { Search as SearchIcon, Filter, X, ArrowRight } from 'lucide-react';
@@ -11,7 +11,6 @@ import {
   CATEGORY_COLORS,
   CATEGORY_NAMES,
   SellableStatus,
-  KatanaItemType,
 } from '@/types/product';
 import { CopyButton } from '@/components/shared/CopyButton';
 
@@ -27,7 +26,7 @@ const CATEGORIES: ProductCategory[] = [
   'material',
 ];
 
-export default function SearchPage() {
+function SearchContent() {
   const searchParams = useSearchParams();
   const initialQuery = searchParams.get('q') || '';
   const initialCategory = searchParams.get('category') || '';
@@ -87,25 +86,7 @@ export default function SearchPage() {
   const productCounts = getProductCounts();
 
   return (
-    <div className="space-y-6">
-      {/* Header */}
-      <div className="bg-white rounded-xl border border-gray-200 p-6">
-        <div className="flex items-start gap-4">
-          <div className="w-12 h-12 rounded-xl bg-gray-100 flex items-center justify-center flex-shrink-0">
-            <SearchIcon className="w-6 h-6 text-gray-600" />
-          </div>
-          <div>
-            <h1 className="text-2xl font-bold text-gray-900 mb-2">
-              Product Search
-            </h1>
-            <p className="text-gray-600">
-              Search and filter all {ALL_PRODUCTS.length.toLocaleString()} products
-              in the Outmore Living catalog.
-            </p>
-          </div>
-        </div>
-      </div>
-
+    <>
       {/* Search and filters */}
       <div className="bg-white rounded-xl border border-gray-200 p-4">
         <div className="flex flex-col sm:flex-row gap-3">
@@ -284,6 +265,42 @@ export default function SearchPage() {
           </div>
         )}
       </div>
+    </>
+  );
+}
+
+function SearchLoading() {
+  return (
+    <div className="bg-white rounded-xl border border-gray-200 p-8 text-center text-gray-500">
+      Loading search...
+    </div>
+  );
+}
+
+export default function SearchPage() {
+  return (
+    <div className="space-y-6">
+      {/* Header */}
+      <div className="bg-white rounded-xl border border-gray-200 p-6">
+        <div className="flex items-start gap-4">
+          <div className="w-12 h-12 rounded-xl bg-gray-100 flex items-center justify-center flex-shrink-0">
+            <SearchIcon className="w-6 h-6 text-gray-600" />
+          </div>
+          <div>
+            <h1 className="text-2xl font-bold text-gray-900 mb-2">
+              Product Search
+            </h1>
+            <p className="text-gray-600">
+              Search and filter all {ALL_PRODUCTS.length.toLocaleString()} products
+              in the Outmore Living catalog.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <Suspense fallback={<SearchLoading />}>
+        <SearchContent />
+      </Suspense>
     </div>
   );
 }
