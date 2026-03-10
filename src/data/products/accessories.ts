@@ -1,5 +1,5 @@
 import { Product, getPartNumberRange } from '@/types/product';
-import { FABRIC_COLORS } from '../fabrics';
+import { FABRIC_COLORS, THROW_COLORS } from '../fabrics';
 
 // Protective Covers (60000s range)
 export const PROTECTIVE_COVERS: Product[] = [
@@ -230,24 +230,21 @@ export const ACCESSORIES: Product[] = [
     isSubassembly: false,
   },
 
-  // Throws (generate for select fabric colors)
-  ...['CBN', 'IND', 'DOV', 'CHR', 'SLT'].map((colorCode, index) => {
-    const fabric = FABRIC_COLORS.find(f => f.code === colorCode);
-    return {
-      sku: `ACC-THRW-${colorCode}`,
-      name: `Sunbrella Throw, ${fabric?.name || colorCode}`,
-      description: `Cozy Sunbrella throw blanket in ${fabric?.name || colorCode}`,
-      category: 'accessory' as const,
-      partNumber: 80010 + index,
-      partNumberRange: getPartNumberRange('accessory'),
-      sellable: 'sellable' as const,
-      katanaItemType: 'Product' as const,
-      katanaUsage: 'product-for-resale' as const,
-      hasBom: false,
-      isSubassembly: false,
-      fabricColor: fabric,
-    };
-  }),
+  // Throws (throw-specific fabric colors, not main seating fabrics)
+  ...THROW_COLORS.map((fabric, index) => ({
+    sku: `ACC-THRW-${fabric.code}`,
+    name: `Sunbrella Throw, ${fabric.name}`,
+    description: `Cozy Sunbrella throw blanket in ${fabric.fullName}`,
+    category: 'accessory' as const,
+    partNumber: 80010 + index,
+    partNumberRange: getPartNumberRange('accessory'),
+    sellable: 'sellable' as const,
+    katanaItemType: 'Product' as const,
+    katanaUsage: 'product-for-resale' as const,
+    hasBom: false,
+    isSubassembly: false,
+    fabricColor: fabric,
+  })),
 
   // Swatch Kits
   {

@@ -130,6 +130,58 @@ export const FABRIC_COLORS: FabricColor[] = [
     pattern: 'BLND',
     sku: 'FAB-SUN-BLND-IND',
   },
+  {
+    code: 'MSA',
+    name: 'Mesa',
+    fullName: 'Sunbrella Canvas Mesa',
+    hexColor: '#C19A6B',
+    pattern: 'CNVS',
+    sku: 'FAB-SUN-CNVS-MSA',
+  },
+  {
+    code: 'EGS',
+    name: 'Eggshell',
+    fullName: 'Sunbrella Canvas Eggshell',
+    hexColor: '#F0EAD6',
+    pattern: 'CNVS',
+    sku: 'FAB-SUN-CNVS-EGS',
+  },
+];
+
+// Throw-specific fabric colors (not used in seating products)
+export const THROW_COLORS: FabricColor[] = [
+  {
+    code: 'STN',
+    name: 'Stone',
+    fullName: 'Sunbrella Heritage Stone',
+    hexColor: '#8B8680',
+    pattern: 'HRTG',
+    sku: 'FAB-SUN-HRTG-STN',
+  },
+  {
+    code: 'SGE',
+    name: 'Sage',
+    fullName: 'Sunbrella Heritage Sage',
+    hexColor: '#9CAF88',
+    pattern: 'HRTG',
+    sku: 'FAB-SUN-HRTG-SGE',
+  },
+  {
+    code: 'DWD',
+    name: 'Driftwood',
+    fullName: 'Sunbrella Sailcloth Driftwood',
+    hexColor: '#A89078',
+    pattern: 'SAIL',
+    sku: 'FAB-SUN-SAIL-DWD',
+  },
+  {
+    code: 'ALB',
+    name: 'Alabaster',
+    fullName: 'Sunbrella Sailcloth Alabaster',
+    hexColor: '#F2EDE4',
+    pattern: 'SAIL',
+    sku: 'FAB-SUN-SAIL-ALB',
+  },
 ];
 
 // Lookup fabric by code
