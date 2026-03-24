@@ -37,9 +37,9 @@ export const CORE_INSERTS: Product[] = [
     notes: 'Contract manufactured. Universal across all fabric colors. Has 1x cord grip.',
   },
   {
-    sku: 'COR-LS-PILB',
-    name: 'Core Insert, Lounge Seating Pillow Back',
-    description: 'Heated core insert for pillow back cushion with graphene heating element',
+    sku: 'COR-LS-SET',
+    name: 'Core Insert, Lounge Seating Set',
+    description: 'Set of seat + back heated core inserts for lounge seating',
     category: 'core-insert',
     partNumber: 40503,
     partNumberRange: getPartNumberRange('core-insert'),
@@ -49,8 +49,8 @@ export const CORE_INSERTS: Product[] = [
     hasBom: true,
     isSubassembly: true,
     seatingType: 'LS',
-    componentType: 'PILB',
-    notes: 'Contract manufactured. Universal across all fabric colors. Has 1x cord grip.',
+    componentType: 'SET',
+    notes: 'Set product. Contains 1x seat core insert + 1x back core insert.',
   },
 ];
 

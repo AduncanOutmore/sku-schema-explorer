@@ -48,20 +48,6 @@ export const HEAT_TECH: Product[] = [
     hasBom: false,
     isSubassembly: false,
   },
-  {
-    sku: 'HT-MNT-UNI',
-    name: 'Mount, Universal',
-    description: 'Universal mounting bracket compatible with all power bar generations',
-    category: 'heat-tech',
-    partNumber: 70004,
-    partNumberRange: getPartNumberRange('heat-tech'),
-    sellable: 'sellable',
-    katanaItemType: 'Product',
-    katanaUsage: 'product-for-resale',
-    hasBom: false,
-    isSubassembly: false,
-  },
-
   // Charging Infrastructure
   {
     sku: 'HT-CHG-CRT-20',
@@ -119,6 +105,36 @@ export const HEAT_TECH: Product[] = [
     isSubassembly: false,
   },
 
+  {
+    sku: 'HT-CHG-ADPT-CRT',
+    name: 'Charging Adapter, Cart',
+    description: 'Power adapter for charging cart',
+    category: 'heat-tech',
+    partNumber: 70009,
+    partNumberRange: getPartNumberRange('heat-tech'),
+    sellable: 'sellable',
+    katanaItemType: 'Product',
+    katanaUsage: 'product-for-resale',
+    hasBom: false,
+    isSubassembly: false,
+  },
+
+  // Power Bar Unit (non-sellable subassembly)
+  {
+    sku: 'HT-PB-UNIT-G1R',
+    name: 'Power Bar Unit, Gen 1 Refresh',
+    description: 'Power bar unit without charger — component of the Power Bar Kit',
+    category: 'heat-tech',
+    partNumber: 70010,
+    partNumberRange: getPartNumberRange('heat-tech'),
+    sellable: 'internal-only',
+    katanaItemType: 'Product',
+    katanaUsage: 'subassembly',
+    hasBom: false,
+    isSubassembly: true,
+    notes: 'Component of HT-PB-G1R-151 kit.',
+  },
+
   // Heating Elements (Materials/Components)
   {
     sku: 'HT-GPH-LS-SEAT-G1',
@@ -140,20 +156,6 @@ export const HEAT_TECH: Product[] = [
     description: 'Graphene-based heating element for lounge seating back cushions',
     category: 'heat-tech',
     partNumber: 70010,
-    partNumberRange: getPartNumberRange('heat-tech'),
-    sellable: 'internal-only',
-    katanaItemType: 'Material',
-    katanaUsage: 'raw-material',
-    hasBom: false,
-    isSubassembly: true,
-    notes: 'Component of core inserts. Not sold separately.',
-  },
-  {
-    sku: 'HT-GPH-LS-PILB-G1',
-    name: 'Graphene Heating Element, LS Pillow Back, Gen 1',
-    description: 'Graphene-based heating element for pillow back cushions',
-    category: 'heat-tech',
-    partNumber: 70011,
     partNumberRange: getPartNumberRange('heat-tech'),
     sellable: 'internal-only',
     katanaItemType: 'Material',

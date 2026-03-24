@@ -1,6 +1,7 @@
 import { Product, ProductCategory } from '@/types/product';
 import { FINISHED_GOODS } from './finished-goods';
-import { FRAMES } from './frames';
+import { SETS } from './sets';
+import { FRAMES, FRAME_PARTS } from './frames';
 import { CUSHIONS } from './cushions';
 import { CORE_INSERTS } from './core-inserts';
 import { SHELLS } from './shells';
@@ -10,7 +11,8 @@ import { MATERIALS } from './materials';
 
 // Re-export all product arrays
 export { FINISHED_GOODS } from './finished-goods';
-export { FRAMES } from './frames';
+export { SETS } from './sets';
+export { FRAMES, FRAME_PARTS } from './frames';
 export { CUSHIONS } from './cushions';
 export { CORE_INSERTS } from './core-inserts';
 export { SHELLS } from './shells';
@@ -21,7 +23,9 @@ export { MATERIALS } from './materials';
 // Aggregate all products
 export const ALL_PRODUCTS: Product[] = [
   ...FINISHED_GOODS,
+  ...SETS,
   ...FRAMES,
+  ...FRAME_PARTS,
   ...CUSHIONS,
   ...CORE_INSERTS,
   ...SHELLS,
