@@ -12,7 +12,7 @@ import {
   CATEGORY_NAMES,
   SellableStatus,
 } from '@/types/product';
-import { CopyButton } from '@/components/shared/CopyButton';
+
 
 const CATEGORIES: ProductCategory[] = [
   'finished-good',
@@ -206,8 +206,9 @@ function SearchContent() {
         ) : (
           <div className="divide-y divide-gray-100">
             {filteredProducts.slice(0, 100).map(product => (
-              <div
+              <Link
                 key={product.sku}
+                href={`/item/${encodeURIComponent(product.sku)}`}
                 className="flex items-center gap-4 px-4 py-3 hover:bg-gray-50"
               >
                 {/* Category color */}
@@ -223,7 +224,6 @@ function SearchContent() {
                     <code className="font-mono text-sm font-medium text-gray-900">
                       {product.sku}
                     </code>
-                    <CopyButton text={product.sku} size="sm" />
                   </div>
                   <p className="text-sm text-gray-600 truncate">{product.name}</p>
                 </div>
@@ -245,15 +245,10 @@ function SearchContent() {
                 )}
 
                 {/* Actions */}
-                {product.hasBom && (
-                  <Link
-                    href={`/bom/${product.sku}`}
-                    className="flex items-center gap-1 px-3 py-1.5 text-xs bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200"
-                  >
-                    BOM <ArrowRight className="w-3 h-3" />
-                  </Link>
-                )}
-              </div>
+                <span className="flex items-center gap-1 px-3 py-1.5 text-xs bg-gray-100 text-gray-700 rounded-lg">
+                  Details <ArrowRight className="w-3 h-3" />
+                </span>
+              </Link>
             ))}
           </div>
         )}
