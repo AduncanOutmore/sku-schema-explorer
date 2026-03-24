@@ -5,7 +5,7 @@ import { Product, getPartNumberRange } from '@/types/product';
 export const FRAMES: Product[] = [
   // Heated seating frames (subassemblies)
   {
-    sku: 'FR-SOL-LCH-NTK',
+    sku: 'FRM-SOL-LCH',
     name: 'Frame, Solerno Lounge Chair',
     description: 'Teak frame for Solerno lounge chair with mounting points for cushions',
     category: 'frame',
@@ -21,7 +21,7 @@ export const FRAMES: Product[] = [
     finish: 'NTK',
   },
   {
-    sku: 'FR-SOL-LOV-NTK',
+    sku: 'FRM-SOL-LOV',
     name: 'Frame, Solerno Loveseat',
     description: 'Teak frame for Solerno loveseat with mounting points for cushions',
     category: 'frame',
@@ -37,7 +37,7 @@ export const FRAMES: Product[] = [
     finish: 'NTK',
   },
   {
-    sku: 'FR-SOL-SOF-NTK',
+    sku: 'FRM-SOL-SOF',
     name: 'Frame, Solerno Sofa',
     description: 'Teak frame for Solerno sofa with mounting points for cushions',
     category: 'frame',
@@ -53,7 +53,7 @@ export const FRAMES: Product[] = [
     finish: 'NTK',
   },
   {
-    sku: 'FR-SOL-HOT-NTK',
+    sku: 'FRM-SOL-HOT',
     name: 'Frame, Solerno Heated Ottoman',
     description: 'Teak frame for Solerno heated ottoman',
     category: 'frame',
@@ -69,7 +69,7 @@ export const FRAMES: Product[] = [
     finish: 'NTK',
   },
   {
-    sku: 'FR-SOL-CHS-NTK',
+    sku: 'FRM-SOL-CHS',
     name: 'Frame, Solerno Chaise Lounge',
     description: 'Teak frame for Solerno chaise lounge',
     category: 'frame',
@@ -85,7 +85,7 @@ export const FRAMES: Product[] = [
     finish: 'NTK',
   },
   {
-    sku: 'FR-SOL-SVL-NTK',
+    sku: 'FRM-SOL-SVL',
     name: 'Frame, Solerno Swivel Chair',
     description: 'Teak frame for Solerno swivel chair with swivel mechanism',
     category: 'frame',
@@ -101,7 +101,7 @@ export const FRAMES: Product[] = [
     finish: 'NTK',
   },
   {
-    sku: 'FR-SOL-DAC-NTK',
+    sku: 'FRM-SOL-DAC',
     name: 'Frame, Solerno Dining Arm Chair',
     description: 'Teak frame for Solerno dining arm chair',
     category: 'frame',
@@ -117,7 +117,7 @@ export const FRAMES: Product[] = [
     finish: 'NTK',
   },
   {
-    sku: 'FR-SOL-DCH-NTK',
+    sku: 'FRM-SOL-DCH',
     name: 'Frame, Solerno Dining Side Chair',
     description: 'Teak frame for Solerno dining side chair',
     category: 'frame',
@@ -135,7 +135,7 @@ export const FRAMES: Product[] = [
 
   // Tables and non-heated ottoman (sold directly as frames)
   {
-    sku: 'FR-SOL-OTM-NTK',
+    sku: 'FRM-SOL-OTM',
     name: 'Frame, Solerno Ottoman (Non-heated)',
     description: 'Teak ottoman frame without heating - sold as standalone product',
     category: 'frame',
@@ -151,7 +151,7 @@ export const FRAMES: Product[] = [
     finish: 'NTK',
   },
   {
-    sku: 'FR-SOL-CTB-NTK',
+    sku: 'FRM-SOL-CTB',
     name: 'Frame, Solerno Coffee Table',
     description: 'Teak coffee table - sold as standalone product',
     category: 'frame',
@@ -167,7 +167,7 @@ export const FRAMES: Product[] = [
     finish: 'NTK',
   },
   {
-    sku: 'FR-SOL-STB-NTK',
+    sku: 'FRM-SOL-STB',
     name: 'Frame, Solerno Side Table',
     description: 'Teak side table - sold as standalone product',
     category: 'frame',
@@ -183,7 +183,7 @@ export const FRAMES: Product[] = [
     finish: 'NTK',
   },
   {
-    sku: 'FR-SOL-SDT-NTK',
+    sku: 'FRM-SOL-SDT',
     name: 'Frame, Solerno Square Dining Table',
     description: 'Teak square dining table - sold as standalone product',
     category: 'frame',
@@ -199,7 +199,7 @@ export const FRAMES: Product[] = [
     finish: 'NTK',
   },
   {
-    sku: 'FR-SOL-RDT-NTK',
+    sku: 'FRM-SOL-RDT',
     name: 'Frame, Solerno Rectangle Dining Table',
     description: 'Teak rectangle dining table - sold as standalone product',
     category: 'frame',
@@ -216,8 +216,51 @@ export const FRAMES: Product[] = [
   },
 ];
 
+// ── Frame Sub-Components (individual teak pieces from Lam Viet, PO 2601) ──────
+// These are the Part A / B / C / D pieces shipped unassembled inside each frame box.
+// katanaItemType: Material — purchased from Lam Viet, consumed in frame assembly.
+export const FRAME_PARTS: Product[] = [
+  // Heated Ottoman (FRM-SOL-HOT)
+  { sku: 'FRM-SOL-HOT-A', name: 'Frame Part A — Slat Frame, Heated Ottoman',    description: 'Main slatted platform, heated ottoman',              category: 'frame', partNumber: null, partNumberRange: getPartNumberRange('frame'), sellable: 'internal-only', katanaItemType: 'Material', katanaUsage: 'raw-material', hasBom: false, isSubassembly: false, collection: 'SOL', productType: 'HOT' },
+  { sku: 'FRM-SOL-HOT-B', name: 'Frame Part B — Leg Pair, Heated Ottoman',      description: 'Tapered teak leg pair (2 legs), heated ottoman',     category: 'frame', partNumber: null, partNumberRange: getPartNumberRange('frame'), sellable: 'internal-only', katanaItemType: 'Material', katanaUsage: 'raw-material', hasBom: false, isSubassembly: false, collection: 'SOL', productType: 'HOT' },
+
+  // Ottoman Non-Heated (FRM-SOL-OTM)
+  { sku: 'FRM-SOL-OTM-A', name: 'Frame Part A — Slat Frame, Ottoman',           description: 'Main slatted platform, non-heated ottoman (same as HOT)', category: 'frame', partNumber: null, partNumberRange: getPartNumberRange('frame'), sellable: 'internal-only', katanaItemType: 'Material', katanaUsage: 'raw-material', hasBom: false, isSubassembly: false, collection: 'SOL', productType: 'OTM' },
+  { sku: 'FRM-SOL-OTM-B', name: 'Frame Part B — Leg Pair, Ottoman',             description: 'Tapered teak leg pair (2 legs), non-heated ottoman',  category: 'frame', partNumber: null, partNumberRange: getPartNumberRange('frame'), sellable: 'internal-only', katanaItemType: 'Material', katanaUsage: 'raw-material', hasBom: false, isSubassembly: false, collection: 'SOL', productType: 'OTM' },
+
+  // Heated Chair (FRM-SOL-CHR)
+  { sku: 'FRM-SOL-CHR-A', name: 'Frame Part A — Slat Seat Frame, Chair',        description: 'Main slatted seat platform, heated chair',           category: 'frame', partNumber: null, partNumberRange: getPartNumberRange('frame'), sellable: 'internal-only', katanaItemType: 'Material', katanaUsage: 'raw-material', hasBom: false, isSubassembly: false, collection: 'SOL', productType: 'CHR' },
+  { sku: 'FRM-SOL-CHR-B', name: 'Frame Part B — Side Frame, Chair',              description: 'Side frame with legs, per side',                    category: 'frame', partNumber: null, partNumberRange: getPartNumberRange('frame'), sellable: 'internal-only', katanaItemType: 'Material', katanaUsage: 'raw-material', hasBom: false, isSubassembly: false, collection: 'SOL', productType: 'CHR' },
+  { sku: 'FRM-SOL-CHR-C', name: 'Frame Part C — Back Rest Rail, Chair',         description: 'Horizontal back support rail, heated chair',         category: 'frame', partNumber: null, partNumberRange: getPartNumberRange('frame'), sellable: 'internal-only', katanaItemType: 'Material', katanaUsage: 'raw-material', hasBom: false, isSubassembly: false, collection: 'SOL', productType: 'CHR' },
+  { sku: 'FRM-SOL-CHR-D', name: 'Frame Part D — Front Rail, Chair',             description: 'Horizontal front rail, heated chair',               category: 'frame', partNumber: null, partNumberRange: getPartNumberRange('frame'), sellable: 'internal-only', katanaItemType: 'Material', katanaUsage: 'raw-material', hasBom: false, isSubassembly: false, collection: 'SOL', productType: 'CHR' },
+
+  // Heated Swivel Chair (FRM-SOL-SVL)
+  { sku: 'FRM-SOL-SVL-A', name: 'Frame Part A — Slat Seat Frame, Swivel Chair', description: 'Main slatted seat platform, swivel chair',           category: 'frame', partNumber: null, partNumberRange: getPartNumberRange('frame'), sellable: 'internal-only', katanaItemType: 'Material', katanaUsage: 'raw-material', hasBom: false, isSubassembly: false, collection: 'SOL', productType: 'SVL' },
+  { sku: 'FRM-SOL-SVL-B', name: 'Frame Part B — Side Frame, Swivel Chair',       description: 'Side frame with legs, per side',                    category: 'frame', partNumber: null, partNumberRange: getPartNumberRange('frame'), sellable: 'internal-only', katanaItemType: 'Material', katanaUsage: 'raw-material', hasBom: false, isSubassembly: false, collection: 'SOL', productType: 'SVL' },
+  { sku: 'FRM-SOL-SVL-C', name: 'Frame Part C — Connector Piece, Swivel Chair', description: 'Swivel mechanism brace',                            category: 'frame', partNumber: null, partNumberRange: getPartNumberRange('frame'), sellable: 'internal-only', katanaItemType: 'Material', katanaUsage: 'raw-material', hasBom: false, isSubassembly: false, collection: 'SOL', productType: 'SVL' },
+  { sku: 'FRM-SOL-SVL-D', name: 'Frame Part D — Front Rail, Swivel Chair',      description: 'Horizontal front rail, swivel chair',               category: 'frame', partNumber: null, partNumberRange: getPartNumberRange('frame'), sellable: 'internal-only', katanaItemType: 'Material', katanaUsage: 'raw-material', hasBom: false, isSubassembly: false, collection: 'SOL', productType: 'SVL' },
+
+  // Heated Loveseat (FRM-SOL-LOV)
+  { sku: 'FRM-SOL-LOV-A', name: 'Frame Part A — Slat Seat Frame, Loveseat',     description: 'Main slatted seat platform, 2-seat loveseat',        category: 'frame', partNumber: null, partNumberRange: getPartNumberRange('frame'), sellable: 'internal-only', katanaItemType: 'Material', katanaUsage: 'raw-material', hasBom: false, isSubassembly: false, collection: 'SOL', productType: 'LOV' },
+  { sku: 'FRM-SOL-LOV-B', name: 'Frame Part B — Side Frame, Loveseat',           description: 'Side frame with legs, per side',                    category: 'frame', partNumber: null, partNumberRange: getPartNumberRange('frame'), sellable: 'internal-only', katanaItemType: 'Material', katanaUsage: 'raw-material', hasBom: false, isSubassembly: false, collection: 'SOL', productType: 'LOV' },
+  { sku: 'FRM-SOL-LOV-C', name: 'Frame Part C — Back Rest, Loveseat',           description: 'Full-width back rest assembly, loveseat',            category: 'frame', partNumber: null, partNumberRange: getPartNumberRange('frame'), sellable: 'internal-only', katanaItemType: 'Material', katanaUsage: 'raw-material', hasBom: false, isSubassembly: false, collection: 'SOL', productType: 'LOV' },
+
+  // Heated Sofa (FRM-SOL-SOF)
+  { sku: 'FRM-SOL-SOF-A', name: 'Frame Part A — Slat Seat Frame, Sofa',         description: 'Main slatted seat platform, 3-seat sofa',            category: 'frame', partNumber: null, partNumberRange: getPartNumberRange('frame'), sellable: 'internal-only', katanaItemType: 'Material', katanaUsage: 'raw-material', hasBom: false, isSubassembly: false, collection: 'SOL', productType: 'SOF' },
+  { sku: 'FRM-SOL-SOF-B', name: 'Frame Part B — Side Frame, Sofa',               description: 'Side frame with legs, per side',                    category: 'frame', partNumber: null, partNumberRange: getPartNumberRange('frame'), sellable: 'internal-only', katanaItemType: 'Material', katanaUsage: 'raw-material', hasBom: false, isSubassembly: false, collection: 'SOL', productType: 'SOF' },
+  { sku: 'FRM-SOL-SOF-C', name: 'Frame Part C — Back Rest, Sofa',               description: 'Full-width back rest assembly, 3-seat sofa',         category: 'frame', partNumber: null, partNumberRange: getPartNumberRange('frame'), sellable: 'internal-only', katanaItemType: 'Material', katanaUsage: 'raw-material', hasBom: false, isSubassembly: false, collection: 'SOL', productType: 'SOF' },
+
+  // Coffee Table (FRM-SOL-CTB)
+  { sku: 'FRM-SOL-CTB-A', name: 'Frame Part A — Slat Top, Coffee Table',        description: 'Slatted table top frame, coffee table',             category: 'frame', partNumber: null, partNumberRange: getPartNumberRange('frame'), sellable: 'internal-only', katanaItemType: 'Material', katanaUsage: 'raw-material', hasBom: false, isSubassembly: false, collection: 'SOL', productType: 'CTB' },
+  { sku: 'FRM-SOL-CTB-B', name: 'Frame Part B — Leg, Coffee Table',             description: 'Individual tapered teak leg, coffee table',         category: 'frame', partNumber: null, partNumberRange: getPartNumberRange('frame'), sellable: 'internal-only', katanaItemType: 'Material', katanaUsage: 'raw-material', hasBom: false, isSubassembly: false, collection: 'SOL', productType: 'CTB' },
+
+  // Side Table (FRM-SOL-STB)
+  { sku: 'FRM-SOL-STB-A', name: 'Frame Part A — Slat Top, Side Table',          description: 'Slatted table top frame, side table',               category: 'frame', partNumber: null, partNumberRange: getPartNumberRange('frame'), sellable: 'internal-only', katanaItemType: 'Material', katanaUsage: 'raw-material', hasBom: false, isSubassembly: false, collection: 'SOL', productType: 'STB' },
+  { sku: 'FRM-SOL-STB-B', name: 'Frame Part B — Leg, Side Table',               description: 'Individual tapered teak leg, side table',           category: 'frame', partNumber: null, partNumberRange: getPartNumberRange('frame'), sellable: 'internal-only', katanaItemType: 'Material', katanaUsage: 'raw-material', hasBom: false, isSubassembly: false, collection: 'SOL', productType: 'STB' },
+];
+
 export function getFrameBySku(sku: string): Product | undefined {
-  return FRAMES.find(f => f.sku === sku);
+  return [...FRAMES, ...FRAME_PARTS].find(f => f.sku === sku);
 }
 
 export function getFramesByType(isSubassembly: boolean): Product[] {

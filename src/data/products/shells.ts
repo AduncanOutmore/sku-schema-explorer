@@ -1,18 +1,17 @@
 import { Product, getPartNumberRange } from '@/types/product';
 import { FABRIC_COLORS } from '../fabrics';
 
-// Shell component types
+// Shell component types (PILB removed — only ST1 standard configuration in Katana)
 const SHELL_COMPONENTS = [
   { code: 'SEAT', name: 'Seat', partNumberOffset: 0 },
-  { code: 'BACK', name: 'Back', partNumberOffset: 16 },
-  { code: 'PILB', name: 'Pillow Back', partNumberOffset: 32 },
+  { code: 'BACK', name: 'Back', partNumberOffset: 19 },
 ];
 
-// Generate all shells (48 total: 3 components x 16 fabrics)
+// Generate all shells (38 total: 2 components x 19 fabrics)
 export const SHELLS: Product[] = SHELL_COMPONENTS.flatMap((component) =>
   FABRIC_COLORS.map((fabric, fabricIndex) => ({
-    sku: `SHL-LS-${component.code}-${fabric.code}`,
-    name: `Shell, Lounge Seating ${component.name}, ${fabric.name}`,
+    sku: `SHL-${component.code}-${fabric.code}`,
+    name: `Shell, ${component.name}, ${fabric.name}`,
     description: `Fabric shell cover for lounge seating ${component.name.toLowerCase()} cushion in ${fabric.fullName}`,
     category: 'shell' as const,
     partNumber: 50001 + component.partNumberOffset + fabricIndex,

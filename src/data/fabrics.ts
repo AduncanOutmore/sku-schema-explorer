@@ -1,6 +1,6 @@
 import { FabricColor } from '@/types/product';
 
-// The 16 available Sunbrella fabric colors
+// The 19 available Sunbrella fabric colors
 export const FABRIC_COLORS: FabricColor[] = [
   {
     code: 'CBN',
@@ -145,6 +145,14 @@ export const FABRIC_COLORS: FabricColor[] = [
     hexColor: '#F0EAD6',
     pattern: 'CNVS',
     sku: 'FAB-SUN-CNVS-EGS',
+  },
+  {
+    code: 'SPS',
+    name: 'Spectrum Sand',
+    fullName: 'Sunbrella Spectrum Sand',
+    hexColor: '#C8BFA9',
+    pattern: 'SPTM',
+    sku: 'FAB-SUN-SPTM-SPS',
   },
 ];
 
