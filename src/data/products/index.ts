@@ -2,9 +2,9 @@ import { Product, ProductCategory } from '@/types/product';
 import { FINISHED_GOODS } from './finished-goods';
 import { SETS } from './sets';
 import { FRAMES, FRAME_PARTS } from './frames';
-import { CUSHIONS } from './cushions';
+import { ALL_CUSHIONS } from './cushions';
 import { CORE_INSERTS } from './core-inserts';
-import { SHELLS } from './shells';
+import { ALL_SHELLS } from './shells';
 import { HEAT_TECH } from './heat-tech';
 import { PROTECTIVE_COVERS, ACCESSORIES } from './accessories';
 import { MATERIALS } from './materials';
@@ -13,9 +13,9 @@ import { MATERIALS } from './materials';
 export { FINISHED_GOODS } from './finished-goods';
 export { SETS } from './sets';
 export { FRAMES, FRAME_PARTS } from './frames';
-export { CUSHIONS } from './cushions';
+export { ALL_CUSHIONS as CUSHIONS, HEATED_OTTOMAN_CUSHIONS, OTTOMAN_CUSHIONS } from './cushions';
 export { CORE_INSERTS } from './core-inserts';
-export { SHELLS } from './shells';
+export { ALL_SHELLS as SHELLS, HEATED_OTTOMAN_SHELLS, OTTOMAN_SHELLS } from './shells';
 export { HEAT_TECH } from './heat-tech';
 export { PROTECTIVE_COVERS, ACCESSORIES } from './accessories';
 export { MATERIALS } from './materials';
@@ -26,9 +26,9 @@ export const ALL_PRODUCTS: Product[] = [
   ...SETS,
   ...FRAMES,
   ...FRAME_PARTS,
-  ...CUSHIONS,
+  ...ALL_CUSHIONS,
   ...CORE_INSERTS,
-  ...SHELLS,
+  ...ALL_SHELLS,
   ...HEAT_TECH,
   ...PROTECTIVE_COVERS,
   ...ACCESSORIES,
