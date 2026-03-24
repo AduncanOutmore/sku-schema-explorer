@@ -1,9 +1,9 @@
 import { Product, getPartNumberRange } from '@/types/product';
 
 // Core Inserts (40500s range)
-// These are internal components NOT sold separately
-// They contain the heating technology and are fabric-agnostic
+// Internal components NOT sold separately. Fabric-agnostic.
 export const CORE_INSERTS: Product[] = [
+  // Lounge seating
   {
     sku: 'COR-LS-SEAT',
     name: 'Core Insert, Lounge Seating Seat',
@@ -51,6 +51,40 @@ export const CORE_INSERTS: Product[] = [
     seatingType: 'LS',
     componentType: 'SET',
     notes: 'Set product. Contains 1x seat core insert + 1x back core insert.',
+  },
+  // Heated Ottoman
+  {
+    sku: 'COR-HOT',
+    name: 'Core Insert, Heated Ottoman',
+    description: 'Heated core insert for ottoman with graphene heating element, #6 grommet, cord grip',
+    category: 'core-insert',
+    partNumber: 40504,
+    partNumberRange: getPartNumberRange('core-insert'),
+    sellable: 'internal-only',
+    katanaItemType: 'Product',
+    katanaUsage: 'contract-manufactured',
+    hasBom: true,
+    isSubassembly: true,
+    seatingType: 'HOT',
+    componentType: 'SEAT',
+    notes: 'Mozaic manufactured. $67.25 total. Foam + batting + barrier + mesh + heating pad + #6 grommet + cord grip + nut + Mozaic op ($16.50).',
+  },
+  // Ottoman (non-heated)
+  {
+    sku: 'COR-OTM',
+    name: 'Core Insert, Ottoman',
+    description: 'Non-heated core insert for ottoman. Foam + barrier + mesh only, no heating elements.',
+    category: 'core-insert',
+    partNumber: 40505,
+    partNumberRange: getPartNumberRange('core-insert'),
+    sellable: 'internal-only',
+    katanaItemType: 'Product',
+    katanaUsage: 'contract-manufactured',
+    hasBom: true,
+    isSubassembly: true,
+    seatingType: 'OTM',
+    componentType: 'SEAT',
+    notes: 'Mozaic manufactured. $63.75 total. Foam + batting + barrier + mesh + Mozaic op ($35.25).',
   },
 ];
 

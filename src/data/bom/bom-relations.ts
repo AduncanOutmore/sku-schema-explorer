@@ -86,6 +86,51 @@ export const BOM_TEMPLATES: BomRelation[] = [
   { parentSku: 'COR-LS-BACK', componentSku: 'HW-CRDG', componentName: 'Cord Grip', quantity: 1, unit: 'ea' },
   { parentSku: 'COR-LS-BACK', componentSku: 'HW-CRDN', componentName: 'Cord Grip Nut', quantity: 1, unit: 'ea' },
 
+  // ===== OTTOMAN FINISHED GOODS -> COMPONENTS =====
+
+  // Ottoman: Frame + Cushion
+  { parentSku: 'SOL-OTM-NTK-{COLOR}-ST1', componentSku: 'FRM-SOL-OTM', componentName: 'Frame, Ottoman', quantity: 1, unit: 'ea' },
+  { parentSku: 'SOL-OTM-NTK-{COLOR}-ST1', componentSku: 'CUS-OTM-{COLOR}', componentName: 'Cushion, Ottoman', quantity: 1, unit: 'ea' },
+
+  // Heated Ottoman: Frame + Heated Cushion + Power Bar
+  { parentSku: 'SOL-HOT-NTK-{COLOR}-ST1', componentSku: 'FRM-SOL-HOT', componentName: 'Frame, Heated Ottoman', quantity: 1, unit: 'ea' },
+  { parentSku: 'SOL-HOT-NTK-{COLOR}-ST1', componentSku: 'CUS-HOT-{COLOR}', componentName: 'Cushion, Heated Ottoman', quantity: 1, unit: 'ea' },
+  { parentSku: 'SOL-HOT-NTK-{COLOR}-ST1', componentSku: 'HT-PB-G1R-151', componentName: 'Power Bar Kit', quantity: 1, unit: 'ea' },
+
+  // ===== OTTOMAN CUSHIONS -> SHELL + CORE INSERT =====
+  { parentSku: 'CUS-OTM-{COLOR}', componentSku: 'SHL-OTM-{COLOR}', componentName: 'Shell, Ottoman', quantity: 1, unit: 'ea' },
+  { parentSku: 'CUS-OTM-{COLOR}', componentSku: 'COR-OTM', componentName: 'Core Insert, Ottoman', quantity: 1, unit: 'ea' },
+
+  { parentSku: 'CUS-HOT-{COLOR}', componentSku: 'SHL-HOT-{COLOR}', componentName: 'Shell, Heated Ottoman', quantity: 1, unit: 'ea' },
+  { parentSku: 'CUS-HOT-{COLOR}', componentSku: 'COR-HOT', componentName: 'Core Insert, Heated Ottoman', quantity: 1, unit: 'ea' },
+
+  // ===== OTTOMAN SHELLS -> MATERIALS =====
+  // Heated Ottoman Shell: fabric + label + #4 grommet + Mozaic op
+  { parentSku: 'SHL-HOT-{COLOR}', componentSku: 'FAB-SUN-{PATTERN}-{COLOR}', componentName: 'Sunbrella Fabric', quantity: 1, unit: 'ea' },
+  { parentSku: 'SHL-HOT-{COLOR}', componentSku: 'LBL-WVN-OM', componentName: 'Woven Label, Outmore', quantity: 1, unit: 'ea' },
+  { parentSku: 'SHL-HOT-{COLOR}', componentSku: 'HW-GRM-4', componentName: 'Snap Grommet #4', quantity: 1, unit: 'ea' },
+
+  // Ottoman Shell: fabric + label (no grommet) + Mozaic op
+  { parentSku: 'SHL-OTM-{COLOR}', componentSku: 'FAB-SUN-{PATTERN}-{COLOR}', componentName: 'Sunbrella Fabric', quantity: 1, unit: 'ea' },
+  { parentSku: 'SHL-OTM-{COLOR}', componentSku: 'LBL-WVN-OM', componentName: 'Woven Label, Outmore', quantity: 1, unit: 'ea' },
+
+  // ===== OTTOMAN CORE INSERTS -> MATERIALS =====
+  // Heated Ottoman Core: foam + batting + barrier + mesh + heating pad + #6 grommet + cord grip + nut
+  { parentSku: 'COR-HOT', componentSku: 'FOM-HOT', componentName: 'Foam, Heated Ottoman', quantity: 1, unit: 'ea' },
+  { parentSku: 'COR-HOT', componentSku: 'FIL-POLY', componentName: 'Polyester Batting', quantity: 1, unit: 'ea' },
+  { parentSku: 'COR-HOT', componentSku: 'FAB-BAR-WPB', componentName: 'Barrier, Waterproof Black', quantity: 1, unit: 'ea' },
+  { parentSku: 'COR-HOT', componentSku: 'FAB-BAR-MSH', componentName: 'Barrier, Mesh', quantity: 1, unit: 'ea' },
+  { parentSku: 'COR-HOT', componentSku: 'HT-GPH-HO-SEAT-G1', componentName: 'Heating Pad, Ottoman', quantity: 1, unit: 'ea' },
+  { parentSku: 'COR-HOT', componentSku: 'HW-GRM-6', componentName: 'Snap-On Grommet #6', quantity: 1, unit: 'ea' },
+  { parentSku: 'COR-HOT', componentSku: 'HW-CRDG', componentName: 'Cord Grip', quantity: 1, unit: 'ea' },
+  { parentSku: 'COR-HOT', componentSku: 'HW-CRDN', componentName: 'Cord Grip Nut', quantity: 1, unit: 'ea' },
+
+  // Ottoman Core: foam + batting + barrier + mesh (no heating, no grommet, no cord grip)
+  { parentSku: 'COR-OTM', componentSku: 'FOM-OTM', componentName: 'Foam, Ottoman', quantity: 1, unit: 'ea' },
+  { parentSku: 'COR-OTM', componentSku: 'FIL-POLY', componentName: 'Polyester Batting', quantity: 1, unit: 'ea' },
+  { parentSku: 'COR-OTM', componentSku: 'FAB-BAR-WPB', componentName: 'Barrier, Waterproof Black', quantity: 1, unit: 'ea' },
+  { parentSku: 'COR-OTM', componentSku: 'FAB-BAR-MSH', componentName: 'Barrier, Mesh', quantity: 1, unit: 'ea' },
+
   // ===== POWER BAR KIT -> COMPONENTS =====
   { parentSku: 'HT-PB-G1R-151', componentSku: 'HT-PB-UNIT-G1R', componentName: 'Power Bar Unit', quantity: 1, unit: 'ea' },
   { parentSku: 'HT-PB-G1R-151', componentSku: 'HT-CHG-ADPT-90', componentName: 'Charging Adapter, 90W', quantity: 1, unit: 'ea' },
