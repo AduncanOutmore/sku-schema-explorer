@@ -16,7 +16,6 @@ const routeLabels: Record<string, string> = {
   'bom': 'BOM Explorer',
   'fabrics': 'Fabric Selector',
   'glossary': 'Glossary',
-  'katana': 'Katana Guide',
   'search': 'Search',
 };
 

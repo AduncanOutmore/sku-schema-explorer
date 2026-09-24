@@ -41,7 +41,6 @@ function SkuPart({ code, meaning, type }: SkuPartProps) {
       case 'product': return 'bg-jet-light text-white';
       case 'finish': return 'bg-sand text-jet';
       case 'fabric': return 'bg-jet-lighter text-white';
-      case 'settype': return 'bg-jet text-white';
       case 'seating': return 'bg-jet-light text-white';
       case 'component': return 'bg-sand-light text-jet';
       default: return 'bg-sand text-jet';
@@ -108,7 +107,6 @@ const secondaryActions = [
   { name: 'Fabrics', href: '/fabrics', icon: Palette },
   { name: 'Glossary', href: '/glossary', icon: BookOpen },
   { name: 'Master Data', href: '/master', icon: Table },
-  { name: 'Katana Guide', href: '/katana', icon: Database },
   { name: 'Downloads', href: '/downloads', icon: Download },
 ];
 
@@ -186,8 +184,6 @@ export default function HomePage() {
               <SkuPart code="NTK" meaning="Natural Teak finish" type="finish" />
               <SkuSeparator />
               <SkuPart code="CBN" meaning="Carbon (Sunbrella)" type="fabric" />
-              <SkuSeparator />
-              <SkuPart code="ST1" meaning="Set Type 1 (Standard back)" type="settype" />
             </div>
           </div>
 
@@ -374,7 +370,7 @@ export default function HomePage() {
             <h3 className="font-display font-medium text-jet mb-2">Sellable vs Internal</h3>
             <p className="text-sm text-muted">
               Some items are sellable replacements (shells), while others are internal-only
-              (core inserts). The Katana Guide helps determine the correct item type.
+              (core inserts).
             </p>
           </div>
         </div>

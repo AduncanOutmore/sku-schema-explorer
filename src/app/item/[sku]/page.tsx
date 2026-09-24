@@ -165,12 +165,6 @@ export default function ItemDetailPage({ params }: ItemDetailPageProps) {
                 <dd className="text-sm font-medium text-gray-900 font-mono">{product.finish}</dd>
               </div>
             )}
-            {product.setType && (
-              <div className="flex justify-between items-center py-2 border-b border-gray-100">
-                <dt className="text-sm text-gray-500">Set Type</dt>
-                <dd className="text-sm font-medium text-gray-900 font-mono">{product.setType}</dd>
-              </div>
-            )}
             {product.componentType && (
               <div className="flex justify-between items-center py-2 border-b border-gray-100">
                 <dt className="text-sm text-gray-500">Component Type</dt>
@@ -299,9 +293,8 @@ export default function ItemDetailPage({ params }: ItemDetailPageProps) {
 // Generate static params for common SKUs
 export async function generateStaticParams() {
   const commonSkus = [
-    'SOL-LCH-NTK-CBN-ST1',
-    'SOL-LCH-NTK-CBN-ST2',
-    'SOL-LOV-NTK-CBN-ST1',
+    'SOL-LCH-NTK-CBN',
+    'SOL-LOV-NTK-CBN',
     'CSH-LS-SEAT-CBN',
     'FR-LS-LCH-NTK',
     'COR-LS-SEAT',

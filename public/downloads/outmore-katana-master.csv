@@ -175,54 +175,30 @@ Part #,SKU,Name,Category,Katana Type,Katana Subtype,Has BOM,Sellable,Notes,Is Su
 90028,FAB-SUN-SPTM-CBN,Sunbrella Spectrum Carbon,Shell Fabric,Material,Raw Material,No,No,Purchased material,Yes
 90029,FAB-SUN-SPTM-IND,Sunbrella Spectrum Indigo,Shell Fabric,Material,Raw Material,No,No,Purchased material,Yes
 90030,FAB-SUN-SPTM-DOV,Sunbrella Spectrum Dove,Shell Fabric,Material,Raw Material,No,No,Purchased material,Yes
-10001,SOL-LCH-NTK-ALO-ST1,"Solerno Lounge Chair, Natural Teak, Bliss Aloe, Standard",Finished Good,Product,Make-to-Order,Yes,Yes,"Qty: 1 cushion set(s), 1 power bar(s)",No
-10002,SOL-LCH-NTK-ALO-ST2,"Solerno Lounge Chair, Natural Teak, Bliss Aloe, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Qty: 1 cushion set(s), 1 power bar(s)",No
-10003,SOL-LCH-NTK-IND-ST1,"Solerno Lounge Chair, Natural Teak, Blend Indigo, Standard",Finished Good,Product,Make-to-Order,Yes,Yes,"Qty: 1 cushion set(s), 1 power bar(s)",No
-10004,SOL-LCH-NTK-IND-ST2,"Solerno Lounge Chair, Natural Teak, Blend Indigo, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Qty: 1 cushion set(s), 1 power bar(s)",No
-10005,SOL-LCH-NTK-BSQ-ST1,"Solerno Lounge Chair, Natural Teak, Cast Bisque, Standard",Finished Good,Product,Make-to-Order,Yes,Yes,"Qty: 1 cushion set(s), 1 power bar(s)",No
-10006,SOL-LCH-NTK-BSQ-ST2,"Solerno Lounge Chair, Natural Teak, Cast Bisque, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Qty: 1 cushion set(s), 1 power bar(s)",No
-10007,SOL-LOV-NTK-ALO-ST1,"Solerno Loveseat, Natural Teak, Bliss Aloe, Standard",Finished Good,Product,Make-to-Order,Yes,Yes,"Qty: 2 cushion set(s), 2 power bar(s)",No
-10008,SOL-LOV-NTK-ALO-ST2,"Solerno Loveseat, Natural Teak, Bliss Aloe, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Qty: 2 cushion set(s), 2 power bar(s)",No
-10009,SOL-LOV-NTK-IND-ST1,"Solerno Loveseat, Natural Teak, Blend Indigo, Standard",Finished Good,Product,Make-to-Order,Yes,Yes,"Qty: 2 cushion set(s), 2 power bar(s)",No
-10010,SOL-LOV-NTK-IND-ST2,"Solerno Loveseat, Natural Teak, Blend Indigo, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Qty: 2 cushion set(s), 2 power bar(s)",No
-10011,SOL-LOV-NTK-BSQ-ST1,"Solerno Loveseat, Natural Teak, Cast Bisque, Standard",Finished Good,Product,Make-to-Order,Yes,Yes,"Qty: 2 cushion set(s), 2 power bar(s)",No
-10012,SOL-LOV-NTK-BSQ-ST2,"Solerno Loveseat, Natural Teak, Cast Bisque, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Qty: 2 cushion set(s), 2 power bar(s)",No
-10013,SOL-SOF-NTK-ALO-ST1,"Solerno Sofa, Natural Teak, Bliss Aloe, Standard",Finished Good,Product,Make-to-Order,Yes,Yes,"Qty: 3 cushion set(s), 3 power bar(s)",No
-10014,SOL-SOF-NTK-ALO-ST2,"Solerno Sofa, Natural Teak, Bliss Aloe, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Qty: 3 cushion set(s), 3 power bar(s)",No
-10015,SOL-SOF-NTK-IND-ST1,"Solerno Sofa, Natural Teak, Blend Indigo, Standard",Finished Good,Product,Make-to-Order,Yes,Yes,"Qty: 3 cushion set(s), 3 power bar(s)",No
-10016,SOL-SOF-NTK-IND-ST2,"Solerno Sofa, Natural Teak, Blend Indigo, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Qty: 3 cushion set(s), 3 power bar(s)",No
-10017,SOL-SOF-NTK-BSQ-ST1,"Solerno Sofa, Natural Teak, Cast Bisque, Standard",Finished Good,Product,Make-to-Order,Yes,Yes,"Qty: 3 cushion set(s), 3 power bar(s)",No
-10018,SOL-SOF-NTK-BSQ-ST2,"Solerno Sofa, Natural Teak, Cast Bisque, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Qty: 3 cushion set(s), 3 power bar(s)",No
-10019,SOL-HOT-NTK-ALO-ST1,"Solerno Heated Ottoman, Natural Teak, Bliss Aloe, Standard",Finished Good,Product,Make-to-Order,Yes,Yes,"Qty: 1 cushion set(s), 1 power bar(s)",No
-10020,SOL-HOT-NTK-ALO-ST2,"Solerno Heated Ottoman, Natural Teak, Bliss Aloe, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Qty: 1 cushion set(s), 1 power bar(s)",No
-10021,SOL-HOT-NTK-IND-ST1,"Solerno Heated Ottoman, Natural Teak, Blend Indigo, Standard",Finished Good,Product,Make-to-Order,Yes,Yes,"Qty: 1 cushion set(s), 1 power bar(s)",No
-10022,SOL-HOT-NTK-IND-ST2,"Solerno Heated Ottoman, Natural Teak, Blend Indigo, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Qty: 1 cushion set(s), 1 power bar(s)",No
-10023,SOL-HOT-NTK-BSQ-ST1,"Solerno Heated Ottoman, Natural Teak, Cast Bisque, Standard",Finished Good,Product,Make-to-Order,Yes,Yes,"Qty: 1 cushion set(s), 1 power bar(s)",No
-10024,SOL-HOT-NTK-BSQ-ST2,"Solerno Heated Ottoman, Natural Teak, Cast Bisque, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Qty: 1 cushion set(s), 1 power bar(s)",No
-10025,SOL-SVL-NTK-ALO-ST1,"Solerno Swivel Chair, Natural Teak, Bliss Aloe, Standard",Finished Good,Product,Make-to-Order,Yes,Yes,"Qty: 1 cushion set(s), 1 power bar(s)",No
-10026,SOL-SVL-NTK-ALO-ST2,"Solerno Swivel Chair, Natural Teak, Bliss Aloe, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Qty: 1 cushion set(s), 1 power bar(s)",No
-10027,SOL-SVL-NTK-IND-ST1,"Solerno Swivel Chair, Natural Teak, Blend Indigo, Standard",Finished Good,Product,Make-to-Order,Yes,Yes,"Qty: 1 cushion set(s), 1 power bar(s)",No
-10028,SOL-SVL-NTK-IND-ST2,"Solerno Swivel Chair, Natural Teak, Blend Indigo, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Qty: 1 cushion set(s), 1 power bar(s)",No
-10029,SOL-SVL-NTK-BSQ-ST1,"Solerno Swivel Chair, Natural Teak, Cast Bisque, Standard",Finished Good,Product,Make-to-Order,Yes,Yes,"Qty: 1 cushion set(s), 1 power bar(s)",No
-10030,SOL-SVL-NTK-BSQ-ST2,"Solerno Swivel Chair, Natural Teak, Cast Bisque, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Qty: 1 cushion set(s), 1 power bar(s)",No
-10031,SOL-CHS-NTK-ALO-ST1,"Solerno Chaise Lounge, Natural Teak, Bliss Aloe, Standard",Finished Good,Product,Make-to-Order,Yes,Yes,"Qty: 1 cushion set(s), 1 power bar(s)",No
-10032,SOL-CHS-NTK-ALO-ST2,"Solerno Chaise Lounge, Natural Teak, Bliss Aloe, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Qty: 1 cushion set(s), 1 power bar(s)",No
-10033,SOL-CHS-NTK-IND-ST1,"Solerno Chaise Lounge, Natural Teak, Blend Indigo, Standard",Finished Good,Product,Make-to-Order,Yes,Yes,"Qty: 1 cushion set(s), 1 power bar(s)",No
-10034,SOL-CHS-NTK-IND-ST2,"Solerno Chaise Lounge, Natural Teak, Blend Indigo, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Qty: 1 cushion set(s), 1 power bar(s)",No
-10035,SOL-CHS-NTK-BSQ-ST1,"Solerno Chaise Lounge, Natural Teak, Cast Bisque, Standard",Finished Good,Product,Make-to-Order,Yes,Yes,"Qty: 1 cushion set(s), 1 power bar(s)",No
-10036,SOL-CHS-NTK-BSQ-ST2,"Solerno Chaise Lounge, Natural Teak, Cast Bisque, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Qty: 1 cushion set(s), 1 power bar(s)",No
-10037,SOL-DCH-NTK-ALO-ST1,"Solerno Dining Side Chair, Natural Teak, Bliss Aloe, Standard",Finished Good,Product,Make-to-Order,Yes,Yes,"Qty: 1 cushion set(s), 1 power bar(s)",No
-10038,SOL-DCH-NTK-ALO-ST2,"Solerno Dining Side Chair, Natural Teak, Bliss Aloe, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Qty: 1 cushion set(s), 1 power bar(s)",No
-10039,SOL-DCH-NTK-IND-ST1,"Solerno Dining Side Chair, Natural Teak, Blend Indigo, Standard",Finished Good,Product,Make-to-Order,Yes,Yes,"Qty: 1 cushion set(s), 1 power bar(s)",No
-10040,SOL-DCH-NTK-IND-ST2,"Solerno Dining Side Chair, Natural Teak, Blend Indigo, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Qty: 1 cushion set(s), 1 power bar(s)",No
-10041,SOL-DCH-NTK-BSQ-ST1,"Solerno Dining Side Chair, Natural Teak, Cast Bisque, Standard",Finished Good,Product,Make-to-Order,Yes,Yes,"Qty: 1 cushion set(s), 1 power bar(s)",No
-10042,SOL-DCH-NTK-BSQ-ST2,"Solerno Dining Side Chair, Natural Teak, Cast Bisque, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Qty: 1 cushion set(s), 1 power bar(s)",No
-10043,SOL-DAC-NTK-ALO-ST1,"Solerno Dining Arm Chair, Natural Teak, Bliss Aloe, Standard",Finished Good,Product,Make-to-Order,Yes,Yes,"Qty: 1 cushion set(s), 1 power bar(s)",No
-10044,SOL-DAC-NTK-ALO-ST2,"Solerno Dining Arm Chair, Natural Teak, Bliss Aloe, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Qty: 1 cushion set(s), 1 power bar(s)",No
-10045,SOL-DAC-NTK-IND-ST1,"Solerno Dining Arm Chair, Natural Teak, Blend Indigo, Standard",Finished Good,Product,Make-to-Order,Yes,Yes,"Qty: 1 cushion set(s), 1 power bar(s)",No
-10046,SOL-DAC-NTK-IND-ST2,"Solerno Dining Arm Chair, Natural Teak, Blend Indigo, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Qty: 1 cushion set(s), 1 power bar(s)",No
-10047,SOL-DAC-NTK-BSQ-ST1,"Solerno Dining Arm Chair, Natural Teak, Cast Bisque, Standard",Finished Good,Product,Make-to-Order,Yes,Yes,"Qty: 1 cushion set(s), 1 power bar(s)",No
-10048,SOL-DAC-NTK-BSQ-ST2,"Solerno Dining Arm Chair, Natural Teak, Cast Bisque, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Qty: 1 cushion set(s), 1 power bar(s)",No
+10001,SOL-LCH-NTK-ALO,"Solerno Lounge Chair, Natural Teak, Bliss Aloe, Standard",Finished Good,Product,Make-to-Order,Yes,Yes,"Qty: 1 cushion set(s), 1 power bar(s)",No
+10003,SOL-LCH-NTK-IND,"Solerno Lounge Chair, Natural Teak, Blend Indigo, Standard",Finished Good,Product,Make-to-Order,Yes,Yes,"Qty: 1 cushion set(s), 1 power bar(s)",No
+10005,SOL-LCH-NTK-BSQ,"Solerno Lounge Chair, Natural Teak, Cast Bisque, Standard",Finished Good,Product,Make-to-Order,Yes,Yes,"Qty: 1 cushion set(s), 1 power bar(s)",No
+10007,SOL-LOV-NTK-ALO,"Solerno Loveseat, Natural Teak, Bliss Aloe, Standard",Finished Good,Product,Make-to-Order,Yes,Yes,"Qty: 2 cushion set(s), 2 power bar(s)",No
+10009,SOL-LOV-NTK-IND,"Solerno Loveseat, Natural Teak, Blend Indigo, Standard",Finished Good,Product,Make-to-Order,Yes,Yes,"Qty: 2 cushion set(s), 2 power bar(s)",No
+10011,SOL-LOV-NTK-BSQ,"Solerno Loveseat, Natural Teak, Cast Bisque, Standard",Finished Good,Product,Make-to-Order,Yes,Yes,"Qty: 2 cushion set(s), 2 power bar(s)",No
+10013,SOL-SOF-NTK-ALO,"Solerno Sofa, Natural Teak, Bliss Aloe, Standard",Finished Good,Product,Make-to-Order,Yes,Yes,"Qty: 3 cushion set(s), 3 power bar(s)",No
+10015,SOL-SOF-NTK-IND,"Solerno Sofa, Natural Teak, Blend Indigo, Standard",Finished Good,Product,Make-to-Order,Yes,Yes,"Qty: 3 cushion set(s), 3 power bar(s)",No
+10017,SOL-SOF-NTK-BSQ,"Solerno Sofa, Natural Teak, Cast Bisque, Standard",Finished Good,Product,Make-to-Order,Yes,Yes,"Qty: 3 cushion set(s), 3 power bar(s)",No
+10019,SOL-HOT-NTK-ALO,"Solerno Heated Ottoman, Natural Teak, Bliss Aloe, Standard",Finished Good,Product,Make-to-Order,Yes,Yes,"Qty: 1 cushion set(s), 1 power bar(s)",No
+10021,SOL-HOT-NTK-IND,"Solerno Heated Ottoman, Natural Teak, Blend Indigo, Standard",Finished Good,Product,Make-to-Order,Yes,Yes,"Qty: 1 cushion set(s), 1 power bar(s)",No
+10023,SOL-HOT-NTK-BSQ,"Solerno Heated Ottoman, Natural Teak, Cast Bisque, Standard",Finished Good,Product,Make-to-Order,Yes,Yes,"Qty: 1 cushion set(s), 1 power bar(s)",No
+10025,SOL-SVL-NTK-ALO,"Solerno Swivel Chair, Natural Teak, Bliss Aloe, Standard",Finished Good,Product,Make-to-Order,Yes,Yes,"Qty: 1 cushion set(s), 1 power bar(s)",No
+10027,SOL-SVL-NTK-IND,"Solerno Swivel Chair, Natural Teak, Blend Indigo, Standard",Finished Good,Product,Make-to-Order,Yes,Yes,"Qty: 1 cushion set(s), 1 power bar(s)",No
+10029,SOL-SVL-NTK-BSQ,"Solerno Swivel Chair, Natural Teak, Cast Bisque, Standard",Finished Good,Product,Make-to-Order,Yes,Yes,"Qty: 1 cushion set(s), 1 power bar(s)",No
+10031,SOL-CHS-NTK-ALO,"Solerno Chaise Lounge, Natural Teak, Bliss Aloe, Standard",Finished Good,Product,Make-to-Order,Yes,Yes,"Qty: 1 cushion set(s), 1 power bar(s)",No
+10033,SOL-CHS-NTK-IND,"Solerno Chaise Lounge, Natural Teak, Blend Indigo, Standard",Finished Good,Product,Make-to-Order,Yes,Yes,"Qty: 1 cushion set(s), 1 power bar(s)",No
+10035,SOL-CHS-NTK-BSQ,"Solerno Chaise Lounge, Natural Teak, Cast Bisque, Standard",Finished Good,Product,Make-to-Order,Yes,Yes,"Qty: 1 cushion set(s), 1 power bar(s)",No
+10037,SOL-DCH-NTK-ALO,"Solerno Dining Side Chair, Natural Teak, Bliss Aloe, Standard",Finished Good,Product,Make-to-Order,Yes,Yes,"Qty: 1 cushion set(s), 1 power bar(s)",No
+10039,SOL-DCH-NTK-IND,"Solerno Dining Side Chair, Natural Teak, Blend Indigo, Standard",Finished Good,Product,Make-to-Order,Yes,Yes,"Qty: 1 cushion set(s), 1 power bar(s)",No
+10041,SOL-DCH-NTK-BSQ,"Solerno Dining Side Chair, Natural Teak, Cast Bisque, Standard",Finished Good,Product,Make-to-Order,Yes,Yes,"Qty: 1 cushion set(s), 1 power bar(s)",No
+10043,SOL-DAC-NTK-ALO,"Solerno Dining Arm Chair, Natural Teak, Bliss Aloe, Standard",Finished Good,Product,Make-to-Order,Yes,Yes,"Qty: 1 cushion set(s), 1 power bar(s)",No
+10045,SOL-DAC-NTK-IND,"Solerno Dining Arm Chair, Natural Teak, Blend Indigo, Standard",Finished Good,Product,Make-to-Order,Yes,Yes,"Qty: 1 cushion set(s), 1 power bar(s)",No
+10047,SOL-DAC-NTK-BSQ,"Solerno Dining Arm Chair, Natural Teak, Cast Bisque, Standard",Finished Good,Product,Make-to-Order,Yes,Yes,"Qty: 1 cushion set(s), 1 power bar(s)",No
 40501,COR-LS-SEAT,"Core Insert, Lounge Seat",Core Insert,Product,Subassembly,Yes,No,"Internal assembly with foam, graphene, batting",Yes
 40502,COR-LS-BACK,"Core Insert, Lounge Back",Core Insert,Product,Subassembly,Yes,No,"Internal assembly with foam, graphene, batting",Yes
 40503,COR-LS-PILB,"Core Insert, Lounge Pillow Back",Core Insert,Product,Subassembly,Yes,No,"Internal assembly with foam, graphene, batting",Yes
@@ -352,166 +328,86 @@ Part #,SKU,Name,Category,Katana Type,Katana Subtype,Has BOM,Sellable,Notes,Is Su
 94014,FAB-SUN-CNVS-JAV,"Fabric, Sunbrella CNVS Java",Material,Material,Raw Material,No,No,,No
 94015,FAB-SUN-EXHL-DEW,"Fabric, Sunbrella EXHL Dewdrop",Material,Material,Raw Material,No,No,,No
 94016,FAB-SUN-EXHL-EMB,"Fabric, Sunbrella EXHL Ember",Material,Material,Raw Material,No,No,,No
-10001,SOL-LCH-NTK-CBN-ST1,"Solerno Lounge Chair, Carbon, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Carbon fabric, foam back",No
-10002,SOL-LCH-NTK-CBN-ST2,"Solerno Lounge Chair, Carbon, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Carbon fabric, pillow back",No
-10003,SOL-LCH-NTK-IND-ST1,"Solerno Lounge Chair, Indigo, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Indigo fabric, foam back",No
-10004,SOL-LCH-NTK-IND-ST2,"Solerno Lounge Chair, Indigo, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Indigo fabric, pillow back",No
-10005,SOL-LCH-NTK-DOV-ST1,"Solerno Lounge Chair, Dove, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Dove fabric, foam back",No
-10006,SOL-LCH-NTK-DOV-ST2,"Solerno Lounge Chair, Dove, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Dove fabric, pillow back",No
-10007,SOL-LCH-NTK-CHR-ST1,"Solerno Lounge Chair, Charcoal, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Charcoal fabric, foam back",No
-10008,SOL-LCH-NTK-CHR-ST2,"Solerno Lounge Chair, Charcoal, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Charcoal fabric, pillow back",No
-10009,SOL-LCH-NTK-LEF-ST1,"Solerno Lounge Chair, Leaf, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Leaf fabric, foam back",No
-10010,SOL-LCH-NTK-LEF-ST2,"Solerno Lounge Chair, Leaf, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Leaf fabric, pillow back",No
-10011,SOL-LCH-NTK-SBL-ST1,"Solerno Lounge Chair, Sable, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Sable fabric, foam back",No
-10012,SOL-LCH-NTK-SBL-ST2,"Solerno Lounge Chair, Sable, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Sable fabric, pillow back",No
-10013,SOL-LCH-NTK-SLT-ST1,"Solerno Lounge Chair, Salt, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Salt fabric, foam back",No
-10014,SOL-LCH-NTK-SLT-ST2,"Solerno Lounge Chair, Salt, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Salt fabric, pillow back",No
-10015,SOL-LCH-NTK-SAH-ST1,"Solerno Lounge Chair, Sahara, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Sahara fabric, foam back",No
-10016,SOL-LCH-NTK-SAH-ST2,"Solerno Lounge Chair, Sahara, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Sahara fabric, pillow back",No
-10017,SOL-LCH-NTK-GUL-ST1,"Solerno Lounge Chair, Seagull, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Seagull fabric, foam back",No
-10018,SOL-LCH-NTK-GUL-ST2,"Solerno Lounge Chair, Seagull, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Seagull fabric, pillow back",No
-10019,SOL-LCH-NTK-BSQ-ST1,"Solerno Lounge Chair, Bisque, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Bisque fabric, foam back",No
-10020,SOL-LCH-NTK-BSQ-ST2,"Solerno Lounge Chair, Bisque, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Bisque fabric, pillow back",No
-10021,SOL-LCH-NTK-SEA-ST1,"Solerno Lounge Chair, Seaglass, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Seaglass fabric, foam back",No
-10022,SOL-LCH-NTK-SEA-ST2,"Solerno Lounge Chair, Seaglass, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Seaglass fabric, pillow back",No
-10023,SOL-LCH-NTK-SND-ST1,"Solerno Lounge Chair, Sand, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Sand fabric, foam back",No
-10024,SOL-LCH-NTK-SND-ST2,"Solerno Lounge Chair, Sand, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Sand fabric, pillow back",No
-10025,SOL-LCH-NTK-ALO-ST1,"Solerno Lounge Chair, Aloe, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Aloe fabric, foam back",No
-10026,SOL-LCH-NTK-ALO-ST2,"Solerno Lounge Chair, Aloe, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Aloe fabric, pillow back",No
-10027,SOL-LCH-NTK-JAV-ST1,"Solerno Lounge Chair, Java, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Java fabric, foam back",No
-10028,SOL-LCH-NTK-JAV-ST2,"Solerno Lounge Chair, Java, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Java fabric, pillow back",No
-10029,SOL-LCH-NTK-DEW-ST1,"Solerno Lounge Chair, Dewdrop, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Dewdrop fabric, foam back",No
-10030,SOL-LCH-NTK-DEW-ST2,"Solerno Lounge Chair, Dewdrop, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Dewdrop fabric, pillow back",No
-10031,SOL-LCH-NTK-EMB-ST1,"Solerno Lounge Chair, Ember, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Ember fabric, foam back",No
-10032,SOL-LCH-NTK-EMB-ST2,"Solerno Lounge Chair, Ember, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Ember fabric, pillow back",No
-10101,SOL-LOV-NTK-CBN-ST1,"Solerno Loveseat, Carbon, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Carbon fabric, foam back",No
-10102,SOL-LOV-NTK-CBN-ST2,"Solerno Loveseat, Carbon, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Carbon fabric, pillow back",No
-10103,SOL-LOV-NTK-IND-ST1,"Solerno Loveseat, Indigo, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Indigo fabric, foam back",No
-10104,SOL-LOV-NTK-IND-ST2,"Solerno Loveseat, Indigo, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Indigo fabric, pillow back",No
-10105,SOL-LOV-NTK-DOV-ST1,"Solerno Loveseat, Dove, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Dove fabric, foam back",No
-10106,SOL-LOV-NTK-DOV-ST2,"Solerno Loveseat, Dove, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Dove fabric, pillow back",No
-10107,SOL-LOV-NTK-CHR-ST1,"Solerno Loveseat, Charcoal, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Charcoal fabric, foam back",No
-10108,SOL-LOV-NTK-CHR-ST2,"Solerno Loveseat, Charcoal, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Charcoal fabric, pillow back",No
-10109,SOL-LOV-NTK-LEF-ST1,"Solerno Loveseat, Leaf, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Leaf fabric, foam back",No
-10110,SOL-LOV-NTK-LEF-ST2,"Solerno Loveseat, Leaf, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Leaf fabric, pillow back",No
-10111,SOL-LOV-NTK-SBL-ST1,"Solerno Loveseat, Sable, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Sable fabric, foam back",No
-10112,SOL-LOV-NTK-SBL-ST2,"Solerno Loveseat, Sable, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Sable fabric, pillow back",No
-10113,SOL-LOV-NTK-SLT-ST1,"Solerno Loveseat, Salt, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Salt fabric, foam back",No
-10114,SOL-LOV-NTK-SLT-ST2,"Solerno Loveseat, Salt, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Salt fabric, pillow back",No
-10115,SOL-LOV-NTK-SAH-ST1,"Solerno Loveseat, Sahara, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Sahara fabric, foam back",No
-10116,SOL-LOV-NTK-SAH-ST2,"Solerno Loveseat, Sahara, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Sahara fabric, pillow back",No
-10117,SOL-LOV-NTK-GUL-ST1,"Solerno Loveseat, Seagull, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Seagull fabric, foam back",No
-10118,SOL-LOV-NTK-GUL-ST2,"Solerno Loveseat, Seagull, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Seagull fabric, pillow back",No
-10119,SOL-LOV-NTK-BSQ-ST1,"Solerno Loveseat, Bisque, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Bisque fabric, foam back",No
-10120,SOL-LOV-NTK-BSQ-ST2,"Solerno Loveseat, Bisque, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Bisque fabric, pillow back",No
-10121,SOL-LOV-NTK-SEA-ST1,"Solerno Loveseat, Seaglass, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Seaglass fabric, foam back",No
-10122,SOL-LOV-NTK-SEA-ST2,"Solerno Loveseat, Seaglass, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Seaglass fabric, pillow back",No
-10123,SOL-LOV-NTK-SND-ST1,"Solerno Loveseat, Sand, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Sand fabric, foam back",No
-10124,SOL-LOV-NTK-SND-ST2,"Solerno Loveseat, Sand, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Sand fabric, pillow back",No
-10125,SOL-LOV-NTK-ALO-ST1,"Solerno Loveseat, Aloe, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Aloe fabric, foam back",No
-10126,SOL-LOV-NTK-ALO-ST2,"Solerno Loveseat, Aloe, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Aloe fabric, pillow back",No
-10127,SOL-LOV-NTK-JAV-ST1,"Solerno Loveseat, Java, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Java fabric, foam back",No
-10128,SOL-LOV-NTK-JAV-ST2,"Solerno Loveseat, Java, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Java fabric, pillow back",No
-10129,SOL-LOV-NTK-DEW-ST1,"Solerno Loveseat, Dewdrop, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Dewdrop fabric, foam back",No
-10130,SOL-LOV-NTK-DEW-ST2,"Solerno Loveseat, Dewdrop, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Dewdrop fabric, pillow back",No
-10131,SOL-LOV-NTK-EMB-ST1,"Solerno Loveseat, Ember, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Ember fabric, foam back",No
-10132,SOL-LOV-NTK-EMB-ST2,"Solerno Loveseat, Ember, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Ember fabric, pillow back",No
-10201,SOL-SOF-NTK-CBN-ST1,"Solerno Sofa, Carbon, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Carbon fabric, foam back",No
-10202,SOL-SOF-NTK-CBN-ST2,"Solerno Sofa, Carbon, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Carbon fabric, pillow back",No
-10203,SOL-SOF-NTK-IND-ST1,"Solerno Sofa, Indigo, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Indigo fabric, foam back",No
-10204,SOL-SOF-NTK-IND-ST2,"Solerno Sofa, Indigo, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Indigo fabric, pillow back",No
-10205,SOL-SOF-NTK-DOV-ST1,"Solerno Sofa, Dove, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Dove fabric, foam back",No
-10206,SOL-SOF-NTK-DOV-ST2,"Solerno Sofa, Dove, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Dove fabric, pillow back",No
-10207,SOL-SOF-NTK-CHR-ST1,"Solerno Sofa, Charcoal, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Charcoal fabric, foam back",No
-10208,SOL-SOF-NTK-CHR-ST2,"Solerno Sofa, Charcoal, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Charcoal fabric, pillow back",No
-10209,SOL-SOF-NTK-LEF-ST1,"Solerno Sofa, Leaf, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Leaf fabric, foam back",No
-10210,SOL-SOF-NTK-LEF-ST2,"Solerno Sofa, Leaf, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Leaf fabric, pillow back",No
-10211,SOL-SOF-NTK-SBL-ST1,"Solerno Sofa, Sable, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Sable fabric, foam back",No
-10212,SOL-SOF-NTK-SBL-ST2,"Solerno Sofa, Sable, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Sable fabric, pillow back",No
-10213,SOL-SOF-NTK-SLT-ST1,"Solerno Sofa, Salt, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Salt fabric, foam back",No
-10214,SOL-SOF-NTK-SLT-ST2,"Solerno Sofa, Salt, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Salt fabric, pillow back",No
-10215,SOL-SOF-NTK-SAH-ST1,"Solerno Sofa, Sahara, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Sahara fabric, foam back",No
-10216,SOL-SOF-NTK-SAH-ST2,"Solerno Sofa, Sahara, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Sahara fabric, pillow back",No
-10217,SOL-SOF-NTK-GUL-ST1,"Solerno Sofa, Seagull, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Seagull fabric, foam back",No
-10218,SOL-SOF-NTK-GUL-ST2,"Solerno Sofa, Seagull, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Seagull fabric, pillow back",No
-10219,SOL-SOF-NTK-BSQ-ST1,"Solerno Sofa, Bisque, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Bisque fabric, foam back",No
-10220,SOL-SOF-NTK-BSQ-ST2,"Solerno Sofa, Bisque, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Bisque fabric, pillow back",No
-10221,SOL-SOF-NTK-SEA-ST1,"Solerno Sofa, Seaglass, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Seaglass fabric, foam back",No
-10222,SOL-SOF-NTK-SEA-ST2,"Solerno Sofa, Seaglass, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Seaglass fabric, pillow back",No
-10223,SOL-SOF-NTK-SND-ST1,"Solerno Sofa, Sand, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Sand fabric, foam back",No
-10224,SOL-SOF-NTK-SND-ST2,"Solerno Sofa, Sand, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Sand fabric, pillow back",No
-10225,SOL-SOF-NTK-ALO-ST1,"Solerno Sofa, Aloe, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Aloe fabric, foam back",No
-10226,SOL-SOF-NTK-ALO-ST2,"Solerno Sofa, Aloe, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Aloe fabric, pillow back",No
-10227,SOL-SOF-NTK-JAV-ST1,"Solerno Sofa, Java, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Java fabric, foam back",No
-10228,SOL-SOF-NTK-JAV-ST2,"Solerno Sofa, Java, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Java fabric, pillow back",No
-10229,SOL-SOF-NTK-DEW-ST1,"Solerno Sofa, Dewdrop, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Dewdrop fabric, foam back",No
-10230,SOL-SOF-NTK-DEW-ST2,"Solerno Sofa, Dewdrop, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Dewdrop fabric, pillow back",No
-10231,SOL-SOF-NTK-EMB-ST1,"Solerno Sofa, Ember, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Ember fabric, foam back",No
-10232,SOL-SOF-NTK-EMB-ST2,"Solerno Sofa, Ember, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Ember fabric, pillow back",No
-10301,SOL-CHS-NTK-CBN-ST1,"Solerno Chaise Lounge, Carbon, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Carbon fabric, foam back",No
-10302,SOL-CHS-NTK-CBN-ST2,"Solerno Chaise Lounge, Carbon, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Carbon fabric, pillow back",No
-10303,SOL-CHS-NTK-IND-ST1,"Solerno Chaise Lounge, Indigo, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Indigo fabric, foam back",No
-10304,SOL-CHS-NTK-IND-ST2,"Solerno Chaise Lounge, Indigo, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Indigo fabric, pillow back",No
-10305,SOL-CHS-NTK-DOV-ST1,"Solerno Chaise Lounge, Dove, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Dove fabric, foam back",No
-10306,SOL-CHS-NTK-DOV-ST2,"Solerno Chaise Lounge, Dove, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Dove fabric, pillow back",No
-10307,SOL-CHS-NTK-CHR-ST1,"Solerno Chaise Lounge, Charcoal, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Charcoal fabric, foam back",No
-10308,SOL-CHS-NTK-CHR-ST2,"Solerno Chaise Lounge, Charcoal, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Charcoal fabric, pillow back",No
-10309,SOL-CHS-NTK-LEF-ST1,"Solerno Chaise Lounge, Leaf, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Leaf fabric, foam back",No
-10310,SOL-CHS-NTK-LEF-ST2,"Solerno Chaise Lounge, Leaf, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Leaf fabric, pillow back",No
-10311,SOL-CHS-NTK-SBL-ST1,"Solerno Chaise Lounge, Sable, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Sable fabric, foam back",No
-10312,SOL-CHS-NTK-SBL-ST2,"Solerno Chaise Lounge, Sable, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Sable fabric, pillow back",No
-10313,SOL-CHS-NTK-SLT-ST1,"Solerno Chaise Lounge, Salt, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Salt fabric, foam back",No
-10314,SOL-CHS-NTK-SLT-ST2,"Solerno Chaise Lounge, Salt, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Salt fabric, pillow back",No
-10315,SOL-CHS-NTK-SAH-ST1,"Solerno Chaise Lounge, Sahara, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Sahara fabric, foam back",No
-10316,SOL-CHS-NTK-SAH-ST2,"Solerno Chaise Lounge, Sahara, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Sahara fabric, pillow back",No
-10317,SOL-CHS-NTK-GUL-ST1,"Solerno Chaise Lounge, Seagull, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Seagull fabric, foam back",No
-10318,SOL-CHS-NTK-GUL-ST2,"Solerno Chaise Lounge, Seagull, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Seagull fabric, pillow back",No
-10319,SOL-CHS-NTK-BSQ-ST1,"Solerno Chaise Lounge, Bisque, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Bisque fabric, foam back",No
-10320,SOL-CHS-NTK-BSQ-ST2,"Solerno Chaise Lounge, Bisque, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Bisque fabric, pillow back",No
-10321,SOL-CHS-NTK-SEA-ST1,"Solerno Chaise Lounge, Seaglass, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Seaglass fabric, foam back",No
-10322,SOL-CHS-NTK-SEA-ST2,"Solerno Chaise Lounge, Seaglass, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Seaglass fabric, pillow back",No
-10323,SOL-CHS-NTK-SND-ST1,"Solerno Chaise Lounge, Sand, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Sand fabric, foam back",No
-10324,SOL-CHS-NTK-SND-ST2,"Solerno Chaise Lounge, Sand, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Sand fabric, pillow back",No
-10325,SOL-CHS-NTK-ALO-ST1,"Solerno Chaise Lounge, Aloe, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Aloe fabric, foam back",No
-10326,SOL-CHS-NTK-ALO-ST2,"Solerno Chaise Lounge, Aloe, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Aloe fabric, pillow back",No
-10327,SOL-CHS-NTK-JAV-ST1,"Solerno Chaise Lounge, Java, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Java fabric, foam back",No
-10328,SOL-CHS-NTK-JAV-ST2,"Solerno Chaise Lounge, Java, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Java fabric, pillow back",No
-10329,SOL-CHS-NTK-DEW-ST1,"Solerno Chaise Lounge, Dewdrop, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Dewdrop fabric, foam back",No
-10330,SOL-CHS-NTK-DEW-ST2,"Solerno Chaise Lounge, Dewdrop, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Dewdrop fabric, pillow back",No
-10331,SOL-CHS-NTK-EMB-ST1,"Solerno Chaise Lounge, Ember, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Ember fabric, foam back",No
-10332,SOL-CHS-NTK-EMB-ST2,"Solerno Chaise Lounge, Ember, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Ember fabric, pillow back",No
-10401,SOL-SVL-NTK-CBN-ST1,"Solerno Swivel Chair, Carbon, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Carbon fabric, foam back",No
-10402,SOL-SVL-NTK-CBN-ST2,"Solerno Swivel Chair, Carbon, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Carbon fabric, pillow back",No
-10403,SOL-SVL-NTK-IND-ST1,"Solerno Swivel Chair, Indigo, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Indigo fabric, foam back",No
-10404,SOL-SVL-NTK-IND-ST2,"Solerno Swivel Chair, Indigo, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Indigo fabric, pillow back",No
-10405,SOL-SVL-NTK-DOV-ST1,"Solerno Swivel Chair, Dove, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Dove fabric, foam back",No
-10406,SOL-SVL-NTK-DOV-ST2,"Solerno Swivel Chair, Dove, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Dove fabric, pillow back",No
-10407,SOL-SVL-NTK-CHR-ST1,"Solerno Swivel Chair, Charcoal, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Charcoal fabric, foam back",No
-10408,SOL-SVL-NTK-CHR-ST2,"Solerno Swivel Chair, Charcoal, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Charcoal fabric, pillow back",No
-10409,SOL-SVL-NTK-LEF-ST1,"Solerno Swivel Chair, Leaf, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Leaf fabric, foam back",No
-10410,SOL-SVL-NTK-LEF-ST2,"Solerno Swivel Chair, Leaf, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Leaf fabric, pillow back",No
-10411,SOL-SVL-NTK-SBL-ST1,"Solerno Swivel Chair, Sable, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Sable fabric, foam back",No
-10412,SOL-SVL-NTK-SBL-ST2,"Solerno Swivel Chair, Sable, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Sable fabric, pillow back",No
-10413,SOL-SVL-NTK-SLT-ST1,"Solerno Swivel Chair, Salt, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Salt fabric, foam back",No
-10414,SOL-SVL-NTK-SLT-ST2,"Solerno Swivel Chair, Salt, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Salt fabric, pillow back",No
-10415,SOL-SVL-NTK-SAH-ST1,"Solerno Swivel Chair, Sahara, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Sahara fabric, foam back",No
-10416,SOL-SVL-NTK-SAH-ST2,"Solerno Swivel Chair, Sahara, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Sahara fabric, pillow back",No
-10417,SOL-SVL-NTK-GUL-ST1,"Solerno Swivel Chair, Seagull, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Seagull fabric, foam back",No
-10418,SOL-SVL-NTK-GUL-ST2,"Solerno Swivel Chair, Seagull, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Seagull fabric, pillow back",No
-10419,SOL-SVL-NTK-BSQ-ST1,"Solerno Swivel Chair, Bisque, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Bisque fabric, foam back",No
-10420,SOL-SVL-NTK-BSQ-ST2,"Solerno Swivel Chair, Bisque, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Bisque fabric, pillow back",No
-10421,SOL-SVL-NTK-SEA-ST1,"Solerno Swivel Chair, Seaglass, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Seaglass fabric, foam back",No
-10422,SOL-SVL-NTK-SEA-ST2,"Solerno Swivel Chair, Seaglass, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Seaglass fabric, pillow back",No
-10423,SOL-SVL-NTK-SND-ST1,"Solerno Swivel Chair, Sand, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Sand fabric, foam back",No
-10424,SOL-SVL-NTK-SND-ST2,"Solerno Swivel Chair, Sand, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Sand fabric, pillow back",No
-10425,SOL-SVL-NTK-ALO-ST1,"Solerno Swivel Chair, Aloe, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Aloe fabric, foam back",No
-10426,SOL-SVL-NTK-ALO-ST2,"Solerno Swivel Chair, Aloe, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Aloe fabric, pillow back",No
-10427,SOL-SVL-NTK-JAV-ST1,"Solerno Swivel Chair, Java, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Java fabric, foam back",No
-10428,SOL-SVL-NTK-JAV-ST2,"Solerno Swivel Chair, Java, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Java fabric, pillow back",No
-10429,SOL-SVL-NTK-DEW-ST1,"Solerno Swivel Chair, Dewdrop, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Dewdrop fabric, foam back",No
-10430,SOL-SVL-NTK-DEW-ST2,"Solerno Swivel Chair, Dewdrop, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Dewdrop fabric, pillow back",No
-10431,SOL-SVL-NTK-EMB-ST1,"Solerno Swivel Chair, Ember, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Ember fabric, foam back",No
-10432,SOL-SVL-NTK-EMB-ST2,"Solerno Swivel Chair, Ember, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Ember fabric, pillow back",No
+10001,SOL-LCH-NTK-CBN,"Solerno Lounge Chair, Carbon, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Carbon fabric, foam back",No
+10003,SOL-LCH-NTK-IND,"Solerno Lounge Chair, Indigo, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Indigo fabric, foam back",No
+10005,SOL-LCH-NTK-DOV,"Solerno Lounge Chair, Dove, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Dove fabric, foam back",No
+10007,SOL-LCH-NTK-CHR,"Solerno Lounge Chair, Charcoal, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Charcoal fabric, foam back",No
+10009,SOL-LCH-NTK-LEF,"Solerno Lounge Chair, Leaf, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Leaf fabric, foam back",No
+10011,SOL-LCH-NTK-SBL,"Solerno Lounge Chair, Sable, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Sable fabric, foam back",No
+10013,SOL-LCH-NTK-SLT,"Solerno Lounge Chair, Salt, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Salt fabric, foam back",No
+10015,SOL-LCH-NTK-SAH,"Solerno Lounge Chair, Sahara, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Sahara fabric, foam back",No
+10017,SOL-LCH-NTK-GUL,"Solerno Lounge Chair, Seagull, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Seagull fabric, foam back",No
+10019,SOL-LCH-NTK-BSQ,"Solerno Lounge Chair, Bisque, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Bisque fabric, foam back",No
+10021,SOL-LCH-NTK-SEA,"Solerno Lounge Chair, Seaglass, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Seaglass fabric, foam back",No
+10023,SOL-LCH-NTK-SND,"Solerno Lounge Chair, Sand, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Sand fabric, foam back",No
+10025,SOL-LCH-NTK-ALO,"Solerno Lounge Chair, Aloe, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Aloe fabric, foam back",No
+10027,SOL-LCH-NTK-JAV,"Solerno Lounge Chair, Java, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Java fabric, foam back",No
+10029,SOL-LCH-NTK-DEW,"Solerno Lounge Chair, Dewdrop, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Dewdrop fabric, foam back",No
+10031,SOL-LCH-NTK-EMB,"Solerno Lounge Chair, Ember, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Ember fabric, foam back",No
+10101,SOL-LOV-NTK-CBN,"Solerno Loveseat, Carbon, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Carbon fabric, foam back",No
+10103,SOL-LOV-NTK-IND,"Solerno Loveseat, Indigo, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Indigo fabric, foam back",No
+10105,SOL-LOV-NTK-DOV,"Solerno Loveseat, Dove, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Dove fabric, foam back",No
+10107,SOL-LOV-NTK-CHR,"Solerno Loveseat, Charcoal, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Charcoal fabric, foam back",No
+10109,SOL-LOV-NTK-LEF,"Solerno Loveseat, Leaf, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Leaf fabric, foam back",No
+10111,SOL-LOV-NTK-SBL,"Solerno Loveseat, Sable, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Sable fabric, foam back",No
+10113,SOL-LOV-NTK-SLT,"Solerno Loveseat, Salt, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Salt fabric, foam back",No
+10115,SOL-LOV-NTK-SAH,"Solerno Loveseat, Sahara, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Sahara fabric, foam back",No
+10117,SOL-LOV-NTK-GUL,"Solerno Loveseat, Seagull, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Seagull fabric, foam back",No
+10119,SOL-LOV-NTK-BSQ,"Solerno Loveseat, Bisque, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Bisque fabric, foam back",No
+10121,SOL-LOV-NTK-SEA,"Solerno Loveseat, Seaglass, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Seaglass fabric, foam back",No
+10123,SOL-LOV-NTK-SND,"Solerno Loveseat, Sand, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Sand fabric, foam back",No
+10125,SOL-LOV-NTK-ALO,"Solerno Loveseat, Aloe, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Aloe fabric, foam back",No
+10127,SOL-LOV-NTK-JAV,"Solerno Loveseat, Java, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Java fabric, foam back",No
+10129,SOL-LOV-NTK-DEW,"Solerno Loveseat, Dewdrop, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Dewdrop fabric, foam back",No
+10131,SOL-LOV-NTK-EMB,"Solerno Loveseat, Ember, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Ember fabric, foam back",No
+10201,SOL-SOF-NTK-CBN,"Solerno Sofa, Carbon, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Carbon fabric, foam back",No
+10203,SOL-SOF-NTK-IND,"Solerno Sofa, Indigo, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Indigo fabric, foam back",No
+10205,SOL-SOF-NTK-DOV,"Solerno Sofa, Dove, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Dove fabric, foam back",No
+10207,SOL-SOF-NTK-CHR,"Solerno Sofa, Charcoal, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Charcoal fabric, foam back",No
+10209,SOL-SOF-NTK-LEF,"Solerno Sofa, Leaf, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Leaf fabric, foam back",No
+10211,SOL-SOF-NTK-SBL,"Solerno Sofa, Sable, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Sable fabric, foam back",No
+10213,SOL-SOF-NTK-SLT,"Solerno Sofa, Salt, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Salt fabric, foam back",No
+10215,SOL-SOF-NTK-SAH,"Solerno Sofa, Sahara, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Sahara fabric, foam back",No
+10217,SOL-SOF-NTK-GUL,"Solerno Sofa, Seagull, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Seagull fabric, foam back",No
+10219,SOL-SOF-NTK-BSQ,"Solerno Sofa, Bisque, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Bisque fabric, foam back",No
+10221,SOL-SOF-NTK-SEA,"Solerno Sofa, Seaglass, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Seaglass fabric, foam back",No
+10223,SOL-SOF-NTK-SND,"Solerno Sofa, Sand, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Sand fabric, foam back",No
+10225,SOL-SOF-NTK-ALO,"Solerno Sofa, Aloe, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Aloe fabric, foam back",No
+10227,SOL-SOF-NTK-JAV,"Solerno Sofa, Java, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Java fabric, foam back",No
+10229,SOL-SOF-NTK-DEW,"Solerno Sofa, Dewdrop, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Dewdrop fabric, foam back",No
+10231,SOL-SOF-NTK-EMB,"Solerno Sofa, Ember, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Ember fabric, foam back",No
+10301,SOL-CHS-NTK-CBN,"Solerno Chaise Lounge, Carbon, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Carbon fabric, foam back",No
+10303,SOL-CHS-NTK-IND,"Solerno Chaise Lounge, Indigo, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Indigo fabric, foam back",No
+10305,SOL-CHS-NTK-DOV,"Solerno Chaise Lounge, Dove, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Dove fabric, foam back",No
+10307,SOL-CHS-NTK-CHR,"Solerno Chaise Lounge, Charcoal, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Charcoal fabric, foam back",No
+10309,SOL-CHS-NTK-LEF,"Solerno Chaise Lounge, Leaf, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Leaf fabric, foam back",No
+10311,SOL-CHS-NTK-SBL,"Solerno Chaise Lounge, Sable, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Sable fabric, foam back",No
+10313,SOL-CHS-NTK-SLT,"Solerno Chaise Lounge, Salt, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Salt fabric, foam back",No
+10315,SOL-CHS-NTK-SAH,"Solerno Chaise Lounge, Sahara, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Sahara fabric, foam back",No
+10317,SOL-CHS-NTK-GUL,"Solerno Chaise Lounge, Seagull, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Seagull fabric, foam back",No
+10319,SOL-CHS-NTK-BSQ,"Solerno Chaise Lounge, Bisque, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Bisque fabric, foam back",No
+10321,SOL-CHS-NTK-SEA,"Solerno Chaise Lounge, Seaglass, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Seaglass fabric, foam back",No
+10323,SOL-CHS-NTK-SND,"Solerno Chaise Lounge, Sand, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Sand fabric, foam back",No
+10325,SOL-CHS-NTK-ALO,"Solerno Chaise Lounge, Aloe, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Aloe fabric, foam back",No
+10327,SOL-CHS-NTK-JAV,"Solerno Chaise Lounge, Java, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Java fabric, foam back",No
+10329,SOL-CHS-NTK-DEW,"Solerno Chaise Lounge, Dewdrop, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Dewdrop fabric, foam back",No
+10331,SOL-CHS-NTK-EMB,"Solerno Chaise Lounge, Ember, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Ember fabric, foam back",No
+10401,SOL-SVL-NTK-CBN,"Solerno Swivel Chair, Carbon, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Carbon fabric, foam back",No
+10403,SOL-SVL-NTK-IND,"Solerno Swivel Chair, Indigo, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Indigo fabric, foam back",No
+10405,SOL-SVL-NTK-DOV,"Solerno Swivel Chair, Dove, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Dove fabric, foam back",No
+10407,SOL-SVL-NTK-CHR,"Solerno Swivel Chair, Charcoal, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Charcoal fabric, foam back",No
+10409,SOL-SVL-NTK-LEF,"Solerno Swivel Chair, Leaf, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Leaf fabric, foam back",No
+10411,SOL-SVL-NTK-SBL,"Solerno Swivel Chair, Sable, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Sable fabric, foam back",No
+10413,SOL-SVL-NTK-SLT,"Solerno Swivel Chair, Salt, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Salt fabric, foam back",No
+10415,SOL-SVL-NTK-SAH,"Solerno Swivel Chair, Sahara, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Sahara fabric, foam back",No
+10417,SOL-SVL-NTK-GUL,"Solerno Swivel Chair, Seagull, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Seagull fabric, foam back",No
+10419,SOL-SVL-NTK-BSQ,"Solerno Swivel Chair, Bisque, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Bisque fabric, foam back",No
+10421,SOL-SVL-NTK-SEA,"Solerno Swivel Chair, Seaglass, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Seaglass fabric, foam back",No
+10423,SOL-SVL-NTK-SND,"Solerno Swivel Chair, Sand, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Sand fabric, foam back",No
+10425,SOL-SVL-NTK-ALO,"Solerno Swivel Chair, Aloe, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Aloe fabric, foam back",No
+10427,SOL-SVL-NTK-JAV,"Solerno Swivel Chair, Java, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Java fabric, foam back",No
+10429,SOL-SVL-NTK-DEW,"Solerno Swivel Chair, Dewdrop, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Dewdrop fabric, foam back",No
+10431,SOL-SVL-NTK-EMB,"Solerno Swivel Chair, Ember, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Ember fabric, foam back",No
 10501,SOL-HOT-NTK-CBN,"Solerno Heated Ottoman, Carbon",Finished Good,Product,Make-to-Order,Yes,Yes,Carbon fabric,No
 10502,SOL-HOT-NTK-IND,"Solerno Heated Ottoman, Indigo",Finished Good,Product,Make-to-Order,Yes,Yes,Indigo fabric,No
 10503,SOL-HOT-NTK-DOV,"Solerno Heated Ottoman, Dove",Finished Good,Product,Make-to-Order,Yes,Yes,Dove fabric,No
@@ -528,67 +424,35 @@ Part #,SKU,Name,Category,Katana Type,Katana Subtype,Has BOM,Sellable,Notes,Is Su
 10514,SOL-HOT-NTK-JAV,"Solerno Heated Ottoman, Java",Finished Good,Product,Make-to-Order,Yes,Yes,Java fabric,No
 10515,SOL-HOT-NTK-DEW,"Solerno Heated Ottoman, Dewdrop",Finished Good,Product,Make-to-Order,Yes,Yes,Dewdrop fabric,No
 10516,SOL-HOT-NTK-EMB,"Solerno Heated Ottoman, Ember",Finished Good,Product,Make-to-Order,Yes,Yes,Ember fabric,No
-10601,SOL-DAC-NTK-CBN-ST1,"Solerno Dining Arm Chair, Carbon, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Carbon fabric, foam back",No
-10602,SOL-DAC-NTK-CBN-ST2,"Solerno Dining Arm Chair, Carbon, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Carbon fabric, pillow back",No
-10603,SOL-DAC-NTK-IND-ST1,"Solerno Dining Arm Chair, Indigo, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Indigo fabric, foam back",No
-10604,SOL-DAC-NTK-IND-ST2,"Solerno Dining Arm Chair, Indigo, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Indigo fabric, pillow back",No
-10605,SOL-DAC-NTK-DOV-ST1,"Solerno Dining Arm Chair, Dove, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Dove fabric, foam back",No
-10606,SOL-DAC-NTK-DOV-ST2,"Solerno Dining Arm Chair, Dove, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Dove fabric, pillow back",No
-10607,SOL-DAC-NTK-CHR-ST1,"Solerno Dining Arm Chair, Charcoal, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Charcoal fabric, foam back",No
-10608,SOL-DAC-NTK-CHR-ST2,"Solerno Dining Arm Chair, Charcoal, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Charcoal fabric, pillow back",No
-10609,SOL-DAC-NTK-LEF-ST1,"Solerno Dining Arm Chair, Leaf, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Leaf fabric, foam back",No
-10610,SOL-DAC-NTK-LEF-ST2,"Solerno Dining Arm Chair, Leaf, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Leaf fabric, pillow back",No
-10611,SOL-DAC-NTK-SBL-ST1,"Solerno Dining Arm Chair, Sable, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Sable fabric, foam back",No
-10612,SOL-DAC-NTK-SBL-ST2,"Solerno Dining Arm Chair, Sable, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Sable fabric, pillow back",No
-10613,SOL-DAC-NTK-SLT-ST1,"Solerno Dining Arm Chair, Salt, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Salt fabric, foam back",No
-10614,SOL-DAC-NTK-SLT-ST2,"Solerno Dining Arm Chair, Salt, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Salt fabric, pillow back",No
-10615,SOL-DAC-NTK-SAH-ST1,"Solerno Dining Arm Chair, Sahara, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Sahara fabric, foam back",No
-10616,SOL-DAC-NTK-SAH-ST2,"Solerno Dining Arm Chair, Sahara, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Sahara fabric, pillow back",No
-10617,SOL-DAC-NTK-GUL-ST1,"Solerno Dining Arm Chair, Seagull, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Seagull fabric, foam back",No
-10618,SOL-DAC-NTK-GUL-ST2,"Solerno Dining Arm Chair, Seagull, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Seagull fabric, pillow back",No
-10619,SOL-DAC-NTK-BSQ-ST1,"Solerno Dining Arm Chair, Bisque, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Bisque fabric, foam back",No
-10620,SOL-DAC-NTK-BSQ-ST2,"Solerno Dining Arm Chair, Bisque, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Bisque fabric, pillow back",No
-10621,SOL-DAC-NTK-SEA-ST1,"Solerno Dining Arm Chair, Seaglass, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Seaglass fabric, foam back",No
-10622,SOL-DAC-NTK-SEA-ST2,"Solerno Dining Arm Chair, Seaglass, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Seaglass fabric, pillow back",No
-10623,SOL-DAC-NTK-SND-ST1,"Solerno Dining Arm Chair, Sand, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Sand fabric, foam back",No
-10624,SOL-DAC-NTK-SND-ST2,"Solerno Dining Arm Chair, Sand, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Sand fabric, pillow back",No
-10625,SOL-DAC-NTK-ALO-ST1,"Solerno Dining Arm Chair, Aloe, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Aloe fabric, foam back",No
-10626,SOL-DAC-NTK-ALO-ST2,"Solerno Dining Arm Chair, Aloe, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Aloe fabric, pillow back",No
-10627,SOL-DAC-NTK-JAV-ST1,"Solerno Dining Arm Chair, Java, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Java fabric, foam back",No
-10628,SOL-DAC-NTK-JAV-ST2,"Solerno Dining Arm Chair, Java, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Java fabric, pillow back",No
-10629,SOL-DAC-NTK-DEW-ST1,"Solerno Dining Arm Chair, Dewdrop, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Dewdrop fabric, foam back",No
-10630,SOL-DAC-NTK-DEW-ST2,"Solerno Dining Arm Chair, Dewdrop, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Dewdrop fabric, pillow back",No
-10631,SOL-DAC-NTK-EMB-ST1,"Solerno Dining Arm Chair, Ember, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Ember fabric, foam back",No
-10632,SOL-DAC-NTK-EMB-ST2,"Solerno Dining Arm Chair, Ember, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Ember fabric, pillow back",No
-10701,SOL-DCH-NTK-CBN-ST1,"Solerno Dining Side Chair, Carbon, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Carbon fabric, foam back",No
-10702,SOL-DCH-NTK-CBN-ST2,"Solerno Dining Side Chair, Carbon, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Carbon fabric, pillow back",No
-10703,SOL-DCH-NTK-IND-ST1,"Solerno Dining Side Chair, Indigo, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Indigo fabric, foam back",No
-10704,SOL-DCH-NTK-IND-ST2,"Solerno Dining Side Chair, Indigo, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Indigo fabric, pillow back",No
-10705,SOL-DCH-NTK-DOV-ST1,"Solerno Dining Side Chair, Dove, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Dove fabric, foam back",No
-10706,SOL-DCH-NTK-DOV-ST2,"Solerno Dining Side Chair, Dove, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Dove fabric, pillow back",No
-10707,SOL-DCH-NTK-CHR-ST1,"Solerno Dining Side Chair, Charcoal, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Charcoal fabric, foam back",No
-10708,SOL-DCH-NTK-CHR-ST2,"Solerno Dining Side Chair, Charcoal, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Charcoal fabric, pillow back",No
-10709,SOL-DCH-NTK-LEF-ST1,"Solerno Dining Side Chair, Leaf, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Leaf fabric, foam back",No
-10710,SOL-DCH-NTK-LEF-ST2,"Solerno Dining Side Chair, Leaf, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Leaf fabric, pillow back",No
-10711,SOL-DCH-NTK-SBL-ST1,"Solerno Dining Side Chair, Sable, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Sable fabric, foam back",No
-10712,SOL-DCH-NTK-SBL-ST2,"Solerno Dining Side Chair, Sable, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Sable fabric, pillow back",No
-10713,SOL-DCH-NTK-SLT-ST1,"Solerno Dining Side Chair, Salt, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Salt fabric, foam back",No
-10714,SOL-DCH-NTK-SLT-ST2,"Solerno Dining Side Chair, Salt, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Salt fabric, pillow back",No
-10715,SOL-DCH-NTK-SAH-ST1,"Solerno Dining Side Chair, Sahara, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Sahara fabric, foam back",No
-10716,SOL-DCH-NTK-SAH-ST2,"Solerno Dining Side Chair, Sahara, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Sahara fabric, pillow back",No
-10717,SOL-DCH-NTK-GUL-ST1,"Solerno Dining Side Chair, Seagull, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Seagull fabric, foam back",No
-10718,SOL-DCH-NTK-GUL-ST2,"Solerno Dining Side Chair, Seagull, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Seagull fabric, pillow back",No
-10719,SOL-DCH-NTK-BSQ-ST1,"Solerno Dining Side Chair, Bisque, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Bisque fabric, foam back",No
-10720,SOL-DCH-NTK-BSQ-ST2,"Solerno Dining Side Chair, Bisque, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Bisque fabric, pillow back",No
-10721,SOL-DCH-NTK-SEA-ST1,"Solerno Dining Side Chair, Seaglass, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Seaglass fabric, foam back",No
-10722,SOL-DCH-NTK-SEA-ST2,"Solerno Dining Side Chair, Seaglass, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Seaglass fabric, pillow back",No
-10723,SOL-DCH-NTK-SND-ST1,"Solerno Dining Side Chair, Sand, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Sand fabric, foam back",No
-10724,SOL-DCH-NTK-SND-ST2,"Solerno Dining Side Chair, Sand, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Sand fabric, pillow back",No
-10725,SOL-DCH-NTK-ALO-ST1,"Solerno Dining Side Chair, Aloe, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Aloe fabric, foam back",No
-10726,SOL-DCH-NTK-ALO-ST2,"Solerno Dining Side Chair, Aloe, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Aloe fabric, pillow back",No
-10727,SOL-DCH-NTK-JAV-ST1,"Solerno Dining Side Chair, Java, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Java fabric, foam back",No
-10728,SOL-DCH-NTK-JAV-ST2,"Solerno Dining Side Chair, Java, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Java fabric, pillow back",No
-10729,SOL-DCH-NTK-DEW-ST1,"Solerno Dining Side Chair, Dewdrop, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Dewdrop fabric, foam back",No
-10730,SOL-DCH-NTK-DEW-ST2,"Solerno Dining Side Chair, Dewdrop, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Dewdrop fabric, pillow back",No
-10731,SOL-DCH-NTK-EMB-ST1,"Solerno Dining Side Chair, Ember, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Ember fabric, foam back",No
-10732,SOL-DCH-NTK-EMB-ST2,"Solerno Dining Side Chair, Ember, Pillow Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Ember fabric, pillow back",No
+10601,SOL-DAC-NTK-CBN,"Solerno Dining Arm Chair, Carbon, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Carbon fabric, foam back",No
+10603,SOL-DAC-NTK-IND,"Solerno Dining Arm Chair, Indigo, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Indigo fabric, foam back",No
+10605,SOL-DAC-NTK-DOV,"Solerno Dining Arm Chair, Dove, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Dove fabric, foam back",No
+10607,SOL-DAC-NTK-CHR,"Solerno Dining Arm Chair, Charcoal, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Charcoal fabric, foam back",No
+10609,SOL-DAC-NTK-LEF,"Solerno Dining Arm Chair, Leaf, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Leaf fabric, foam back",No
+10611,SOL-DAC-NTK-SBL,"Solerno Dining Arm Chair, Sable, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Sable fabric, foam back",No
+10613,SOL-DAC-NTK-SLT,"Solerno Dining Arm Chair, Salt, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Salt fabric, foam back",No
+10615,SOL-DAC-NTK-SAH,"Solerno Dining Arm Chair, Sahara, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Sahara fabric, foam back",No
+10617,SOL-DAC-NTK-GUL,"Solerno Dining Arm Chair, Seagull, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Seagull fabric, foam back",No
+10619,SOL-DAC-NTK-BSQ,"Solerno Dining Arm Chair, Bisque, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Bisque fabric, foam back",No
+10621,SOL-DAC-NTK-SEA,"Solerno Dining Arm Chair, Seaglass, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Seaglass fabric, foam back",No
+10623,SOL-DAC-NTK-SND,"Solerno Dining Arm Chair, Sand, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Sand fabric, foam back",No
+10625,SOL-DAC-NTK-ALO,"Solerno Dining Arm Chair, Aloe, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Aloe fabric, foam back",No
+10627,SOL-DAC-NTK-JAV,"Solerno Dining Arm Chair, Java, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Java fabric, foam back",No
+10629,SOL-DAC-NTK-DEW,"Solerno Dining Arm Chair, Dewdrop, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Dewdrop fabric, foam back",No
+10631,SOL-DAC-NTK-EMB,"Solerno Dining Arm Chair, Ember, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Ember fabric, foam back",No
+10701,SOL-DCH-NTK-CBN,"Solerno Dining Side Chair, Carbon, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Carbon fabric, foam back",No
+10703,SOL-DCH-NTK-IND,"Solerno Dining Side Chair, Indigo, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Indigo fabric, foam back",No
+10705,SOL-DCH-NTK-DOV,"Solerno Dining Side Chair, Dove, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Dove fabric, foam back",No
+10707,SOL-DCH-NTK-CHR,"Solerno Dining Side Chair, Charcoal, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Charcoal fabric, foam back",No
+10709,SOL-DCH-NTK-LEF,"Solerno Dining Side Chair, Leaf, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Leaf fabric, foam back",No
+10711,SOL-DCH-NTK-SBL,"Solerno Dining Side Chair, Sable, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Sable fabric, foam back",No
+10713,SOL-DCH-NTK-SLT,"Solerno Dining Side Chair, Salt, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Salt fabric, foam back",No
+10715,SOL-DCH-NTK-SAH,"Solerno Dining Side Chair, Sahara, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Sahara fabric, foam back",No
+10717,SOL-DCH-NTK-GUL,"Solerno Dining Side Chair, Seagull, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Seagull fabric, foam back",No
+10719,SOL-DCH-NTK-BSQ,"Solerno Dining Side Chair, Bisque, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Bisque fabric, foam back",No
+10721,SOL-DCH-NTK-SEA,"Solerno Dining Side Chair, Seaglass, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Seaglass fabric, foam back",No
+10723,SOL-DCH-NTK-SND,"Solerno Dining Side Chair, Sand, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Sand fabric, foam back",No
+10725,SOL-DCH-NTK-ALO,"Solerno Dining Side Chair, Aloe, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Aloe fabric, foam back",No
+10727,SOL-DCH-NTK-JAV,"Solerno Dining Side Chair, Java, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Java fabric, foam back",No
+10729,SOL-DCH-NTK-DEW,"Solerno Dining Side Chair, Dewdrop, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Dewdrop fabric, foam back",No
+10731,SOL-DCH-NTK-EMB,"Solerno Dining Side Chair, Ember, Standard Back",Finished Good,Product,Make-to-Order,Yes,Yes,"Ember fabric, foam back",No

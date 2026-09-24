@@ -4,47 +4,47 @@ import { BomRelation } from '@/types/bom';
 // {COLOR} is replaced with the actual fabric color code at runtime
 export const BOM_TEMPLATES: BomRelation[] = [
   // ===== FINISHED GOODS -> COMPONENTS =====
-  // All finished goods are ST1 only (pillow back ST2 was removed)
+  // Standard back only
 
   // Lounge Chair: Frame + Cushion Set + Power Bar
-  { parentSku: 'SOL-LCH-NTK-{COLOR}-ST1', componentSku: 'FRM-SOL-LCH', componentName: 'Frame, Solerno Lounge Chair', quantity: 1, unit: 'ea' },
-  { parentSku: 'SOL-LCH-NTK-{COLOR}-ST1', componentSku: 'CUS-LS-SET-{COLOR}', componentName: 'Cushion Set', quantity: 1, unit: 'ea' },
-  { parentSku: 'SOL-LCH-NTK-{COLOR}-ST1', componentSku: 'HT-PB-G1R-151', componentName: 'Power Bar Kit', quantity: 1, unit: 'ea' },
+  { parentSku: 'SOL-LCH-NTK-{COLOR}', componentSku: 'FRM-SOL-LCH', componentName: 'Frame, Solerno Lounge Chair', quantity: 1, unit: 'ea' },
+  { parentSku: 'SOL-LCH-NTK-{COLOR}', componentSku: 'CUS-LS-SET-{COLOR}', componentName: 'Cushion Set', quantity: 1, unit: 'ea' },
+  { parentSku: 'SOL-LCH-NTK-{COLOR}', componentSku: 'HT-PB-G1R-151', componentName: 'Power Bar Kit', quantity: 1, unit: 'ea' },
 
   // Loveseat (2 cushion sets)
-  { parentSku: 'SOL-LOV-NTK-{COLOR}-ST1', componentSku: 'FRM-SOL-LOV', componentName: 'Frame, Solerno Loveseat', quantity: 1, unit: 'ea' },
-  { parentSku: 'SOL-LOV-NTK-{COLOR}-ST1', componentSku: 'CUS-LS-SET-{COLOR}', componentName: 'Cushion Set', quantity: 2, unit: 'ea' },
-  { parentSku: 'SOL-LOV-NTK-{COLOR}-ST1', componentSku: 'HT-PB-G1R-151', componentName: 'Power Bar Kit', quantity: 1, unit: 'ea' },
+  { parentSku: 'SOL-LOV-NTK-{COLOR}', componentSku: 'FRM-SOL-LOV', componentName: 'Frame, Solerno Loveseat', quantity: 1, unit: 'ea' },
+  { parentSku: 'SOL-LOV-NTK-{COLOR}', componentSku: 'CUS-LS-SET-{COLOR}', componentName: 'Cushion Set', quantity: 2, unit: 'ea' },
+  { parentSku: 'SOL-LOV-NTK-{COLOR}', componentSku: 'HT-PB-G1R-151', componentName: 'Power Bar Kit', quantity: 1, unit: 'ea' },
 
   // Sofa (3 cushion sets)
-  { parentSku: 'SOL-SOF-NTK-{COLOR}-ST1', componentSku: 'FRM-SOL-SOF', componentName: 'Frame, Solerno Sofa', quantity: 1, unit: 'ea' },
-  { parentSku: 'SOL-SOF-NTK-{COLOR}-ST1', componentSku: 'CUS-LS-SET-{COLOR}', componentName: 'Cushion Set', quantity: 3, unit: 'ea' },
-  { parentSku: 'SOL-SOF-NTK-{COLOR}-ST1', componentSku: 'HT-PB-G1R-151', componentName: 'Power Bar Kit', quantity: 1, unit: 'ea' },
+  { parentSku: 'SOL-SOF-NTK-{COLOR}', componentSku: 'FRM-SOL-SOF', componentName: 'Frame, Solerno Sofa', quantity: 1, unit: 'ea' },
+  { parentSku: 'SOL-SOF-NTK-{COLOR}', componentSku: 'CUS-LS-SET-{COLOR}', componentName: 'Cushion Set', quantity: 3, unit: 'ea' },
+  { parentSku: 'SOL-SOF-NTK-{COLOR}', componentSku: 'HT-PB-G1R-151', componentName: 'Power Bar Kit', quantity: 1, unit: 'ea' },
 
   // Heated Ottoman (seat only, no back)
-  { parentSku: 'SOL-HOT-NTK-{COLOR}-ST1', componentSku: 'FRM-SOL-HOT', componentName: 'Frame, Solerno Heated Ottoman', quantity: 1, unit: 'ea' },
-  { parentSku: 'SOL-HOT-NTK-{COLOR}-ST1', componentSku: 'CUS-LS-SET-{COLOR}', componentName: 'Cushion Set', quantity: 1, unit: 'ea' },
-  { parentSku: 'SOL-HOT-NTK-{COLOR}-ST1', componentSku: 'HT-PB-G1R-151', componentName: 'Power Bar Kit', quantity: 1, unit: 'ea' },
+  { parentSku: 'SOL-HOT-NTK-{COLOR}', componentSku: 'FRM-SOL-HOT', componentName: 'Frame, Solerno Heated Ottoman', quantity: 1, unit: 'ea' },
+  { parentSku: 'SOL-HOT-NTK-{COLOR}', componentSku: 'CUS-LS-SET-{COLOR}', componentName: 'Cushion Set', quantity: 1, unit: 'ea' },
+  { parentSku: 'SOL-HOT-NTK-{COLOR}', componentSku: 'HT-PB-G1R-151', componentName: 'Power Bar Kit', quantity: 1, unit: 'ea' },
 
   // Chaise Lounge
-  { parentSku: 'SOL-CHS-NTK-{COLOR}-ST1', componentSku: 'FRM-SOL-CHS', componentName: 'Frame, Solerno Chaise Lounge', quantity: 1, unit: 'ea' },
-  { parentSku: 'SOL-CHS-NTK-{COLOR}-ST1', componentSku: 'CUS-LS-SET-{COLOR}', componentName: 'Cushion Set', quantity: 1, unit: 'ea' },
-  { parentSku: 'SOL-CHS-NTK-{COLOR}-ST1', componentSku: 'HT-PB-G1R-151', componentName: 'Power Bar Kit', quantity: 1, unit: 'ea' },
+  { parentSku: 'SOL-CHS-NTK-{COLOR}', componentSku: 'FRM-SOL-CHS', componentName: 'Frame, Solerno Chaise Lounge', quantity: 1, unit: 'ea' },
+  { parentSku: 'SOL-CHS-NTK-{COLOR}', componentSku: 'CUS-LS-SET-{COLOR}', componentName: 'Cushion Set', quantity: 1, unit: 'ea' },
+  { parentSku: 'SOL-CHS-NTK-{COLOR}', componentSku: 'HT-PB-G1R-151', componentName: 'Power Bar Kit', quantity: 1, unit: 'ea' },
 
   // Swivel Chair
-  { parentSku: 'SOL-SVL-NTK-{COLOR}-ST1', componentSku: 'FRM-SOL-SVL', componentName: 'Frame, Solerno Swivel Chair', quantity: 1, unit: 'ea' },
-  { parentSku: 'SOL-SVL-NTK-{COLOR}-ST1', componentSku: 'CUS-LS-SET-{COLOR}', componentName: 'Cushion Set', quantity: 1, unit: 'ea' },
-  { parentSku: 'SOL-SVL-NTK-{COLOR}-ST1', componentSku: 'HT-PB-G1R-151', componentName: 'Power Bar Kit', quantity: 1, unit: 'ea' },
+  { parentSku: 'SOL-SVL-NTK-{COLOR}', componentSku: 'FRM-SOL-SVL', componentName: 'Frame, Solerno Swivel Chair', quantity: 1, unit: 'ea' },
+  { parentSku: 'SOL-SVL-NTK-{COLOR}', componentSku: 'CUS-LS-SET-{COLOR}', componentName: 'Cushion Set', quantity: 1, unit: 'ea' },
+  { parentSku: 'SOL-SVL-NTK-{COLOR}', componentSku: 'HT-PB-G1R-151', componentName: 'Power Bar Kit', quantity: 1, unit: 'ea' },
 
   // Dining Arm Chair
-  { parentSku: 'SOL-DAC-NTK-{COLOR}-ST1', componentSku: 'FRM-SOL-DAC', componentName: 'Frame, Solerno Dining Arm Chair', quantity: 1, unit: 'ea' },
-  { parentSku: 'SOL-DAC-NTK-{COLOR}-ST1', componentSku: 'CUS-LS-SET-{COLOR}', componentName: 'Cushion Set', quantity: 1, unit: 'ea' },
-  { parentSku: 'SOL-DAC-NTK-{COLOR}-ST1', componentSku: 'HT-PB-G1R-151', componentName: 'Power Bar Kit', quantity: 1, unit: 'ea' },
+  { parentSku: 'SOL-DAC-NTK-{COLOR}', componentSku: 'FRM-SOL-DAC', componentName: 'Frame, Solerno Dining Arm Chair', quantity: 1, unit: 'ea' },
+  { parentSku: 'SOL-DAC-NTK-{COLOR}', componentSku: 'CUS-LS-SET-{COLOR}', componentName: 'Cushion Set', quantity: 1, unit: 'ea' },
+  { parentSku: 'SOL-DAC-NTK-{COLOR}', componentSku: 'HT-PB-G1R-151', componentName: 'Power Bar Kit', quantity: 1, unit: 'ea' },
 
   // Dining Side Chair
-  { parentSku: 'SOL-DCH-NTK-{COLOR}-ST1', componentSku: 'FRM-SOL-DCH', componentName: 'Frame, Solerno Dining Side Chair', quantity: 1, unit: 'ea' },
-  { parentSku: 'SOL-DCH-NTK-{COLOR}-ST1', componentSku: 'CUS-LS-SET-{COLOR}', componentName: 'Cushion Set', quantity: 1, unit: 'ea' },
-  { parentSku: 'SOL-DCH-NTK-{COLOR}-ST1', componentSku: 'HT-PB-G1R-151', componentName: 'Power Bar Kit', quantity: 1, unit: 'ea' },
+  { parentSku: 'SOL-DCH-NTK-{COLOR}', componentSku: 'FRM-SOL-DCH', componentName: 'Frame, Solerno Dining Side Chair', quantity: 1, unit: 'ea' },
+  { parentSku: 'SOL-DCH-NTK-{COLOR}', componentSku: 'CUS-LS-SET-{COLOR}', componentName: 'Cushion Set', quantity: 1, unit: 'ea' },
+  { parentSku: 'SOL-DCH-NTK-{COLOR}', componentSku: 'HT-PB-G1R-151', componentName: 'Power Bar Kit', quantity: 1, unit: 'ea' },
 
   // ===== CUSHION SET -> SHELLS + CORE INSERT SET =====
   { parentSku: 'CUS-LS-SET-{COLOR}', componentSku: 'SHL-SEAT-{COLOR}', componentName: 'Shell, Seat', quantity: 1, unit: 'ea' },
@@ -89,13 +89,13 @@ export const BOM_TEMPLATES: BomRelation[] = [
   // ===== OTTOMAN FINISHED GOODS -> COMPONENTS =====
 
   // Ottoman: Frame + Cushion
-  { parentSku: 'SOL-OTM-NTK-{COLOR}-ST1', componentSku: 'FRM-SOL-OTM', componentName: 'Frame, Ottoman', quantity: 1, unit: 'ea' },
-  { parentSku: 'SOL-OTM-NTK-{COLOR}-ST1', componentSku: 'CUS-OTM-{COLOR}', componentName: 'Cushion, Ottoman', quantity: 1, unit: 'ea' },
+  { parentSku: 'SOL-OTM-NTK-{COLOR}', componentSku: 'FRM-SOL-OTM', componentName: 'Frame, Ottoman', quantity: 1, unit: 'ea' },
+  { parentSku: 'SOL-OTM-NTK-{COLOR}', componentSku: 'CUS-OTM-{COLOR}', componentName: 'Cushion, Ottoman', quantity: 1, unit: 'ea' },
 
   // Heated Ottoman: Frame + Heated Cushion + Power Bar
-  { parentSku: 'SOL-HOT-NTK-{COLOR}-ST1', componentSku: 'FRM-SOL-HOT', componentName: 'Frame, Heated Ottoman', quantity: 1, unit: 'ea' },
-  { parentSku: 'SOL-HOT-NTK-{COLOR}-ST1', componentSku: 'CUS-HOT-{COLOR}', componentName: 'Cushion, Heated Ottoman', quantity: 1, unit: 'ea' },
-  { parentSku: 'SOL-HOT-NTK-{COLOR}-ST1', componentSku: 'HT-PB-G1R-151', componentName: 'Power Bar Kit', quantity: 1, unit: 'ea' },
+  { parentSku: 'SOL-HOT-NTK-{COLOR}', componentSku: 'FRM-SOL-HOT', componentName: 'Frame, Heated Ottoman', quantity: 1, unit: 'ea' },
+  { parentSku: 'SOL-HOT-NTK-{COLOR}', componentSku: 'CUS-HOT-{COLOR}', componentName: 'Cushion, Heated Ottoman', quantity: 1, unit: 'ea' },
+  { parentSku: 'SOL-HOT-NTK-{COLOR}', componentSku: 'HT-PB-G1R-151', componentName: 'Power Bar Kit', quantity: 1, unit: 'ea' },
 
   // ===== OTTOMAN CUSHIONS -> SHELL + CORE INSERT =====
   { parentSku: 'CUS-OTM-{COLOR}', componentSku: 'SHL-OTM-{COLOR}', componentName: 'Shell, Ottoman', quantity: 1, unit: 'ea' },

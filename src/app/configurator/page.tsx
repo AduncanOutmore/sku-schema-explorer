@@ -100,7 +100,6 @@ function BomLeaf({ sku, desc, cat, qty, isHighlightQty }: Omit<BomNodeProps, 'ch
 export default function ConfiguratorPage() {
   const [product, setProduct] = useState('');
   const [finish, setFinish] = useState('NTK');
-  const [back, setBack] = useState('ST1');
   const [fabric, setFabric] = useState('');
   const [copied, setCopied] = useState(false);
 
@@ -115,15 +114,14 @@ export default function ConfiguratorPage() {
     const isDining = pData.hasDining;
     const seats = pData.seats;
     const seatingType = isDining ? 'DN' : 'LS';
-    const backType = back === 'ST1' ? 'BACK' : 'PILB';
+    const backType = 'BACK';
 
     // Build SKU
-    let generatedSku = 'SOL-' + product + '-' + finish + '-' + fabric;
-    if (!isOttoman) generatedSku += '-' + back;
+    const generatedSku = 'SOL-' + product + '-' + finish + '-' + fabric;
 
     // Build description
     let desc = pData.name + ', ' + fData.name;
-    if (!isOttoman) desc += ', ' + (back === 'ST1' ? 'Standard Back' : 'Pillow Back');
+    if (!isOttoman) desc += ', Standard Back';
 
     // Build BOM JSX
     const bomContent = (
@@ -170,14 +168,14 @@ export default function ConfiguratorPage() {
               {/* Back Cushions */}
               <BomNode
                 sku={`CSH-${seatingType}-${backType}-${fabric}`}
-                desc={(back === 'ST1' ? 'Back' : 'Pillow Back') + ' Cushion'}
+                desc="Back Cushion"
                 cat="cat-cushion"
                 qty={seats > 1 ? `×${seats}` : '×1'}
                 isHighlightQty={seats > 1}
               >
                 <BomNode
                   sku={`SHL-${seatingType}-${backType}-${fabric}`}
-                  desc={`Shell, ${back === 'ST1' ? 'Back' : 'Pillow Back'}`}
+                  desc="Shell, Back"
                   cat="cat-shell"
                   qty="×1"
                 >
@@ -187,7 +185,7 @@ export default function ConfiguratorPage() {
                 </BomNode>
                 <BomNode
                   sku={`COR-${seatingType}-${backType}`}
-                  desc={`Core Insert, ${back === 'ST1' ? 'Back' : 'Pillow Back'}`}
+                  desc="Core Insert, Back"
                   cat="cat-core"
                   qty="×1"
                 >
@@ -246,7 +244,7 @@ export default function ConfiguratorPage() {
     );
 
     return { sku: generatedSku, description: desc, bomHtml: bomContent };
-  }, [product, finish, back, fabric, isValid]);
+  }, [product, finish, fabric, isValid]);
 
   const handleCopy = () => {
     navigator.clipboard.writeText(sku);
@@ -282,7 +280,7 @@ export default function ConfiguratorPage() {
             <strong>Build Your SKU:</strong> Select your product options below to generate the finished goods SKU and see the complete Bill of Materials with quantities.
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {/* Furniture Piece */}
             <div>
               <label className="font-display text-xs font-semibold uppercase tracking-wider text-muted block mb-2">
@@ -320,25 +318,6 @@ export default function ConfiguratorPage() {
                   className="w-full appearance-none px-4 py-3 border border-sand rounded-md bg-white text-jet focus:outline-none focus:ring-2 focus:ring-hot-embers pr-10"
                 >
                   <option value="NTK">Natural Teak</option>
-                </select>
-                <ChevronDown className="absolute right-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted pointer-events-none" />
-              </div>
-            </div>
-
-            {/* Back Style */}
-            <div>
-              <label className="font-display text-xs font-semibold uppercase tracking-wider text-muted block mb-2">
-                Back Style
-              </label>
-              <div className="relative">
-                <select
-                  value={back}
-                  onChange={(e) => setBack(e.target.value)}
-                  disabled={Boolean(product && PRODUCT_DATA[product]?.noBack)}
-                  className="w-full appearance-none px-4 py-3 border border-sand rounded-md bg-white text-jet focus:outline-none focus:ring-2 focus:ring-hot-embers pr-10 disabled:opacity-50 disabled:cursor-not-allowed"
-                >
-                  <option value="ST1">Standard Back (Foam)</option>
-                  <option value="ST2">Pillow Back</option>
                 </select>
                 <ChevronDown className="absolute right-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted pointer-events-none" />
               </div>

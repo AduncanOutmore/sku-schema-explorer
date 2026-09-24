@@ -22,12 +22,10 @@ export function Header({ onMenuClick, isSidebarOpen }: HeaderProps) {
     if (pathname.startsWith('/bom')) return 'BOM Explorer';
     if (pathname === '/fabrics') return 'Fabric Selector';
     if (pathname === '/glossary') return 'Glossary';
-    if (pathname === '/katana') return 'Katana Guide';
     if (pathname === '/search') return 'Search';
     if (pathname === '/configurator') return 'SKU Configurator';
     if (pathname === '/master') return 'Master Data';
     if (pathname === '/downloads') return 'Downloads & Resources';
-    if (pathname === '/katana-checklist') return 'Katana Integration Checklist';
     return 'SKU Schema Explorer';
   };
 

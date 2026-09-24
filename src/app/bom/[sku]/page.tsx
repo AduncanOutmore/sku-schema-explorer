@@ -75,11 +75,9 @@ export default function BomSkuPage({ params }: BomSkuPageProps) {
 // Generate static params for common SKUs
 export async function generateStaticParams() {
   const commonSkus = [
-    'SOL-LCH-NTK-CBN-ST1',
-    'SOL-LCH-NTK-CBN-ST2',
+    'SOL-LCH-NTK-CBN',
     'CSH-LS-SEAT-CBN',
     'CSH-LS-BACK-CBN',
-    'CSH-LS-PILB-CBN',
     'COR-LS-SEAT',
     'SHL-LS-SEAT-CBN',
     'HT-PB-G1R-151',

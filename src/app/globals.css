@@ -203,7 +203,6 @@
   .sku-part.product { @apply bg-jet-light text-white; }
   .sku-part.finish { @apply bg-sand text-jet; }
   .sku-part.fabric { @apply bg-jet-lighter text-white; }
-  .sku-part.settype { @apply bg-jet text-white; }
   .sku-part.seating { @apply bg-jet-light text-white; }
   .sku-part.component { @apply bg-sand-light text-jet; }
   .sku-part.brand { @apply bg-jet text-white; }

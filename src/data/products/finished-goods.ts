@@ -14,10 +14,10 @@ const HEATED_SEATING_TYPES = [
 ];
 
 // Generate all finished goods
-// 8 seating types x 19 fabrics = 152 products (ST1 only — ST2 pillow back was removed)
+// 8 seating types x 19 fabrics = 152 products
 export const FINISHED_GOODS: Product[] = HEATED_SEATING_TYPES.flatMap((productType) =>
   FABRIC_COLORS.map((fabric, fabricIndex) => ({
-    sku: `SOL-${productType.code}-NTK-${fabric.code}-ST1`,
+    sku: `SOL-${productType.code}-NTK-${fabric.code}`,
     name: `Solerno ${productType.name}, ${fabric.name}`,
     description: `${productType.name} from the Solerno collection in ${fabric.fullName}`,
     category: 'finished-good' as const,
@@ -31,7 +31,6 @@ export const FINISHED_GOODS: Product[] = HEATED_SEATING_TYPES.flatMap((productTy
     collection: 'SOL',
     productType: productType.code,
     finish: 'NTK',
-    setType: 'ST1',
     fabricColor: fabric,
     notes: 'Make-to-Order. Assembled when customer places order on Shopify.',
   }))

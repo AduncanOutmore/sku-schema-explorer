@@ -64,7 +64,6 @@ function SelectField({ label, value, onChange, options, placeholder }: SelectFie
 export function SkuBuilder() {
   const [category, setCategory] = useState('');
   const [productType, setProductType] = useState('');
-  const [setType, setSetType] = useState('');
   const [fabric, setFabric] = useState('');
   const [component, setComponent] = useState('');
 
@@ -74,8 +73,8 @@ export function SkuBuilder() {
 
     switch (category) {
       case 'finished-good':
-        if (productType && fabric && setType) {
-          return `SOL-${productType}-NTK-${fabric}-${setType}`;
+        if (productType && fabric) {
+          return `SOL-${productType}-NTK-${fabric}`;
         }
         break;
       case 'cushion':
@@ -95,7 +94,7 @@ export function SkuBuilder() {
         break;
     }
     return null;
-  }, [category, productType, setType, fabric, component]);
+  }, [category, productType, fabric, component]);
 
   // Validate SKU
   const product = useMemo(() => {
@@ -107,7 +106,6 @@ export function SkuBuilder() {
   const handleCategoryChange = (newCategory: string) => {
     setCategory(newCategory);
     setProductType('');
-    setSetType('');
     setFabric('');
     setComponent('');
   };
@@ -171,16 +169,6 @@ export function SkuBuilder() {
                   onChange={setFabric}
                   options={fabricOptions}
                   placeholder="Select fabric..."
-                />
-                <SelectField
-                  label="Set Type"
-                  value={setType}
-                  onChange={setSetType}
-                  options={[
-                    { code: 'ST1', name: 'Standard (Foam Back)' },
-                    { code: 'ST2', name: 'Pillow Back' },
-                  ]}
-                  placeholder="Select set type..."
                 />
               </>
             )}
