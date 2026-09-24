@@ -96,9 +96,9 @@ export default function BuilderPage() {
           <div>
             <p className="font-display font-medium text-white mb-1">Finished Goods</p>
             <code className="text-hot-embers bg-white/10 px-2 py-1 rounded text-xs">
-              SOL-[PRODUCT]-[FINISH]-[FABRIC]-[SET]
+              SOL-[PRODUCT]-[FINISH]-[FABRIC]
             </code>
-            <p className="text-sand mt-2">Example: SOL-LCH-NTK-CBN-ST1</p>
+            <p className="text-sand mt-2">Example: SOL-LCH-NTK-CBN</p>
           </div>
           <div>
             <p className="font-display font-medium text-white mb-1">Cushions</p>

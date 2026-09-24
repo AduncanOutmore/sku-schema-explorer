@@ -11,9 +11,9 @@ import { CopyButton } from '@/components/shared/CopyButton';
 // SKU patterns with segment descriptions
 const SKU_PATTERNS = [
   {
-    pattern: /^SOL-([A-Z]{3})-([A-Z]{2,3})-([A-Z]{3})-ST([12])$/,
+    pattern: /^SOL-([A-Z]{3})-([A-Z]{2,3})-([A-Z]{3})$/,
     category: 'finished-good' as ProductCategory,
-    segments: ['Collection', 'Product Type', 'Finish', 'Fabric', 'Set Type'],
+    segments: ['Collection', 'Product Type', 'Finish', 'Fabric'],
   },
   {
     pattern: /^FR-([A-Z]{3})-([A-Z]{3})-([A-Z]{2,3})$/,
@@ -114,7 +114,7 @@ export function SkuDecoder() {
         <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" />
         <input
           type="text"
-          placeholder="Enter a SKU to decode (e.g., SOL-LCH-NTK-CBN-ST1)"
+          placeholder="Enter a SKU to decode (e.g., SOL-LCH-NTK-CBN)"
           value={inputSku}
           onChange={(e) => setInputSku(e.target.value)}
           className="w-full pl-12 pr-4 py-4 text-lg font-mono border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-sku-finished focus:border-transparent"
@@ -238,7 +238,7 @@ export function SkuDecoder() {
         <div className="text-sm text-gray-500">
           <p className="mb-2">Try these example SKUs:</p>
           <div className="flex flex-wrap gap-2">
-            {['SOL-LCH-NTK-CBN-ST1', 'CSH-LS-SEAT-CBN', 'COR-LS-SEAT', 'HT-PB-G1R-151'].map(sku => (
+            {['SOL-LCH-NTK-CBN', 'CSH-LS-SEAT-CBN', 'COR-LS-SEAT', 'HT-PB-G1R-151'].map(sku => (
               <button
                 key={sku}
                 onClick={() => setInputSku(sku)}

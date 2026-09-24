@@ -3,8 +3,7 @@
 export const MAIN_HIERARCHY_DIAGRAM = `%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#2F5496', 'primaryTextColor': '#fff', 'primaryBorderColor': '#1a3a6e', 'lineColor': '#5b9bd5', 'secondaryColor': '#70AD47', 'tertiaryColor': '#FFC000'}}}%%
 flowchart TB
     subgraph FG["FINISHED GOODS (10000s)"]
-        FG1["SOL-LCH-NTK-CBN-ST1<br/>Lounge Chair, Carbon, Standard"]
-        FG2["SOL-LCH-NTK-CBN-ST2<br/>Lounge Chair, Carbon, Pillow Back"]
+        FG1["SOL-LCH-NTK-CBN<br/>Lounge Chair, Carbon, Standard"]
     end
 
     subgraph FR["FRAMES (30000s)"]
@@ -14,19 +13,16 @@ flowchart TB
     subgraph CSH["CUSHIONS (40000s)"]
         CSH1["CSH-LS-SEAT-CBN<br/>Seat Cushion"]
         CSH2["CSH-LS-BACK-CBN<br/>Back Cushion"]
-        CSH3["CSH-LS-PILB-CBN<br/>Pillow Back Cushion"]
     end
 
     subgraph COR["CORE INSERTS (40500s)"]
         COR1["COR-LS-SEAT<br/>Seat Core"]
         COR2["COR-LS-BACK<br/>Back Core"]
-        COR3["COR-LS-PILB<br/>Pillow Back Core"]
     end
 
     subgraph SHL["SHELLS (50000s)"]
         SHL1["SHL-LS-SEAT-CBN<br/>Seat Shell"]
         SHL2["SHL-LS-BACK-CBN<br/>Back Shell"]
-        SHL3["SHL-LS-PILB-CBN<br/>Pillow Back Shell"]
     end
 
     subgraph HT["HEAT TECH (70000s)"]
@@ -46,17 +42,10 @@ flowchart TB
     FG1 --> CSH2
     FG1 --> HT1
 
-    FG2 --> FR1
-    FG2 --> CSH1
-    FG2 --> CSH3
-    FG2 --> HT1
-
     CSH1 --> SHL1
     CSH1 --> COR1
     CSH2 --> SHL2
     CSH2 --> COR2
-    CSH3 --> SHL3
-    CSH3 --> COR3
 
     HT1 --> HT2
 
@@ -73,11 +62,11 @@ flowchart TB
     classDef heattech fill:#FFC000,stroke:#bf9000,color:#000
     classDef material fill:#F4B183,stroke:#c55a11,color:#000
 
-    class FG1,FG2 finished
+    class FG1 finished
     class FR1 frame
-    class CSH1,CSH2,CSH3 cushion
-    class COR1,COR2,COR3 core
-    class SHL1,SHL2,SHL3 shell
+    class CSH1,CSH2 cushion
+    class COR1,COR2 core
+    class SHL1,SHL2 shell
     class HT1,HT2 heattech
     class MAT1,MAT2,MAT3,MAT4 material`;
 
@@ -159,12 +148,11 @@ export const SKU_PATTERN_DIAGRAM = `%%{init: {'theme': 'base'}}%%
 flowchart TB
     subgraph FG["Finished Good SKU Pattern"]
         direction LR
-        F1["SOL"] --> F2["LCH"] --> F3["NTK"] --> F4["CBN"] --> F5["ST1"]
+        F1["SOL"] --> F2["LCH"] --> F3["NTK"] --> F4["CBN"]
         F1b["Collection"] -.-> F1
         F2b["Product"] -.-> F2
         F3b["Finish"] -.-> F3
         F4b["Fabric"] -.-> F4
-        F5b["Set Type"] -.-> F5
     end
 
     subgraph CSH["Cushion SKU Pattern"]

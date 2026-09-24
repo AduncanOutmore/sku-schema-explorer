@@ -63,7 +63,6 @@ export interface Product {
   collection?: string;         // e.g., 'SOL' for Solerno
   productType?: string;        // e.g., 'LCH' for Lounge Chair
   finish?: string;             // e.g., 'NTK' for Natural Teak
-  setType?: string;            // e.g., 'ST1', 'ST2'
   componentType?: string;      // e.g., 'SEAT', 'BACK', 'PILB'
   seatingType?: string;        // e.g., 'LS' for Lounge Seating
   notes?: string;

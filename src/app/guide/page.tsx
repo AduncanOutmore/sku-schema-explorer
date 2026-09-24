@@ -105,7 +105,7 @@ export default function GuidedTourPage() {
   const hierarchyDiagram = `%%{init: {'theme': 'neutral', 'themeVariables': { 'fontSize': '14px', 'primaryColor': '#F25431', 'primaryTextColor': '#fff', 'primaryBorderColor': '#373534', 'lineColor': '#d4cec4', 'secondaryColor': '#ebe5dc', 'tertiaryColor': '#fcf9f5'}}}%%
 flowchart TB
     subgraph L1["<b>Finished Goods</b> — What Customers Buy"]
-        FG["SOL-LCH-NTK-CBN-ST1<br/>Lounge Chair, Carbon"]
+        FG["SOL-LCH-NTK-CBN<br/>Lounge Chair, Carbon"]
     end
     subgraph L2["<b>Major Components</b> — Assembled In-House"]
         FR["FR-SOL-LCH-NT<br/>Frame"]
@@ -239,14 +239,7 @@ flowchart TB
 
           <div className="bg-jet text-white rounded-lg p-5">
             <h4 className="font-display font-semibold mb-3">Key Concepts</h4>
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-sm">
-              <div>
-                <span className="text-hot-embers font-semibold">ST1 vs ST2</span>
-                <p className="text-sand mt-1">
-                  ST1 = Standard foam back<br />
-                  ST2 = Pillow back style
-                </p>
-              </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
               <div>
                 <span className="text-hot-embers font-semibold">LS vs DN</span>
                 <p className="text-sand mt-1">
@@ -364,7 +357,6 @@ flowchart TB
                 { code: 'LCH', meaning: 'Lounge Chair', type: 'product' },
                 { code: 'NTK', meaning: 'Natural Teak finish', type: 'finish' },
                 { code: 'CBN', meaning: 'Carbon (Sunbrella Spectrum)', type: 'fabric' },
-                { code: 'ST1', meaning: 'Set Type 1 (Standard back)', type: 'settype' },
               ]}
             />
             <InteractiveSku
@@ -390,7 +382,7 @@ flowchart TB
               parts={[
                 { code: 'SHL', meaning: 'Shell (fabric cover)', type: 'prefix' },
                 { code: 'LS', meaning: 'Lounge Seating', type: 'seating' },
-                { code: 'PILB', meaning: 'Pillow Back (ST2)', type: 'component' },
+                { code: 'BACK', meaning: 'Back position', type: 'component' },
                 { code: 'DOV', meaning: 'Dove (Sunbrella Spectrum)', type: 'fabric' },
               ]}
             />
@@ -436,8 +428,8 @@ flowchart TB
             <tbody>
               <tr>
                 <td>Finished Goods</td>
-                <td><code className="text-xs bg-sand-light px-2 py-0.5 rounded">SOL-[PRODUCT]-[FINISH]-[FABRIC]-[SET]</code></td>
-                <td className="sku">SOL-LCH-NTK-CBN-ST1</td>
+                <td><code className="text-xs bg-sand-light px-2 py-0.5 rounded">SOL-[PRODUCT]-[FINISH]-[FABRIC]</code></td>
+                <td className="sku">SOL-LCH-NTK-CBN</td>
               </tr>
               <tr>
                 <td>Frames</td>
@@ -507,7 +499,7 @@ flowchart TB
               <div>
                 <h4 className="font-display font-semibold text-jet mb-1">Katana Creates MO</h4>
                 <p className="text-sm text-muted">
-                  Manufacturing Order created for the specific SKU (e.g., SOL-LCH-NTK-CBN-ST1). BOM explodes to show all needed components.
+                  Manufacturing Order created for the specific SKU (e.g., SOL-LCH-NTK-CBN). BOM explodes to show all needed components.
                 </p>
               </div>
             </div>

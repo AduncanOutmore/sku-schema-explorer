@@ -32,8 +32,6 @@ BACK,Back (foam),Component
 PILB,Pillow Back,Component
 LS,Lounge Seating,Component
 DN,Dining,Component
-ST1,Set Type 1 (Seat + Foam Back),Component
-ST2,Set Type 2 (Seat + Pillow Back),Component
 NT,Natural Teak,Finish
 NTK,Natural Teak (finished goods),Finish
 BLK,Black,Finish

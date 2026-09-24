@@ -41,7 +41,6 @@ function SkuPart({ code, meaning, type }: SkuPartProps) {
       case 'product': return 'bg-jet-light text-white';
       case 'finish': return 'bg-sand text-jet';
       case 'fabric': return 'bg-jet-lighter text-white';
-      case 'settype': return 'bg-jet text-white';
       case 'seating': return 'bg-jet-light text-white';
       case 'component': return 'bg-sand-light text-jet';
       default: return 'bg-sand text-jet';
@@ -186,8 +185,6 @@ export default function HomePage() {
               <SkuPart code="NTK" meaning="Natural Teak finish" type="finish" />
               <SkuSeparator />
               <SkuPart code="CBN" meaning="Carbon (Sunbrella)" type="fabric" />
-              <SkuSeparator />
-              <SkuPart code="ST1" meaning="Set Type 1 (Standard back)" type="settype" />
             </div>
           </div>
 

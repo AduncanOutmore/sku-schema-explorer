@@ -46,7 +46,7 @@ export default function FabricsPage() {
             The 3-letter fabric code appears at different positions depending on the SKU type:
           </p>
           <div className="font-mono bg-gray-50 p-3 rounded-lg space-y-1">
-            <p>Finished Good: SOL-LCH-NTK-<span className="text-sku-finished font-bold">CBN</span>-ST1</p>
+            <p>Finished Good: SOL-LCH-NTK-<span className="text-sku-finished font-bold">CBN</span></p>
             <p>Cushion: CSH-LS-SEAT-<span className="text-sku-cushion font-bold">CBN</span></p>
             <p>Shell: SHL-LS-SEAT-<span className="text-sku-shell font-bold">CBN</span></p>
             <p>Fabric: FAB-SUN-SPTM-<span className="text-sku-material font-bold">CBN</span></p>

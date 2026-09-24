@@ -7,12 +7,12 @@ import { getFabricByCode } from '../fabrics';
 // Extract color code from SKU
 export function extractColorFromSku(sku: string): string | null {
   // Try to match fabric color code patterns
-  // Finished goods: SOL-LCH-NTK-CBN-ST1
+  // Finished goods: SOL-LCH-NTK-CBN
   // Cushions/Shells: CSH-LS-SEAT-CBN
   const parts = sku.split('-');
 
-  // For finished goods (5 parts), color is at index 3
-  if (parts.length === 5 && parts[0] === 'SOL') {
+  // For finished goods (4 parts, finish segment NTK), color is at index 3
+  if (parts.length === 4 && parts[0] === 'SOL' && parts[2] === 'NTK') {
     return parts[3];
   }
 

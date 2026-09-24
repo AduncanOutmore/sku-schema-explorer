@@ -38,7 +38,7 @@ const itemTypeDescriptions: Record<string, { name: string; description: string; 
   'make-to-order': {
     name: 'Make-to-Order',
     description: 'Finished goods assembled when customer places order. Not pre-built inventory.',
-    examples: ['SOL-LCH-NTK-CBN-ST1', 'SOL-SOF-NTK-IND-ST2'],
+    examples: ['SOL-LCH-NTK-CBN', 'SOL-SOF-NTK-IND'],
   },
   'subassembly': {
     name: 'Subassembly',

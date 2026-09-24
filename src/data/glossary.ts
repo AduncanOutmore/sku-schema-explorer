@@ -38,8 +38,6 @@ export const GLOSSARY: GlossaryEntry[] = [
   { abbreviation: 'BACK', meaning: 'Back (foam)', category: 'Component' },
   { abbreviation: 'PILB', meaning: 'Pillow Back', category: 'Component' },
   { abbreviation: 'LS', meaning: 'Lounge Seating', category: 'Component' },
-  { abbreviation: 'ST1', meaning: 'Set Type 1 (Seat + Foam Back)', category: 'Component' },
-  { abbreviation: 'ST2', meaning: 'Set Type 2 (Seat + Pillow Back)', category: 'Component' },
 
   // Finishes
   { abbreviation: 'NTK', meaning: 'Natural Teak', category: 'Finish' },

@@ -69,7 +69,7 @@ const CHECKLIST_SECTIONS: ChecklistSection[] = [
         id: 'usage-mto',
         title: 'Configure-to-Order (CTO)',
         description: 'Furniture SETS are configured and assembled when ordered. Individual pieces (frames, cushions) are pre-built.',
-        decision: 'Use for: Furniture sets (SOL-LCH-NTK-CBN-ST1) - these are configured combinations of pre-built pieces assembled at order time.',
+        decision: 'Use for: Furniture sets (SOL-LCH-NTK-CBN) - these are configured combinations of pre-built pieces assembled at order time.',
         important: true,
         links: [
           { label: 'Katana MTO Guide', url: 'https://support.katanamrp.com/hc/en-us/articles/4403780481937-Make-to-Order-MTO-' },
@@ -237,7 +237,7 @@ const CHECKLIST_SECTIONS: ChecklistSection[] = [
         id: 'shop-variants',
         title: 'SKU Variants for Fabric Colors',
         description: 'Each fabric color creates a unique SKU variant.',
-        decision: 'SOL-LCH-NTK-CBN-ST1 and SOL-LCH-NTK-IND-ST1 are different variants. Katana tracks each separately.',
+        decision: 'SOL-LCH-NTK-CBN and SOL-LCH-NTK-IND are different variants. Katana tracks each separately.',
       },
     ],
   },
