@@ -107,7 +107,6 @@ const secondaryActions = [
   { name: 'Fabrics', href: '/fabrics', icon: Palette },
   { name: 'Glossary', href: '/glossary', icon: BookOpen },
   { name: 'Master Data', href: '/master', icon: Table },
-  { name: 'Katana Guide', href: '/katana', icon: Database },
   { name: 'Downloads', href: '/downloads', icon: Download },
 ];
 
@@ -371,7 +370,7 @@ export default function HomePage() {
             <h3 className="font-display font-medium text-jet mb-2">Sellable vs Internal</h3>
             <p className="text-sm text-muted">
               Some items are sellable replacements (shells), while others are internal-only
-              (core inserts). The Katana Guide helps determine the correct item type.
+              (core inserts).
             </p>
           </div>
         </div>
