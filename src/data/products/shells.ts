@@ -1,7 +1,7 @@
 import { Product, getPartNumberRange } from '@/types/product';
 import { FABRIC_COLORS } from '../fabrics';
 
-// Lounge seating shell components (PILB removed — only ST1 standard configuration in Katana)
+// Lounge seating shell components (seat and back only; pillow back removed)
 const SHELL_COMPONENTS = [
   { code: 'SEAT', name: 'Seat', partNumberOffset: 0 },
   { code: 'BACK', name: 'Back', partNumberOffset: 19 },
